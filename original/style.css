@@ -186,3 +186,8 @@ ul {
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.page-content .base-layout {
+    background: #d1d1d1;
+    padding: 10px;
+}
