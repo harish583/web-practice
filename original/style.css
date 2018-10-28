@@ -115,9 +115,15 @@ ul {
     float: left;
     margin-left: 20px;
 }
+.form-row {
+    padding: 10px;
+}
 
-.form-row  {
-    margin-top: 20px;
+.form-row:nth-child(odd)  {
+    background: #fff;
+}
+.form-row.button-container {
+    background: none;
 }
 
 .input-holder  .input-text {
