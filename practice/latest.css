@@ -18,7 +18,6 @@ body{
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -29,6 +28,11 @@ li{
 .center{
     width: 700px;
     margin: 0 auto;
+    
+}
+.center-content{
+    background: #d1d1d1;
+    padding: 10px;
 }
 .nav{
     position: fixed;
@@ -54,6 +58,7 @@ li{
 .nav-links .nav-sub-links {
     font-size: 18px;
     padding: 5px;
+    font-size: 14px;
 }
 
 .nav-links:hover .nav-sub{
@@ -75,13 +80,13 @@ li{
 }
 .discription{
     line-height: 2;
-   
+    
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     color: #757883;
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .help-text{
     font-size: 10px;
@@ -102,24 +107,31 @@ li{
 }    
 .form-row{
     overflow: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .form-row label{
     display: block;
+    box-sizing: border-box;
+    line-height: 31px;
+    padding-left:15px;
 }
-
-.form-head{
+.float{
     float: left;
-    width: 25%;
-    background-color: #262626;
-
+    width: 22%; 
     font-size: 14px;
-    padding: 7px;
+    margin: 0px 10px;
+    margin-right: 20px;
+}
+.form-head{
+    
     text-transform: uppercase;
     color: white;
     font-weight: bold;
     position: relative;
-    margin-right: 15px;
+    
+    background-color: #262626;
+
+   
 }
 
 
@@ -134,11 +146,15 @@ li{
 }
 .form-text{
     float: left;
-    width: 50%;
+    width: 45%;
 }
 .form-text input, textarea{
-    padding: 7px;
     width: 100%;
+    padding: 7px 10px;
+    
+    border-left-color: #999;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ccc;
 }
 .buttons button{
     padding: 10px 20px;
@@ -148,4 +164,9 @@ li{
     border: 0;
     margin-top: 20px;
     cursor: pointer;
+    margin: 20px 10px;
+}
+.form-row:nth-child(odd) {
+    background: #fff;
+    padding: 10px 0px;
 }
