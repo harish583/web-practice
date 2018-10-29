@@ -1,0 +1,10 @@
+28th - oct - 2018
+
+- Layouting
+- dropdown
+- css
+- border box / box modal
+
+
+29 - oct - 2018
+- github login page
