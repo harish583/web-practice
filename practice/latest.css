@@ -11,9 +11,13 @@ body{
     background: #F6F6F6;
 }
 .nav-links a{
-    color:#757883;
+    color: #757883;
     padding: 15px 20px;
     display: block;
+}
+.nav-sub a{
+
+    color:#c1c1c1;
 }
 *{
     margin: 0;
@@ -57,7 +61,7 @@ li{
 }
 .nav-links .nav-sub-links {
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
 }
 
@@ -120,7 +124,7 @@ li{
     width: 22%; 
     font-size: 14px;
     margin: 0px 10px;
-    margin-right: 20px;
+    margin-right: 16px;
 }
 .form-head{
     
@@ -128,10 +132,13 @@ li{
     color: white;
     font-weight: bold;
     position: relative;
-    
+    width: 150px;
     background-color: #262626;
 
    
+}
+.form-text div input , .form-text div textarea{
+    border-left-color: #999;
 }
 
 
@@ -141,7 +148,7 @@ li{
 .form-head img{
     width: 20px;
     position: absolute;
-    right: -12px;
+    right: -11px;
     top: calc(50% - 10px);
 }
 .form-text{
@@ -149,10 +156,10 @@ li{
     width: 45%;
 }
 .form-text input, textarea{
-    width: 100%;
+    width: 97%;
     padding: 7px 10px;
     
-    border-left-color: #999;
+    
     font-family: 'Open Sans', sans-serif;
     border: 1px solid #ccc;
 }
@@ -164,7 +171,7 @@ li{
     border: 0;
     margin-top: 20px;
     cursor: pointer;
-    margin: 20px 10px;
+    margin: 20px 10px 10px 10px;
 }
 .form-row:nth-child(odd) {
     background: #fff;
