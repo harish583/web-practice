@@ -1,0 +1,40 @@
+body{
+    color: red;
+}
+h1, .btn{
+    text-transform: uppercase;
+}
+.content{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.header{
+    position: relative;
+    animation: harish;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    -o-animation-direction: normal;
+}
+@keyframes harish{
+   0%{ top:0px;}
+   50%{ top:20px;}
+   100%{ top:40px;}
+}
+.container{
+    position: relative;
+    animation: nani;
+}
+@keyframes kyatham{
+    0%{ left:1000px;}
+    30%{ left:500px;}
+    60%{ left:250px;}
+    100%{ left: 0px;}
+
+}
+.btn{
+    width: 200px;
+    padding: 10px;
+    animation: kyatham;
+}

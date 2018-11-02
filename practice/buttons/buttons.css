@@ -1,0 +1,103 @@
+.single-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+button{
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    border: 0;
+}
+li{
+    color: black;
+    list-style-type: none;
+    width: 150px;
+    background-color: rgb(241, 236, 236);
+    padding: 10px;
+}
+.sub-menu-dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.single-btn:hover .sub-menu-dropdown{
+    display: block;
+}
+.sub-menu-dropdown li:hover{
+
+    background-color: #333;
+    color:white;
+}
+
+.common{
+    width: 200px;
+    padding: 15px;
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    transition: all 1s ease;
+    display: block;
+}
+.align{
+    margin: 0 auto;
+    width: 300px;
+    transform: translate(-50%,-50%);
+}
+.common::before {
+    background-color: black;
+    content: "";
+    position: absolte;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 1s ease;
+}
+.button1::before{
+    width: 0;
+    height: 100%
+}
+
+.button1:hover::before{
+    width: 100%;
+
+}
+.button2::before{
+    height: 0;
+    width: 100%;
+
+}
+.button2:hover::before{
+    height: 100%;
+}
+.button3::before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+
+}
+.button3:hover::before{
+    height: 400%;
+}
+.button4::before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+
+}
+.button4:hover::before{
+    height: 400%;
+}

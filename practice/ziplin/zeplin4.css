@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #C2E42B;
+}
+.align{
+    width: 328px;
+    margin: 0 auto;
+    margin-top: 110px;
+
+}
+.center-align{
+    text-align: center;
+}
+.sub-header{
+    font-size: 17px;
+    color: #F16300;
+    padding-top: 4px;
+}
+.header{
+    font-size: 37px;
+    color: #574C57;
+}
+.email-bar img{
+    width: 20px;
+}
+.form{
+    margin-top: 41px;
+}
+.email-bar{
+    position: relative;
+    margin-top: 36px;
+}
+input{
+    width: 100%;
+    padding: 12px 0px 8px;
+    border: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #978E96;
+}
+input:focus{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #FAC900;
+}
+.email{
+    padding-bottom: 8px;
+}
+.help-info {
+    display: none;
+}
+input:focus+.help-info {
+    display: block;
+}
+.btn button{
+    width: 100%;
+    border: 0;
+    padding: 17px;
+    color: white;
+    font-size: 17px;
+    background-color: #FAC900;
+    
+}
+.btn{
+    margin-top: 15px;
+}
+
+.help-bar{
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 10px);
+}
+.help-text{
+    position: absolute;
+    left: 110%;
+    width: 70%;
+    bottom: 0;
+    color:#574C57;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.footer1{
+    margin-top: 23px;
+    font-size: 13px;
+    color: #9C949B;
+    text-align: center;
+
+}
+.footer2{
+    margin-top: 13px;
+    font-size: 13px;
+    text-align: center;
+    color: #9C949B;
+}
+.footer{
+    margin: 20px 0 30px;
+}
+.help-bar span{
+    display: inline-block
+}
+#checkbox{
+    width: 20px;
+}
+

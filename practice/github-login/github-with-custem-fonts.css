@@ -4,6 +4,11 @@
     margin-top: 32px;
     
 }
+@font-face{
+    font-family: harish;
+    src: url(./Princella.otf);
+    src: url(./Princella.ttf);
+}
 body{
     padding: 0;
     margin: 0;
@@ -23,6 +28,7 @@ body{
 .headding{
     text-align: center;
     font-size: 24px;
+    font-family: harish;
     font-weight: 300;
     letter-spacing: -0.5px;
     padding-top: 21px;
@@ -125,6 +131,7 @@ body{
     background-color: #00BD4B;
     border: 0;
     font-weight: bold;
+    font-family: harish;
     padding: 9px;
     border-radius:4px; 
     font-size: 14px;

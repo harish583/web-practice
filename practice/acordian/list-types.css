@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+.list-item{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: brown;
+}
+.list-item:nth-last-child(even){
+    border: 2px solid white;
+}
+.sub-content{
+    display: none;
+    background-color: aqua;
+    color: white;
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.content:hover .sub-content{
+    display: block;
+;}
+.content:hover img{
+    transform: rotate(180deg);
+
+}
+.list-item img{
+    width: 40px;
+    float: right;
+}

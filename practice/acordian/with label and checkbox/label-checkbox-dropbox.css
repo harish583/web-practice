@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.full-info{
+    width: 700px;
+    margin: 0 auto;
+}
+.content{
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+#checkbox:checked+.content{
+    display: block;
+}

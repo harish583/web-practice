@@ -1,0 +1,12 @@
+https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
+https://schier.co/blog/2014/10/23/creating-a-pure-css-dropdown-using-the-hover-selector.html
+https://schier.co/blog/2014/03/01/clicky-3d-buttons-with-css.html
+
+
+Concepts: Font icons
+Why and advantages of font icons
+alternatives of font icons
+
+
+Accordian
+https://codepen.io/shehab-eltawel/pen/dYwOgX

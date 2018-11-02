@@ -1,0 +1,42 @@
+body{
+    color: red;
+    padding:0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 410px;
+    margin: auto;
+}
+.sub-lists{
+    display: none;
+    position: absolute;
+    color: black;
+    top: 100%;
+    padding: 15px 0px;
+    
+}
+.container-lists li{
+    background-color: #009B8A;
+    color: white;
+    position: relative;
+    padding: 15px;
+    font-size: 15px;
+}
+.container-lists li:hover .sub-lists{
+    display: inline-block;
+    background: red;
+}
+.down-icon {
+    width: 20px;
+    float: right;
+}
+.list-line{
+    display: block;
+}
+.container-lists li:hover .down-icon{
+    transform: rotate(180deg);
+    transition: all 0.1s;
+}

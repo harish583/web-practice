@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    list-style-type: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+ul{
+
+    padding: 0;
+    margin: 0;
+}
+.sub-link12{
+    position: relative;
+}
+.nav-bar .main-links{
+    display: inline-block;
+}
+.nav-bar{
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    position: relative;
+    left: 0;
+}
+.sub-links{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.sub-sub-links{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    display: none;
+}
+.sub-links li:hover .sub-sub-links{
+    display: block;
+}
+.sub-links{
+    display: none;
+}
+.nav-bar li:hover .sub-links{
+    display: block;
+}

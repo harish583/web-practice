@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./zeplin.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="header">Start using Zeplin!</div>
+            <div class="mini-header">It’s free!</div>
+            
+            
+            <abbr title="Username">
+                <input class="input-type" type="text" placeholder="Username"><br />
+            </abbr>
+            <abbr title="Password">
+                <input class="input-type" type="password" placeholder="Password">
+            </abbr>
+            <button class="submit">Sign up FREE</button>
+        </div>
+        <div class="footer">
+            <div class="extra-info">
+                <div>Already have an account?</div>
+                <div><a href="#">Login here</a></div>
+            </div>
+            <div class="extra-info">
+                <div>By clicking ‘Sign up FREE’, I agree to Zeplin’s</div>
+                <div><a href="#">Terms of Service</a></div>
+            </div>

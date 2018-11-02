@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: Roboto, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#C2E52C;
+}
+.align{
+    text-align: center;
+}
+.header{
+    font-size: 40px;
+    color:#574C57;
+}
+.sub-header{
+    font-size: 20px;
+    color: #F7AA74;
+    padding-top: 2px;
+}
+.container{
+    margin-top: 120px;
+}
+.line1 {
+    margin: 29px 0px;
+}
+.common{
+    width: 360px;
+    margin: 0 auto;
+}
+.line1{
+
+    position: relative;
+    margin: 49px 0;
+}
+.form{
+    margin-top: 40px;
+}
+.help-text{
+    position: absolute;
+    right: -108%;
+    width: 100%;
+    top: 0;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.text-bar input{
+    padding: 10px 0px 7px;
+    width: 100%;
+
+}
+.text-bar{
+    position: relative;
+}
+.image-container div{
+    display: inline-block;
+}
+.image-container{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+}
+.line3:last-child{
+    margin-bottom: 0px;
+}
+img{
+    width: 20px;
+}
+
+.image-container , .help-text{
+    display: none;
+} 
+
+input:focus+.image-container , input:focus+.help-text{
+    display: block;
+}
+.line2{
+    margin: 29px 0px;
+}
+input{
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+.btns button{
+    width: 100%;
+    border: 0;
+    color: white;
+    background-color: #FAC900;
+    padding: 20px;
+    font-size: 17px;
+}
+.btns{
+    margin-top: 15px;
+
+}
+.footer1 , .footer2{
+    font-size: 15px;
+    text-align: center;
+    padding: 17px 0;
+
+}
+.footer2{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
