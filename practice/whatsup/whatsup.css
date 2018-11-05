@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 460px;
+}
+*{
+    box-sizing: border-box;
+}
+.view-content{
+    width: 300px;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 460px;
+
+}
+.fixed{
+    position: relative;
+}
+.head{
+    background-color: #006358;
+    color: white;
+    padding: 10px 10px 0;
+}
+.header{
+    float: left;
+    font-size: 20px;
+}
+.help{
+    float: right;
+}
+
+.menu div{
+    display: inline-block;
+}
+.menu{
+    overflow: auto;
+    padding: 10px 0;
+}
+.nav-bar div{
+    display: inline-block;
+
+}
+.nav-bar{
+    padding: 10px 0 0;
+}
+.nav{
+    width: 29%;
+    text-align: center;
+    border: 2px solid #006358;
+}
+.nav:hover {
+    border-bottom: 2px solid white;
+}
+.contact{
+    overflow: auto;
+    padding: 10px 0;
+    background-color: #FAFAFA;
+}
+.contact-img{
+    float: left;
+    width: 20%;
+}
+.contact-img img{
+    width: 100%;
+    padding-left: 8px;
+}
+.contact .contact-img , .contact .contact-chat{
+    display: inline-block;
+}
+.contact-chat{
+    width: 80%;
+    float: left;
+    padding-left: 10px;
+}
+.contact-name{
+    float:left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-time{
+    float: right;
+    padding-right: 10px;
+}
+.contact-last-message{
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+.name-time{
+    overflow: auto;
+}
+
+.verification .delivery-symbol, .verification .contact-last-message{
+    float: left;
+}
+.verification .delivery-symbol::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fa-commenting{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}

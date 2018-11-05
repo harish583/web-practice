@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-color: #F0F0F0;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: black;
+}
+@font-face{
+    font-family: Helvetica;
+    src: url(./HelveticaMedExt.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.footer-links{
+    display: inline-block;
+    padding: 10px 3px;
+    text-decoration: none;
+
+
+}
+.footer-links:hover{
+    border: 1px solid orange;
+}
+.footer-link{
+
+    margin: 0 auto;
+    width: 54%;
+    text-align: center;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.footer{
+    background-color: #fff;
+    margin: 3px 0;
+    padding: 10px;
+}
+.footer div{
+    display: inline-block;
+    font-size: 14px;
+}
+.search-bar img{
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 15px) ;
+}
+.content{
+    width: 563px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 10px;
+}
+.search-bar input{
+    width: 100%;
+    padding: 10px;
+    padding: 14px 25px;
+    font-size: 24px;
+    
+}
+.completed-link{
+    float: right;
+    margin-top: 10px;
+}
+.search-bar{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.searched-history{
+    background-color: #fff;
+    margin-top: 3px;
+}
+.searched-history-row{
+    padding: 5px;
+    position: relative;
+}
+.text-history{
+    position: absolute;
+    top: calc(50% - 10px);
+    margin-left: 10px;
+    font-size: 24px;
+}
+.searched-history-row input{
+    height: 35px;
+    width: 35px;
+    margin: 0;
+}
+.searched-history-row img{
+    width: 30px;
+    display: none;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 0;
+}
+.searched-history-row:hover img{
+    display: block;
+}
+.header{
+    text-align: center;
+    font-size: 100px;
+    color: #EAD3D4;
+
+}
+.searched-history-row input:checked+.text-history{
+    text-decoration: line-through;
+    color: darkgray;
+}

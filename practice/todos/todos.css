@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.content{
+    margin: 0 auto;
+    width: 500px;
+}
+input{
+    width: 100%;
+    padding: 36px 0 0;
+}
+.text{
+    width: 87%;
+}
+.search-history{
+    overflow: auto;
+}
+.radio{
+    width: 38px;
+    height: 50px;
+    margin: 0;
+}
