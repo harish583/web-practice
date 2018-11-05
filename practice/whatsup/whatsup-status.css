@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.content{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.nav-bar , .head{
+    background-color: #006358;
+    color: white;
+    padding: 10px 0 0 10px;
+}
+.nav-bar span{
+    padding: 9px;
+    color: #629F9A;
+    border-bottom: 2px solid  #006358;
+}
+.nav-bar .active{
+    border-bottom:2px solid white;
+    color: white;
+}
+.nav-bar{
+    padding: 10px 0;
+}
+.nav-links{
+}
+.head{
+    overflow: auto;
+    padding: 10px;
+}
+.header{
+    float: left;
+}
+.help-icons{
+    float: right;
+}
+.upload span{
+    display: inline-block;
+}
+img{
+    width: 30px;
+}
+.upload{
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+.info{
+    background-color: #F4F4F4
+}
+.upload-text{
+    padding-left: 10px;
+}
+.upload:hover{
+    background-color: #ff99ff;
+}
+.extra-info{
+    position: fixed;
+    right: 0;
+}
+
