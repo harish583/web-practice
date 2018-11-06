@@ -1,0 +1,10 @@
+.content-chat{
+    display: none;
+}
+.chat:checked+.content-chat{
+    display: block;
+}
+#status-bar:checked+.content-chat{
+
+    display: block;
+}

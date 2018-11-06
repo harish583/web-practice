@@ -1,0 +1,197 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.content{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.header{
+    float: left;
+    width: 100%;
+    padding: 10px 10px 0;
+    background-color: #00685B;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+.help-icons{
+    float: right;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-bar{
+    margin-top: 10px;
+}
+.nav-bar span{
+ 
+}
+
+.upload span{
+    display: inline-block;
+    color: black;
+}
+img{
+    width: 10px;
+}
+.smile{
+    width: 30px;
+}
+.upload{
+    padding: 10px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+.info{
+    background-color: #F4F4F4;
+    color: #ff99ff;
+}
+.upload-text{
+    padding-left: 10px;
+    width: 78%;
+}
+.upload:hover{
+    background-color: #ff99ff;
+    color: white;
+}
+.active{
+    position: relative;
+    padding: 10px 10px 0;
+}
+.chat-bar{    
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 500px;
+    display: none;
+}
+#status:checked+.chat-bar{
+    display: block;
+}
+#status:checked>.call{
+    display: none;
+}
+.contact{
+    overflow: auto;
+    padding: 10px 0;
+    background-color: #FAFAFA;
+}
+.contact-img{
+    float: left;
+    width: 20%;
+}
+.contact-img img{
+    width: 100%;
+    padding-left: 8px;
+}
+.contact .contact-img , .contact .contact-chat{
+    display: inline-block;
+    color: burlywood;
+}
+.contact-chat{
+    width: 80%;
+    float: left;
+    padding-left: 10px;
+}
+.contact-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-name , .contact-time{
+    display: inline-block;
+}
+.chating-page{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+.contact-time{
+    float: right;
+    padding-right: 10px;
+}
+.contact-last-message{
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+.name-time{
+    overflow: auto;
+}
+
+.verification .delivery-symbol, .verification .contact-last-message{
+    float: left;
+}
+.verification .delivery-symbol::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fa-commenting{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#chat:checked+.chating-page{
+    display: block;
+}
+.chating-page ,.chat-bar ,.call{
+    height: 500px;
+    overflow: auto;
+}
+#calls:checked+.call{
+    display: block;
+}
+#calls:checked>.chat-bar{
+    display: none;
+}
+
+input{
+    display: none;
+}
+
+.status-holder .smiley{ 
+    width: 30px;
+    float: left;
+}
+.fa-video-camera{
+    float: right;
+    width: 22px;
+}
+.status-holder{
+    background-color: #FAFAFA;
+    overflow: auto;
+    padding: 10px;
+    color: black;
+}
+.status-holder:hover{
+    background-color: aqua;
+}
+.name-time{
+    width: 91%;
+   /* float: left;
+    padding: 10px; */
+
+}
+.contact:hover{
+    background: orange;
+}
+.status-link , .call{
+    display: inline-block;
+}
+.call{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+
