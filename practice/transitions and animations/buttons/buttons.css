@@ -1,0 +1,168 @@
+.buttons{
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+.btns{
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: aqua;
+    border: 0;
+}
+.btn1 , .btn2{
+    transition: all 2s linear ease;
+    transition-duration: 2s;
+}
+.btn1:hover{
+    transform: scale(1.5);
+}
+.btn2:hover{
+    transform: scale(0.9);
+}
+.btn3:hover{
+    animation: btn3 linear infinite;
+    animation-duration: 3s;
+}
+@keyframes btn3{
+    30%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(0.8);
+    
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.btn4:hover{
+    transition: all 1s linear;    
+    transition-timing-function: cubic-bezier(0.9, 2.02, 0.31, 0.64);
+    transform: scale(1.3);
+}
+.btn5:hover{
+    transition: all 1s linear;
+    transition-timing-function: cubic-bezier(0.3,2.34,0.31,0.6);
+    transform: scale(0.8);
+}
+.btn6:hover{
+    transition: all 1s linear;
+    transform: rotate(-10deg);
+}
+.btn7:hover{
+    transition: all .5s linear;
+    transform: rotate(10deg);
+}
+.btn8:hover{
+    transition: all .3s linear;
+    transform: translateY(-4px);
+}
+.btn9:hover{
+    transition: all .3s linear;
+    transform: translateX(4px);
+}
+.btn10:hover{
+    transition: all .4s linear;
+    transform: translate(3px);
+}
+.btn11:hover{
+    transition: all .4s linear;
+    transform: translateY(4px);
+    animation: btn11 .4s ease infinite;
+}
+@keyframes btn11{
+    0%{transform: translateY(-10px)}
+    20%{transform: translateY(10px)}
+    40%{transform: translateY(-8px)}
+    60%{transform: translateY(8px)}
+    80%{transform: translateY(-6px)}
+
+    100%{transform: translateY(0px)}
+}
+.btn12{
+    transition: all 2s ease;
+    transition-duration: 1s;
+
+}
+.btn12:hover{
+    transform: skewX(-20deg);
+}
+.btn13:hover{
+    transition: all 0.5s linear;
+    transform: skewY(-20deg);
+}
+.btn14:hover{
+    animation: btn14 1s linear infinite;
+}
+@keyframes btn14{
+    0%{transform:translate(10px,0)}
+    50%{transform:translate(20px,0)}
+    100%{transform:translate(5px,0)}
+}
+
+.btn15{
+    transition: all .4s linear ;
+    transform-origin: 0% 100%;
+}
+.btn15:hover{
+    transform: skew(10deg);
+}
+.btn16{
+    transition: all .4s linear ;
+    transform-origin: 100% 0% ;
+}
+.btn16:hover{
+    transform: skewY(10deg);
+}
+.btn17 , .btn18 , .btn19 , .btn19 , .btn20 , .btn21{
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition: all .5s ease-in-out;
+}
+.btn17:hover:before , .btn18:hover:before , .btn19:hover:before , .btn19:hover:before , .btn20:hover:before , .btn21:hover:before {
+    transform: scale(1);
+}
+.btn17:hover:before , .btn18:hover , .btn19:hover , .btn19:hover , .btn20:hover , .btn21:hover {
+    color: white;
+}
+.btn17:before , .btn18:before , .btn19:before , .btn19:before , .btn20:before , .btn21:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .5s ease;
+    background-color: brown;
+    transition: all .4s ease-out;
+}
+.btn17:before {
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+
+} 
+.btn18:before {
+    transform-origin: 0 0%;
+    transform: scaleY(0);
+
+} 
+.btn19:before {
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+
+}
+ .btn20:before {
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+
+}
+ .btn21:before{
+    transform-origin: 50% 50%;
+    transform: scaleY(0);
+
+ }
