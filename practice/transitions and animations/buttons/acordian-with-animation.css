@@ -1,0 +1,57 @@
+
+.link1-info{
+    display: none;
+}
+.link1:hover+.link1-info{
+    display: block;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.links{
+    width: 500px;
+    margin: 0 auto;
+}
+.link1{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+
+}
+.link1-info{
+    padding: 5px;
+    animation: link1-info 1s linear forwards;
+    background-color: aqua;
+}
+@keyframes link1-info{
+    0%{
+        transform: scale(.5);
+       
+    }
+    20%{
+        transform:scale(.6);
+    }
+    40%{
+        transform: scale(.7);
+       
+    }
+    60%{
+        transform:scale(.8);
+    }
+    80%{
+        transform: scale(.9);
+       
+    }
+    100%{
+        transform:scale(1);
+    }
+}
