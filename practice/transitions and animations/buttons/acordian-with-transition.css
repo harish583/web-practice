@@ -20,3 +20,16 @@
     opacity: 1;
     max-height: 1000px;
 }
+.link2{
+    color: white;
+    background: brown;
+}
+.link2-info{
+    overflow: hidden;
+    max-height: 0;
+    transition: all 10s linear;
+}
+.link2:hover+.link2-info{
+    opacity: 1;
+    max-height: 500px;
+}
