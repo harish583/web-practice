@@ -2,8 +2,10 @@
 .link1-info{
     display: none;
 }
-.link1:hover+.link1-info{
+.link1:active+.link1-info , .link1:hover+.link1-info , .link1:focus+.link1-info{
     display: block;
+    transition: all 10s ease-in;
+    opacity: 1;
 }
 
 
@@ -29,24 +31,19 @@ body{
 }
 .link1-info{
     padding: 5px;
-    animation: link1-info 1s linear forwards;
     background-color: aqua;
     width: 100%;
     height: 100px;
+    opacity: 0;
 }
 .link1-info{
-    animation: links-info .7s linear forwards;
+    animation: link1-info 20s ease forwards;
+    overflow: hidden;
 }
-@keyframes links-info{
-    0%{
-        height: 0px;
+@keyframes link1-info{
+    0%{opacity:0;
+        height: 0;
     }
-    50%{
-        height: 50px;
-
-    }
-    100%{
-        height: 100px;
-    }
+    100%{opacity:1;
+    height: 100}
 }
-
