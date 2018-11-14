@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+.form {
+    text-align: center;
+}
+.stars {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid;
+    margin-top: 30px;
+    display: none;
+}
+.star {
+    display: inline-block;
+    background: #ccc;
+    color: #333;
+    border: 1px solid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.stars .line {
+    margin-top: 10px;
+}

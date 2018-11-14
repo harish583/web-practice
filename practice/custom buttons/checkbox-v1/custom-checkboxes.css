@@ -1,0 +1,43 @@
+.view-port{
+    text-align: center;
+}
+/*
+.input-type{
+    width: 0;
+    height: 0;
+}*/
+.container{
+    position: relative;
+}
+.input-box{
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border: 1px solid brown;
+    position: absolute
+}
+.container:hover input+.input-box{
+    background-color: aqua;
+}
+.container input:checked~.input-box{
+    background-color: blue;
+}
+.input-box:after{
+    content:"";
+    display: none;
+    position: absolute;
+}
+input:checked~.input-box:after{
+    display: block;
+}
+.container .input-box::after{
+    border-width: 0 3px 3px 0;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    border: 1px solid white;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./calculator.css">
+        
+    </head>
+    <body>
+        <div class="menu">
+                <h1>KYATHAM HARISH CALCULATOR<img class="image" src="./smiley.png"></h1>
+
+            <input class="input-bar" type="text" id="text">
+            
+            <input class="btn add" onclick="text.value += '+'" type="button" value="+">
+            <input class="btn sub"  onclick="text.value += '-'"type="button" value="-">
+            <input class="btn modulo-div" onclick="text.value += '/'" type="button" value="/">
+            <input class="btn mul" onclick="text.value += '*'" type="button" value="*">
+            <div class="buttons">
+                <button class="numbers" onclick="text.value += '7'">7</button>
+                <button class="numbers" onclick="text.value += '8'">8</button>
+                <button class="numbers" onclick="text.value += '9'">9</button>
+                
+
+                <button class="numbers" onclick="text.value += '4'">4</button>
+                <button class="numbers" onclick="text.value += '5'">5</button>
+                <button class="numbers" onclick="text.value += '6'">6</button>
+
+                <button class="numbers" onclick="text.value += '1'">1</button>
+                <button class="numbers" onclick="text.value += '2'">2</button>
+                <button class="numbers" onclick="text.value += '3'">3</button>
+
+                <button class="numbers" onclick="text.value += '0'">0</button>
+                <button class="numbers" onclick="text.value += '.'">.</button>
+                <button class="numbers" onclick="text.value *= '0'">AC</button>
+            </div>
+            <div class="equal">
+                <input class="btn equal" type="button" value="=" onclick="text.value=eval(text.value)">
+            </div>
+            <script src="./calculator.js"></script>
+        </div>
+    </body>
+</html>

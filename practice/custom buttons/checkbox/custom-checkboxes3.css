@@ -1,0 +1,45 @@
+.container{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: block;
+
+}
+.input-type{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.input-box{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    position: absolute;
+    margin-left: 40px;
+}
+.container:hover .input-type~.input-box{
+    background-color: cadetblue;
+}
+
+.container .input-type:checked~.input-box{
+    background-color: yellow;
+}
+.container .input-box:after{
+    content: "✓";
+    display: none;
+    position: absolute;
+}
+.container .input-type:checked ~.input-box:after{
+    display: block;
+}
+/* .input-box:after{
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-width:  0px 0px 3px 3px;
+    border: solid white;
+
+} */
