@@ -8,32 +8,32 @@
         <div class="menu">
                 <h1>KYATHAM HARISH CALCULATOR<img class="image" src="./smiley.png"></h1>
 
-            <input class="input-bar" type="text" id="text">
+            <input class="input-bar" onkeypress="inputKeyPress(event)" type="text" id="text">
             
-            <input class="btn add" onclick="text.value += '+'" type="button" value="+">
-            <input class="btn sub"  onclick="text.value += '-'"type="button" value="-">
-            <input class="btn modulo-div" onclick="text.value += '/'" type="button" value="/">
-            <input class="btn mul" onclick="text.value += '*'" type="button" value="*">
+            <input class="btn add" onclick="buttonPress('+')" type="button" value="+">
+            <input class="btn sub"  onclick="buttonPress('-')"type="button" value="-">
+            <input class="btn modulo-div" onclick="buttonPress('/')" type="button" value="/">
+            <input class="btn mul" onclick="buttonPress('*')" type="button" value="*">
             <div class="buttons">
-                <button class="numbers" onclick="text.value += '7'">7</button>
-                <button class="numbers" onclick="text.value += '8'">8</button>
-                <button class="numbers" onclick="text.value += '9'">9</button>
+                <button class="numbers" onclick="buttonPress('7')">7</button>
+                <button class="numbers" onclick="buttonPress('8')">8</button>
+                <button class="numbers" onclick="buttonPress('9')">9</button>
                 
 
-                <button class="numbers" onclick="text.value += '4'">4</button>
-                <button class="numbers" onclick="text.value += '5'">5</button>
-                <button class="numbers" onclick="text.value += '6'">6</button>
+                <button class="numbers" onclick="buttonPress('4')">4</button>
+                <button class="numbers" onclick="buttonPress('5')">5</button>
+                <button class="numbers" onclick="buttonPress('6')">6</button>
 
-                <button class="numbers" onclick="text.value += '1'">1</button>
-                <button class="numbers" onclick="text.value += '2'">2</button>
-                <button class="numbers" onclick="text.value += '3'">3</button>
+                <button class="numbers" onclick="buttonPress('1')">1</button>
+                <button class="numbers" onclick="buttonPress('2')">2</button>
+                <button class="numbers" onclick="buttonPress('3')">3</button>
 
-                <button class="numbers" onclick="text.value += '0'">0</button>
-                <button class="numbers" onclick="text.value += '.'">.</button>
-                <button class="numbers" onclick="text.value *= '0'">AC</button>
+                <button class="numbers" onclick="buttonPress('0')">0</button>
+                <button class="numbers" onclick="buttonPress('.')">.</button>
+                <button class="numbers" onclick="buttonPress('')">AC</button>
             </div>
             <div class="equal">
-                <input class="btn equal" type="button" value="=" onclick="text.value=eval(text.value)">
+                <input class="btn equal" type="button" value="=" onclick="calculateSum()">
             </div>
             <script src="./calculator.js"></script>
         </div>

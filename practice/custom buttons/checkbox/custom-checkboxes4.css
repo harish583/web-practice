@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.menu{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+input{
+    opacity: 0;
+
+}
+.box{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: yellow;
+}
+.box::after{
+    content: "";
+    display: none;
+    position: absolute;
+}
+input:checked~.box::after{
+    border-width: 0 0 3px 3px;
+    width: 6px;
+    height: 3px;
+    display: block;
+    
+}
