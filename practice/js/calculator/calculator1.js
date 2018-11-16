@@ -37,9 +37,15 @@ function inputKeyPress(event) {
     }
     event.preventDefault();
 }
+
+
+
+
+
 function popup1(){
-    document.getElementById("popup1").style.display="block";
+    document.getElementById('popup1').style.display="block";
 }
+
 function popup2(){
     document.getElementById("popup2").style.display="block";
 }
@@ -48,5 +54,13 @@ function close1(){
 
 }
 function close2(){
+    document.getElementById("popup2").style.display="none";
+}
+
+function background1(){
+    document.getElementById("popup1").style.display="none";
+
+}
+function background2(){
     document.getElementById("popup2").style.display="none";
 }
