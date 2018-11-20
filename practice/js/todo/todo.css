@@ -1,0 +1,98 @@
+*{
+ box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.input-bar{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+#text{
+    width: 85%;
+    padding: 10px;
+    float: left;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.button{
+    padding: 16px 8px 12px;
+    cursor: pointer;
+    width: 15%;
+}
+.down{
+    position: absolute;
+    width: 30px;
+    top: calc(50% - 15px);
+    left: 5px;
+}
+.text-bar{
+    position: relative;
+}
+.demo{
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+}
+li{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    background: #aaa;
+    color: #f1f1f1;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+}
+li:nth-child(even){
+    background: #f1f1f1;
+    color: #aaa;
+}
+li:hover{
+    background: wheat;
+    color: cadetblue;
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    border: 2px solid black;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-width: 0px 0px 2px 2px;
+    left: 12px;
+    top: 12px;
+    opacity: 0.5;
+} 
+ li:after:hover{
+ background: red;
+}
+ li.checked{
+    text-decoration: line-through;
+    opacity:.5;
+}
+
+ .li:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    display: block;
+    height: 30px;
+    border-width: 2px 2px 0 0;
+    right: 10px;
+    border:2px solid black;
+    top: 12px;
+}
+li:after{
+
+    transform: rotate(-45deg);
+}

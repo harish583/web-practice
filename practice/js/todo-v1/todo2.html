@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+    <div class="base-layout">
+        <div class="todo-wrapper">
+            <div class="todo-header">
+                <span class="checkbox" onclick="headerCheckBoxChecked(event)">
+                    <span class="checkbox-tick"></span>
+                </span>
+                <input onkeypress="inputChange(event)" type="text" placeholder="Todo" class="input-text" />
+            </div>
+            <ul class="todo-list" id="todo-list">
+                <li class="todo-item completed" onclick="todoClick(event)">
+                    <span class="checkbox">
+                        <span class="checkbox-tick"></span>
+                    </span>
+                    <span>Item1</span>
+                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                </li>
+                <li class="todo-item" onclick="todoClick(event)">
+                    <span class="checkbox">
+                        <span class="checkbox-tick"></span>
+                    </span>Item1
+                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                </li>
+                <li class="todo-item completed" onclick="todoClick(event)">
+                    <span class="checkbox">
+                        <span class="checkbox-tick"></span>
+                    </span>Item1
+                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                </li>
+                <li class="todo-item" onclick="todoClick(event);">
+                    <span class="checkbox">
+                        <span class="checkbox-tick"></span>
+                    </span>Item1
+                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                </li>
+            </ul>
+        </div>
+        <div id="dump"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./todo3.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <span class="check all" onclick="checkAll(event)">
+                    <span class="checked" onclick="check()"></span>
+                </span>
+                <input type="text" class="text-bar" onkeypress="enter(value)">
+            </div>
+            <ul class="li-list" id="li-list">
+                <li class="li-element" onclick="liList1(event)">
+                    <span class="check"><span></span></span>
+                    <span>item1</span>
+                    <span class="close" onclick="close(event)">X</span>
+                </li>
+                <li class="li-element" onclick="liList1(event)">
+                    <span class="check"><span class="checked"></span></span>
+                    <span>item1</span>
+                    <span class="close" onclick="close(event)">X</span>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+    <script src="./todo3.js"></script>
+</html>
