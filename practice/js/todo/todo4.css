@@ -1,0 +1,73 @@
+body{
+    border: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.check-box{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 0px;
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+.text-bar{
+    width: calc(100% - 25px);
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+
+}
+.li-list{
+    margin: 0;
+    padding: 0;
+}
+.cross{
+    width: 20px;
+    height: 100%;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.li-content{
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+.li-content:first-child{
+    border: 0;
+
+}
+
+.completed .check-mark , .select .check-mark{
+    width: 17px;
+    height: 10px;
+    left: 3px;
+    top: 5px;
+    border:solid #ccc;
+    position: absolute;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    
+    
+
+}
+.completed span{
+    text-decoration: line-through;
+    color: #ccc;
+}

@@ -11,37 +11,37 @@
     <div class="base-layout">
         <div class="todo-wrapper">
             <div class="todo-header">
-                <span class="checkbox" onclick="headerCheckBoxChecked(event)">
+                <span class="checkbox" id="header-checkbox">
                     <span class="checkbox-tick"></span>
                 </span>
-                <input onkeypress="inputChange(event)" type="text" placeholder="Todo" class="input-text" />
+                <input type="text" id="todo-input" placeholder="Todo" class="input-text" />
             </div>
             <ul class="todo-list" id="todo-list">
-                <li class="todo-item completed" onclick="todoClick(event)">
+                <!-- <li class="todo-item completed">
                     <span class="checkbox">
                         <span class="checkbox-tick"></span>
                     </span>
                     <span>Item1</span>
-                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                    <span class="delete">x<span>
                 </li>
-                <li class="todo-item" onclick="todoClick(event)">
+                <li class="todo-item">
                     <span class="checkbox">
                         <span class="checkbox-tick"></span>
                     </span>Item1
-                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                    <span class="delete">x<span>
                 </li>
-                <li class="todo-item completed" onclick="todoClick(event)">
+                <li class="todo-item completed">
                     <span class="checkbox">
                         <span class="checkbox-tick"></span>
                     </span>Item1
-                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
+                    <span class="delete">x<span>
                 </li>
                 <li class="todo-item" onclick="todoClick(event);">
                     <span class="checkbox">
                         <span class="checkbox-tick"></span>
                     </span>Item1
-                    <span class="delete" onclick="todoDeleteClick(event)">x<span>
-                </li>
+                    <span class="delete">x<span>
+                </li> -->
             </ul>
         </div>
         <div id="dump"></div>

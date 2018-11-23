@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./domElements.css">
+    </head>
+    <body>
+        <h1 title="Document Object Model">DOM</h1>
+        <ol>
+            <li>The DOM defines a standard for accessing documents</li>
+            <li> The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</li>
+            <li>HTML DOM methods are actions you can perform (on HTML Elements).</li>
+            <li>HTML DOM properties are values (of HTML Elements) that you can set or change.</li>
+            <li>In the DOM, all HTML elements are defined as objects.</li>
+            <li>The programming interface is the properties and methods of each object.</li>
+            <li>A property is a value that you can get or set (like changing the content of an HTML element).</li>
+            <li>A method is an action you can do (like add or deleting an HTML element).</li>
+            <li>The HTML DOM document object is the owner of all other objects in your web page.</li>
+            <li>Finding HTML elements by id</li>
+            <li>Finding HTML elements by tag name</li>
+            <li>Finding HTML elements by class name</li>
+            <li>Finding HTML elements by CSS selectors</li>
+            <li>Finding HTML elements by HTML object collections</li>
+            <li>If you want to find all HTML elements that match a specified CSS selector 
+                (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
+            
+            <h3>Examples of HTML events:</h3>
+                <pre>    
+                    When a user clicks the mouse
+                    When a web page has loaded
+                    When an image has been loaded
+                    When the mouse moves over an element
+                    When an input field is changed
+                    When an HTML form is submitted
+                    When a user strokes a key
+                </pre>
+            <h3>addEventListener()</h3>
+            <h4>element.addEventListener(event, function, useCapture);</h4>
+            <pre>
+                The first parameter is the type of the event (like "click" or "mousedown").
+                The second parameter is the function we want to call when the event occurs.
+                The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+                <mark>Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".</mark>
+            </pre>
+
+
+            <h3>var x = document.querySelectorAll("p.intro");</h3>
+            <li>returns a list of all < p> elements with class="intro".</li>
+            <li>If you want to find all HTML elements that match a specified CSS selector (id, class names, 
+                types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
+
+            <h3>document.getElementById("demo").innerHTML</h3>
+            <li>its collect the value in that perticular id</li>
+            <li> getElementById is a method, while innerHTML(replace) is a property.
+                The innerHTML property can be used to get or change any HTML element, including < html> and < body>.
+                If the element is not found, myElement will contain null.
+            </li>
+
+
+            <ul>
+                <li>The addEventListener() method attaches an event handler to the specified element.</li>
+
+                <li>The addEventListener() method attaches an event handler to an element without overwriting existing event handlers</li>
+                <li>You can add many event handlers to one element.</li>
+
+                <li>You can add many event handlers of the same type to one element, i.e two "click" events.</li>
+
+                <li>You can add event listeners to any DOM object not only HTML elements. i.e the window object.</li>
+
+                <li>The addEventListener() method makes it easier to control how the event reacts to bubbling.</li>
+
+                <li>When using the addEventListener() method, the JavaScript is separated from the HTML markup, 
+                    for better readability and allows you to add event listeners even when you do not control the HTML markup.</li> 
+                <li>You can easily remove an event listener by using the removeEventListener() method.
+                <li>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:</li>
+                <li>You can add events of different types to the same element:like(mouseover,click & mouseout)</li>
+            </ul>
+                <ul>
+                   <h3> object.style.alignItems = "stretch|center|flex-start|flex-end|baseline|initial|inherit"</h3>
+                    <h5>Property Values</h5>
+                    Value --> Description
+                    <li>stretch --> 	Default. Items are stretched to fit the container</li>
+                    <li>center --> 	Items are positioned at the center of the container</li>
+                    <li>flex-start --> 	Items are positioned at the beginning of the container</li>
+                    <li>flex-end --> 	Items are positioned at the end of the container</li>
+                    <li>baseline --> 	Items are positioned at the baseline of the container</li>
+                    <li>initial --> 	Sets this property to its default value.</li>
+                    <li>inherit --> 	Inherits this property from its parent element.</li>
+                </ul>
+                <ul>
+                   <h3>object.style.alignContent = "stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit"</h3>
+                    <h5>Property Values</h5>
+                    Value --> 	Description
+                    <li>stretch --> 	Default value. Items are stretched to fit the container</li>
+                    <li>center --> 	Items are positioned at the center of the container</li>
+                    <li>flex-start --> 	Items are positioned at the beginning of the container</li>
+                    <li>flex-end --> 	Items are positioned at the end of the container</li>
+                    <li>space-between --> 	Items are positioned with space between the lines</li>
+                    <li>space-around --> 	Items are positioned with space before, between, and after the lines</li>
+                    <li>initial --> 	Sets this property to its default value. Read about initial</li>
+                    <li>inherit --> 	Inherits this property from its parent element.</li>
+                </ul>
+                <ul>
+                   <h3> object.style.alignSelf = "auto|stretch|center|flex-start|flex-end|baseline|initial|inherit"</h3>
+                    <h5> Property Values</h5>
+                    Value --> Description
+                    <li>auto --> 	Default. The element inherits its parent container's align-items property, or "stretch" if it has no parent container</
+                    <li>.stretch --> 	The element is positioned to fit the conatiner</li>
+                    <li>center --> 	The element is positioned at the center of the container</li>
+                    <li>flex-start --> 	The element is are positioned at the beginning of the container</li>
+                    <li>flex-end --> 	The element is positioned at the end of the container</li>
+                    <li>baseline --> 	The element is positioned at the baseline of the container</li>
+                    <li>initial --> 	Sets this property to its default value. Read about initial</li>
+                    <li>inherit --> 	Inherits this property from its parent element.</li>
+                </ul>
+                <ul>
+                    <h3>animation</h3>
+                    <h5>object.style.animation = "name duration timingFunction delay iterationCount direction fillMode playState"</h5>
+                    <li>animationName --> object.style.animationName = "none|keyframename|initial|inherit"</li> 
+                    <li>animationDuration --> object.style.animationDuration = "time|initial|inherit"</li> 
+                    <b>Note:</b> Always specify the animationDuration property, otherwise the duration is 0, and will never be played.
+                    <li>animationTimingFunction --> object.style.animationTimingFunction = "linear|ease|ease-in|ease-out|cubic-bezier(n, n, n, n)|initial|inherit"</li> 
+                    <li>animationDelay  --> object.style.animationDelay = "time|initial|inherit"</li>
+                    <li>animationIterationCount --> object.style.animationIterationCount = "number|infinite|initial|inherit"</li> 
+                    <li>animationDirection --> object.style.animationDirection = "normal|reverse|alternate|alternate-reverse|initial|inherit"</li>
+                    <li>animationFillMode --> object.style.animationFillMode = "none|forwards|backwards|both|initial|inherit"</li>
+                    <li>animationPlayState --> object.style.animationPlayState = "running|paused|initial|inherit"</li>
+                    
+                        
+                    
+                </ul>
+                <ul>
+                    <h3>background --> object.style.background = "color image repeat attachment position size origin clip|initial|inherit"</h3>
+                    <li>background-color --> object.style.backgroundColor = "color|transparent|initial|inherit"</li>
+                    <li>background-image --> object.style.backgroundImage = "url('URL')|none|initial|inherit"</li>
+                    <li>background-repeat --> object.style.backgroundRepeat = "repeat|repeat-x|repeat-y|no-repeat|initial|inherit"
+                        </li>
+                    <li>background-attachment --> object.style.backgroundAttachment = "scroll|fixed|local|initial|inherit"</li>
+                    <li>background-position --> object.style.backgroundPosition = value(ex: 20px 40x (or) top left/top center/top right/center left/center center/center right/bottom left/bottom center/center/bottom right)</li>
+                    <li>background-size --> object.style.backgroundSize = "auto|length|cover|contain|intial|inherit"</li>
+                    <li>background-origin --> object.style.backgroundOrigin = "padding-box|border-box|content-box|initial|inherit"</li>
+                    <li>background-clip --> object.style.backgroundClip = "border-box|padding-box|content-box|initial|inherit"</li>
+
+                </ul>
+                <ul>
+                    <h3>border(ex:left/right/top/bottom)</h3>
+                    <li>borderColor</li>
+                    <li>borderRadius</li>
+                    <li>borderBottomStyle(ex:solid/dotted/dashed......)</li>
+                    <li>borderWidth</li>
+                    <li>borderCollapse</li>
+                    <li>borderImage</li>
+                    <li>borderSpacing</li>
+                </ul>
+                <ul>
+                    <h3>columns</h3>
+                    <li>columnCount --> the given content id devided into given number of columns</li>
+                    <li>columnFill --> </li>
+                    <li>columnGap --> its giving the space between the colomns</li>
+                    <li>columnRule --> object.style.columnRule = "column-rule-width column-rule-style column-rule-color" its devide the contentwith vertical line</li>
+                    <li>columnRuleColor --> its giving the color for the columns divided line</li>
+                    <li>columnRuleStyle --> its giving the style for the columns divided line</li>
+                    <li>columnRuleWidth --> its giving the width for the columns divided line</li>
+                    <li>columnSpan --> </li>
+                    <li>columnWidth --> its giving the width for column</li>
+                </ul>
+                <ul>
+                    <h3>flex --> object.style.flex = "flex-grow flex-shrink flex-basis|auto|initial|inherit"</h3>
+                    <li>flexBasis --> </li>
+                    <li>flexDirection --> </li>
+                    <li>flexFlow --> </li>
+                    <li>flexGrow --> </li>
+                    <li>flexWrap --> </li>
+                    <li>flexShrink --> </li>
+                </ul>
+                <ul>
+                    <h3>font --> object.style.font = "font-style font-variant font-weight font-size/line-height|caption|icon|menu|
+                            message-box|small-caption|status-bar|initial|inherit;"</h3>
+                    <li>fontFamily --> write font names</li>
+                    <li>fontSize --> size of the fontsize for the text</li>
+                    <li>fontStyle --> returns whether the style of the font is normal, italic or oblique</li>
+                    <li>fontVariant --> returns whether the font should be displayed in small capital letters</li>
+                    <li>fontWeight --> returns the boldness of the font</li>
+                    <li>fontSizeAdjust --> </li>
+                    <li>fontStretch --> </li>
+                    
+                </ul>
+                <ul>
+                    <h3>listStyle</h3>
+                    <li>list-style-type --> returns the position of the list-item marker</li>
+                    <li>list-style-position --> object.style.listStylePosition = "outside|inside" its decide the list item mark</li>
+                    <li>list-style-image --> returns an image as the list-item marker with url()</li>
+                </ul>
+                <ul>
+                    <h3>outline</h3>
+                    <li>outlineColor</li>
+                    <li>outlineOffset</li>
+                    <li>outlineStyle</li>
+                    <li>outlineWidth</li>
+                    Outlines differ from borders in two ways:
+
+                    <li>Outlines do not take up space</li>
+                    <li>Outlines may be non-rectangular</li>
+                    <li>document.getElementById("myDIV").style.outlineOffset = "15px";</li>
+                    <li>its give the space between outline and border</li>
+
+                </ul>
+                <ul>
+                    <h3>textDecoration --> object.style.textDecoration = "none|underline|overline|line-through|blink"</h3>
+                    <li>textDecorationLine --> its gives the color for the line of that text content</li>
+                    <li>textDecorationStyle --> object.style.textDecorationStyle = "solid|double|dotted|dashed|wavy</li>
+                    <li>textDecorationColor --> its gives the color for that text content</li>
+                </ul>
+                <ul>
+                    <h3>transform</h3>
+                    
+                    <li>none --> Defines that there should be no transformation</li>
+                    <li>matrix(n, n, n, n, n, n) --> Defines a 2D transformation, using a matrix of six values</li>
+                    <li>matrix3d(n, n, n, n, etc....) --> Defines a 3D transformation, using a 4x4 matrix of 16 values</li>
+                    <li>translate(x, y)	 --> Defines a 2D translation</li>
+                    <li>translate3d(x, y, z) --> 	Defines a 3D translation</li>
+                    <li>translateX(x) --> 	Defines a translation, using only the value for the X-axis</li>
+                    <li>translateY(y) --> 	Defines a translation, using only the value for the Y-axis</li>
+                    <li>translateZ(z) --> 	Defines a 3D translation, using only the value for the Z-axis</li>
+                    <li>scale(x, y)	 --> Defines a 2D scale transformation</li>
+                    <li>scale3d(x, y, z) --> 	Defines a 3D scale transformation</li>
+                    <li>scaleX(x) --> 	Defines a scale transformation by giving a value for the X-axis</li>
+                    <li>scaleY(y) --> 	Defines a scale transformation by giving a value for the Y-axis</li>
+                    <li>scaleZ(z)	 --> Defines a 3D scale transformation by giving a value for the Z-axis</li>
+                    <li>rotate(angle) --> 	Defines a 2D rotation, the angle is specified in the parameter</li>
+                    <li>rotate3d(x, y, z, angle) --> 	Defines a 3D rotation</li>
+                    <li>rotateX(angle) --> 	Defines a 3D rotation along the X-axis</li>
+                    <li>rotateY(angle) --> 	Defines a 3D rotation along the Y-axis</li>
+                    <li>rotateZ(angle) --> 	Defines a 3D rotation along the Z-axis</li>
+                    <li>skew(x-angle, y-angle) --> 	Defines a 2D skew transformation along the X- and the Y-axis</li>
+                    <li>skewX(angle) --> 	Defines a 2D skew transformation along the X-axis</li>
+                    <li>skewY(angle) --> 	Defines a 2D skew transformation along the Y-axis</li>
+                    <li>perspective(n) --> 	Defines a perspective view for a 3D transformed element</li>
+                </ul>
+                <h3>transformOrigin --> </h3><span> the starting point for the animation</span>
+                <h3>object.style.transformStyle = "flat|preserve-3d"</h3>
+                <h3>preserve-3d --></h3><span>The child elements will preserve its 3D position</span>
+                <h3>flat --> </h3><span>Default value. The child elements will NOT preserve its 3D position</span>
+                <ul>
+                    <h3>transition</h3><span> object.style.transition = "property duration timing-function delay</span>
+                    <li>transitionProperty -->  which property to  change is Specifies the name of the CSS property the transition effect is for</li>
+                    <li>transitionDuration	 --> Specifies how many seconds or milliseconds the  effect takes to complete</li>
+                    <li>TimingFunction	 --> Specifies the speed curve of the  effect</li>
+                    <li>Delay	 --> Defines when the transition effect will start</li>
+                </ul>
+            
+            </ul>
+        </ol>
+        <table>        
+            <tr>
+                <th>METHODS/PROPERTY/EVENTS</th>
+                <th>DISCRIPTION</th>
+            </tr>
+            <tr>
+                <td>document.getElementById("demo").innerHTML</td>
+                <td>its collect the value in that perticular id.. getElementById is a method, while innerHTML(replace) is a property.
+                    The innerHTML property can be used to get or change any HTML element, including < html> and < body>.
+                    If the element is not found, myElement will contain null.
+                </td>
+            </tr>
+            
+            <tr>
+                <td>document.getElementsByTagName("p")</td>
+                <td> finds all &lt;p&gt; elements </td>
+            </tr>
+            <tr>
+                <td>var x = document.querySelectorAll("p.intro");</td>
+                <td>returns a list of all < p> elements with class="intro".If you want to find all HTML elements that match a specified CSS selector (id, class names, 
+                    types, attributes, values of attributes, etc), use the querySelectorAll() method.</td>
+            </tr>
+            <tr>
+                <td>document.getElementsByClassName("demo")</td>
+                <td> returns a list of all elements with class="demo".</td>
+            </tr>
+            <tr>
+                <td>document.getElementById(id).onclick = function(){code}</td>
+                <td>	Adding event handler code to an onclick event</td>
+            </tr>
+            <tr>
+                <td>document.getElementById(id).attribute((ex:src)) = new value</td>
+                <td>its change the image content</td>
+            </tr>
+            <tr>
+                <td>document.getElementById(id).style.property = new style</td>
+                <td>changes the style of  id element:</td>
+            </tr>
+            <tr>
+                <td>element.innerHTML =  new html content</td>
+                <td>Change the inner HTML of an element</td>
+            </tr>
+            <tr>
+                <td>element.attribute = new value</td>
+                <td>Change the attribute value of an HTML element</td>
+            </tr>
+            <tr>
+                <td>element.setAttribute(attribute, value)</td>
+                <td>Change the attribute value of an HTML element</td>
+            </tr>
+            <tr>
+                <td>element.style.property = new style</td>
+                <td>Change the style of an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.createElement(element)</td>
+                <td>Create an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.removeChild(element)</td>
+                <td>Remove an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.appendChild(element)</td>
+                <td>Add an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.replaceChild(element)</td>
+                <td>Replace an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.write(text)</td>
+                <td>Write into the HTML output stream</td>
+            </tr>
+            
+            <tr>
+                <td>document.anchors</td>
+                <td>it gives a tag list</td>
+            </tr>
+            <tr>
+                <td>document.baseURI</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.body</td>
+                <td>its give total body content like source code</td>
+            </tr>
+            <tr>
+                <td>document.documentElement</td>
+                <td>its give total html content(head, body)</td>
+            </tr>
+            <tr>
+                <td>document.cookie</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.doctype</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>document.documentMode</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.documentURI</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.domain</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.domConfig</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.embeds</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.forms</td>
+                <td>its give forms info</td>
+            </tr>
+            <tr>
+                <td>document.head</td>
+                <td>its gives total content in head tag </td>
+            </tr>
+            <tr>
+                <td>document.images</td>
+                <td>its give images we have in the page</td>
+            </tr>
+            <tr>
+                <td>document.implementation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.inputEncoding</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.lastModified</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.links</td>
+                <td>its gives the links we have</td>
+            </tr>
+            <tr>
+                <td>document.readyState</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.referrer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.scripts</td>
+                <td>its give the script tags we have</td>
+            </tr>
+            <tr>
+                <td>document.strictErrorChecking</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.title</td>
+                <td>its gives title text info</td>
+            </tr>
+            <tr>
+                <td>document.URL</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document.getElementById("myBtn").addEventListener("click", displayDate);</td>
+                <td>Add an event listener that fires when a user clicks a button:</td>
+                
+            </tr>
+            <tr>
+                <td>window.addEventListener("resize", function(){
+                        document.getElementById("demo").innerHTML = Math.random();
+                    });</td>
+                <td>its gives the random value when screen size changes in place of id attributes</td>
+            </tr>
+            <tr>
+                <td>element.addEventListener("click", function(){ alert("Hello World!"); });</td>
+                <td>Alert "Hello World!" when the user clicks on an element:function is declared in inside or outside</td>
+                
+            </tr>
+            <tr>
+                <td>element.attachEvent(event, function); &element.detachEvent(event, function);</td>
+                <td> <mark>only for not supported in IE 8 and earlier versions and Opera 6.0 and earlier versions</mark> use the attachEvent() method to attach an event handlers to the element, and the detachEvent() method to remove it:</td>
+            </tr>
+            <tr>
+                <td>element.removeEventListener("mousemove", myFunction);</td>
+                <td>removeEventListener() method removes event handlers that have been attached with the addEventListener() method:
+
+                    </td>
+            </tr>
+            <tr>
+                <td>onclick(add javascript/event handler/event/attributes)</td>
+                <td>element is changed when a user clicks on it:</td>
+            </tr>
+            <tr>
+                <td>onload & onunload</td>
+                <td>The onload and onunload events can be used to deal with cookies.it shows the page has finished loading.</td>
+            </tr>
+            <tr>
+                <td>onchange</td>
+                <td>onchange event is often used in combination with validation of input fields.</td>
+            </tr>
+            <tr>
+                <td>onmouseover & onmouseout</td>
+                <td>The onmouseover and onmouseout events can be used to trigger a function when the user mouses over, or out of, an HTML element:</td>
+            </tr>
+            <tr>
+                <td>onmousedown & onmouseup &onclick</td>
+                <td>The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. First when a mouse-button is clicked, the onmousedown event is triggered, then, when the mouse-button is released,
+                     the onmouseup event is triggered, finally, when the mouse-click is completed, the onclick event is triggered.</td>
+            </tr>
+            <tr>
+                <td>onfocus</td>
+                <td>when it gets focus an input field values change</td>
+            </tr>
+            
+            <tr>
+                <td>alignContent(ex:object.style.alignItems = "stretch|center|flex-start|flex-end|baseline|initial|inherit")</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alignItems</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alignSelf</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationDelay</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationDirection</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationDuration</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationFillMode</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationIterationCount</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationTimingFunction</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>animationPlayState</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>background</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundAttachment</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundImage</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundPosition</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundRepeat</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundClip</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundOrigin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backgroundSize</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backfaceVisibility</td>
+                <td>object.style.backfaceVisibility = "visible|hidden|initial|inherit"</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderBottom</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderBottomColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderBottomLeftRadius</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderBottomStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderBottomWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderCollapse</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderImage --> object.style.borderImage = "source slice width outset repeat|initial|inherit"</td>
+                <td>The borderImage property is a shorthand property for setting the borderImageSource, borderImageSlice, borderImageWidth, borderImageOutset and borderImageRepeat properties.</td>
+            </tr>
+            <tr>
+                <td>borderImageOutset</td>
+                <td>The amount by which the border image area extends beyond the border box</td>
+            </tr>
+            <tr>
+                <td>borderImageRepeat</td>
+                <td>Whether the image-border should be repeated, rounded or stretched</td>
+            </tr>
+            <tr>
+                <td>borderImageSlice</td>
+                <td>The inward offsets of the image-border</td>
+            </tr>
+            <tr>
+                <td>borderImageSource</td>
+                <td>The path to the image to be used as a border</td>
+            </tr>
+            <tr>
+                <td>borderImageWidth</td>
+                <td>The widths of the image-border</td>
+            </tr>
+            <tr>
+                <td>borderRadius</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderRight/borderRightColor/borderRightStyle/borderRightWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderTop/borderTopColor/borderTopLeftRadius/borderTopRightRadius/borderTopStyle/borderTopWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderLeft/borderLeftStyle/borderLeftColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderLeftWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderSpacing</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>borderWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bottom</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>boxDecorationBreak</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>boxShadow</td>
+                <td>object.style.boxShadow = "none|h-shadow v-shadow blur spread color |inset|initial|inherit"</td>
+            </tr>
+            <tr>
+                <td>boxSizing</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>captionSide --> object.style.captionSide = "top|bottom|initial|inherit"</td>
+                <td> it is only used for table captions</td>
+            </tr>
+            <tr>
+                <td>clear --> object.style.clear = "none|left|right|both|initial|inherit"</td>
+                <td>no floating objects allowed on given side of elements</td>
+            </tr>
+            <tr>
+                <td>clip --> object.style.clip = "auto|rect(top right bottom left)|initial|inherit"</td>
+                <td>clip the shape defined. if it is auto eleme doesnot clip</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnCount --> object.style.columnCount = "number|auto"</td>
+                <td>The optimal number of columns into which the content of the element will be flowed</td>
+            </tr>
+            
+            <tr>
+                <td>columnGap</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnRule</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnRuleColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnRuleStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnRuleWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columns</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnSpan</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>columnWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td>Used with the :before and :after pseudo-elements, to insert generated content</td>
+            </tr>
+            <tr>
+                <td>counterIncrement</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>counterReset</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>direction --> document.getElementById("myP").style.direction = "rtl";</td>
+                <td>Set the text direction of a id element to "right-to-left":</td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>emptyCells --> object.style.emptyCells = "show|hide|initial|inherit"</td>
+                <td>its show/hide the empty cells in table formate</td>
+            </tr>
+            <tr>
+                <td>filter --> object.style.filter = "none | blur() | brightness(0% to 100%) | contrast(0% to 100%) | drop-shadow() | grayscale(0% to 100%) | hue-rotate(0 to 360deg) | invert(0% to 100%) | opacity(0% to 100%) | saturate(0% to 100%) | sepia(0% to 100%)"</td>
+                <td> its apply for images its change the backgroundImage properties</td>
+            </tr>
+            <tr>
+                <td>flex</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexBasis</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexDirection</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexFlow</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexGrow</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexShrink</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>flexWrap</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>cssFloat --> object.style.cssFloat = "left|right|none"</td>
+                <td>it's like css float </td>
+            </tr>
+            <tr>
+                <td>font --> object.style.font = "font-style font-variant font-weight font-size/line-height|caption|icon|menu|
+                        message-box|small-caption|status-bar|initial|inherit;"</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontFamily</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontSize</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontVariant</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontWeight</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontSizeAdjust</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fontStretch</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>hangingPunctuation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>hyphens</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>icon</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>imageOrientation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>isolation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>justifyContent</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td>it is as it is in css left</td>
+            </tr>
+            <tr>
+                <td>letterSpacing</td>
+                <td>it is giving the space between each  letter</td>
+            </tr>
+            <tr>
+                <td>lineHeight</td>
+                <td>its give the disthance between the two lines</td>
+            </tr>
+            <tr>
+                <td>listStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>listStyleImage</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>listStylePosition</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>listStyleType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>margin(marginBottom/marginLeft/marginRight/marginTop)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>maxHeight/minHeight</td>
+                <td> gives the maximum/minimum height of an element</td>
+            </tr>
+            <tr>
+                <td>maxWidth/minWidth</td>
+                <td> gives the maximum/minimum width of an element</td>
+            </tr>
+            <tr>
+                <td>navIndex</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>navLeft/navRight/navUp/navDown</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>objectFit -->object.style.objectFit = "fill|contain|cover|scale-down|none</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>objectPosition</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>opacity</td>
+                <td>its givesthe opacity for that perticular content</td>
+            </tr>
+            <tr>
+                <td>order --> object.style.order = "number"</td>
+                <td>its changes dipending on given order  of disply content </td>
+            </tr>
+            <tr>
+                <td>orphans</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outline</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outlineColor</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outlineOffset</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outlineStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outlineWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>overflow/overflowX/overflowY --> object.style.overflow = "visible|hidden|scroll|auto"</td>
+                <td>overflowX(ex:left/right),overflowY(ex:top/bottom),overflow:hidden(hidden)</td>
+            </tr>
+            <tr>
+                <td>padding(Bottom/top/left/right)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>pageBreakAfter/pageBreakBefore/pageBreakInside</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>perspective/perspectiveOrigin</td>
+                <td>its change the slop nature of 3D elements</td>
+            </tr>
+            <tr>
+                <td>position(relative/absolute/static/fixed)</td>
+                <td>decides the position of the content</td>
+            </tr>
+            <tr>
+                <td>quotes -->  document.getElementById("myQ").style.quotes = "'\273' '\273'";</td>
+                <td>its gives the given symbols for that text</td>
+            </tr>
+            <tr>
+                <td>resize --> object.style.resize = "none|both|horizontal|vertical"</td>
+                <td>the width of the content will be change through dragging corners</td>
+            </tr>
+            <tr>
+                <td>right</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tableLayout</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tabSize --> document.getElementById("t1").style.tabSize = "16";</td>
+                <td>gives the space bet the words</td>
+            </tr>
+            <tr>
+                <td>textAlign --> object.style.textAlign = "left|right|center"</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>textalignLast -->object.style.textAlignLast = "auto|left|right|center|justify|start|end"</td>
+                <td>its give the last remaing words can arrange in given side </td>
+            </tr>
+            <tr>
+                <td>textDecoration/textDecorationColor/textDecorationStyle/textDecorationLine</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>textIndent --> document.getElementById("myDiv").style.textIndent = "5px";</td>
+                <td> its give the new paragraph space for the first line in paragraph</td>
+            </tr>
+            <tr>
+                <td>textJustify</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>textOverflow --> object.style.textOverflow = "clip|ellipsis|string"</td>
+                <td> its give the ... marks when content is overflow</td>
+            </tr>
+            <tr>
+                <td>textShadow --> object.style.textShadow = "none|h-shadow v-shadow blur color"</td>
+                <td> its give the shadow for that content</td>
+            </tr>
+            <tr>
+                <td>textTransform --> object.style.textTransform = "none|capitalize|uppercase|lowercase"</td>
+                <td>its convert the text from one state to another state</td>
+            </tr>
+            <tr>
+                <td>top</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transform</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transformOrigin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transformStyle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transition</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transitionProperty</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transitionDuration</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transitionTimingFunction</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>transitionDelay</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>unicodeBidi --> object.style.unicodeBidi ="bidi-override"</td>
+                <td> this is same as rtl change the direction of the content</td>
+            </tr>
+            <tr>
+                <td>userSelect --> object.style.userSelect = "auto|none"</td>
+                <td>auto(select),none(doesnot select) if we select the content its not working</td>
+            </tr>
+            <tr>
+                <td>verticalAlign</td>
+                <td>content changes with y-axis </td>
+            </tr>
+            <tr>
+                <td>visibility --> object.style.visibility = "visible|hidden|collapse"</td>
+                <td> visibility:hidden/collapse gives space alloted for that content as usual</td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>display : none gives hide the content but next content is replace with that place</td>
+            </tr>
+            <tr>
+                <td>whiteSpace</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>wordBreak --> object.style.wordBreak = "normal|break-all|keep-all"</td>
+                <td>break-all: its break the long word up to that width and remaing in next line(Allows unbreakable words to be broken)</td>
+            </tr>
+            <tr>
+                <td>wordSpacing --> object.style.wordSpacing = "normal|length"</td>
+                <td>its give the space between the words</td>
+            </tr>
+            <tr>
+                <td>wordWrap --> object.style.wordWrap = "normal|break-word"</td>
+                <td>break-word: its break the long word up to that width and remaing in next line(Allows unbreakable words to be broken)</td>
+            </tr>
+            <tr>
+                <td>widows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>zIndex</td>
+                <td> its change the content layer</td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+        </table>
+        <h1>Did not understand</h1>
+        <ul>
+            <li>Finding HTML Elements by HTML Object Collections</li>
+            <li> document.embeds</li>
+            <li>dom animations</li>
+            <li>Event Bubbling or Event Capturing?true/false</li>
+            <li>boxDecorationBreak</li>
+            <li>columnFill:not supported</li>
+            <li>object.style.columnSpan = "1|all|initial|inherit"</li>
+            <li>document.body.style.counterReset = "section";</li>
+            <li>document.getElementById("myH1").style.counterIncrement = "subsection";</li>
+            <li>fontSizeAdjust</li>
+            <li>fontStretch</li>
+            <li>isolation</li>
+            <li>justifyContent</li>
+            <li>orphans
+            <li>pageBreakAfter</li>
+            <li>pageBreakBefore</li>
+            <li>pageBreakInside</li>
+            <li>perspecive</li>
+            <li>whiteSpace</li>
+            <li>widow</li>
+                    
+
+        </ul>
+    </body>
+</html>
+
+
+
+
+

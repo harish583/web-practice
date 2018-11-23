@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    
+    margin: 0;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+th , tr ,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: #ccc;
+}

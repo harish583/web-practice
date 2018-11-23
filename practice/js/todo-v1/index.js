@@ -15,7 +15,9 @@ function headerCheckBoxChecked(event) {
             todos[i].classList.add('completed');
         }
     }
-};
+}
+
+document.getElementById('header-checkbox').addEventListener('click', headerCheckBoxChecked)
 
 function inputChange(event) {
     var keyCode = event.keyCode;
@@ -26,6 +28,8 @@ function inputChange(event) {
     }
     
 }
+
+document.getElementById('todo-input').addEventListener('keypress', inputChange);
 
 function appendTodo(value) {
     if(!value) {
@@ -45,13 +49,14 @@ function appendTodo(value) {
     span3.setAttribute('class', 'delete');
     li.appendChild(span3);
     li.setAttribute('class', 'todo-item');
-    li.setAttribute('onclick', "todoClick(event)");
-    span3.setAttribute('onclick', "todoDeleteClick(event)");
+    li.addEventListener('click', todoClick);
+    span3.addEventListener('click', todoDeleteClick);
+    // li.setAttribute('onclick', "todoClick(event)");
+    // span3.setAttribute('onclick', "todoDeleteClick(event)");
     todoList.appendChild(li);
 }
 
 function todoClick(event) {
-    console.log('todoClick...', event);
     var classes = event.currentTarget.classList;
     if(classes.contains('completed')) {
         classes.remove('completed');
@@ -59,6 +64,8 @@ function todoClick(event) {
         classes.add('completed');
     }
 }
+
+
 
 // function todoCheckClick(event) {
 //     event.stopPropagation();
@@ -75,3 +82,28 @@ document.getElementById('dump').innerHTML = html;
 
 // code starts here
 
+//function{
+//var div = document.createElement('div');
+//var btn = document.createElement('button');
+//div.appendChild(btn);
+//div.value = 'hello......';
+//btn.value = 'try once';
+//btn.setAttribute('onclick','doOperations()');
+//btn.setAttribute('class','btn');
+//dump.appendChild(div);
+
+//}
+var buttons = document.getElementsByTagName("button");
+function abc(){
+    alert("welcome");
+}
+
+ buttons[0].addEventListener("click", abc);
+
+// setTimeout(function() {
+//     buttons[0].addEventListener('click', abc)
+// }, 5000);
+
+setTimeout(function() {
+    buttons[0].removeEventListener('click', abc)
+}, 5000);

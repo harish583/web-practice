@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./todo4.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="container">
+                <span class="check-box" onclick="allCheckBoxs(event)">
+                    <span class="check-mark"></span>
+                </span>
+                <input type="text" class="text-bar" onkeypress="keyPressed(event)">
+                
+            </div>
+            <ul class="li-list" id="li-list">
+                <li class="li-content completed" id="li-content" onclick="checkmark(event)">
+                    <span class="check-box" id="check-box">
+                        <span class="check-mark"></span>
+                    </span>
+                    <span class="text-value">list1</span>
+                    <span class="cross" onclick="closeid(event)">X</span>
+                </li>
+                <li class="li-content" id="li-content" onclick="checkmark(event)">
+                    <span class="check-box" id="check-box">
+                        <span class="check-mark"></span>
+                    </span>
+                    <span class="text-value">list1</span>
+                    <span class="cross" onclick="closeid(event)">X</span>
+                </li>
+                <li class="li-content completed" id="li-content" onclick="checkmark(event)">
+                    <span class="check-box" id="check-box">
+                        <span class="check-mark"></span>
+                    </span>
+                    <span class="text-value">list1</span>
+                    <span class="cross" onclick="closeid(event)">X</span>
+                </li>
+            </ul>
+        </div>
+        <script src='./todo4.js'></script>
+    </body>
+</html>
