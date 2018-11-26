@@ -43,7 +43,7 @@ body{
     border-width: 0 0 2px 2px;
     transform: rotate(-45deg);
 }
-.check~span{
+.check span{
     text-decoration: line-through;
     color: #ccc;
 
