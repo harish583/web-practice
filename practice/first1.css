@@ -1,0 +1,12 @@
+body{
+    color: rgb(236, 28, 28);
+}
+*{
+    border-collapse: collapse;
+}
+.navigation{
+    float: right;
+}
+td,th{
+    border: 1px solid black;
+}

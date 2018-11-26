@@ -6,74 +6,91 @@
     <body>
         <h1 title="Document Object Model">DOM</h1>
         <ol>
-            <li>The DOM defines a standard for accessing documents</li>
-            <li> The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</li>
-            <li>HTML DOM methods are actions you can perform (on HTML Elements).</li>
-            <li>HTML DOM properties are values (of HTML Elements) that you can set or change.</li>
-            <li>In the DOM, all HTML elements are defined as objects.</li>
-            <li>The programming interface is the properties and methods of each object.</li>
-            <li>A property is a value that you can get or set (like changing the content of an HTML element).</li>
-            <li>A method is an action you can do (like add or deleting an HTML element).</li>
-            <li>The HTML DOM document object is the owner of all other objects in your web page.</li>
-            <li>Finding HTML elements by id</li>
-            <li>Finding HTML elements by tag name</li>
-            <li>Finding HTML elements by class name</li>
-            <li>Finding HTML elements by CSS selectors</li>
-            <li>Finding HTML elements by HTML object collections</li>
-            <li>If you want to find all HTML elements that match a specified CSS selector 
-                (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
+            <li>
+                <ul>
+                    <h3>intro</h3>
+                    <li>The DOM defines a standard for accessing documents</li>
+                    <li> The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</li>
+                    <li>HTML DOM methods are actions you can perform (on HTML Elements).</li>
+                    <li>HTML DOM properties are values (of HTML Elements) that you can set or change.</li>
+                    <li>In the DOM, all HTML elements are defined as objects.</li>
+                    <li>The programming interface is the properties and methods of each object.</li>
+                    <li>A property is a value that you can get or set (like changing the content of an HTML element).</li>
+                    <li>A method is an action you can do (like add or deleting an HTML element).</li>
+                    <li>The HTML DOM document object is the owner of all other objects in your web page.</li>
+                    <li>Finding HTML elements by id</li>
+                    <li>Finding HTML elements by tag name</li>
+                    <li>Finding HTML elements by class name</li>
+                    <li>Finding HTML elements by CSS selectors</li>
+                    <li>Finding HTML elements by HTML object collections</li>
+                    <li>If you want to find all HTML elements that match a specified CSS selector 
+                    (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>Examples of HTML events:</h3>
+                    <li>When a user clicks the mouse</li>
+                    <li>When a web page has loaded</li>
+                    <li>When an image has been loaded</li>
+                    <li>When the mouse moves over an element</li>
+                    <li>When an input field is changed</li>
+                    <li>When an HTML form is submitted</li>
+                    <li>When a user strokes a key</li>
+                
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>addEventListener()</h3>
+                    <h4>element.addEventListener(event, function, useCapture);</h4>
+                    <li>The first parameter is the type of the event (like "click" or "mousedown").</li>
+                    <li>The second parameter is the function we want to call when the event occurs.</li>
+                    <li>The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+                    <mark>Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".</mark></li>
             
-            <h3>Examples of HTML events:</h3>
-                <pre>    
-                    When a user clicks the mouse
-                    When a web page has loaded
-                    When an image has been loaded
-                    When the mouse moves over an element
-                    When an input field is changed
-                    When an HTML form is submitted
-                    When a user strokes a key
-                </pre>
-            <h3>addEventListener()</h3>
-            <h4>element.addEventListener(event, function, useCapture);</h4>
-            <pre>
-                The first parameter is the type of the event (like "click" or "mousedown").
-                The second parameter is the function we want to call when the event occurs.
-                The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
-                <mark>Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".</mark>
-            </pre>
-
-
-            <h3>var x = document.querySelectorAll("p.intro");</h3>
-            <li>returns a list of all < p> elements with class="intro".</li>
-            <li>If you want to find all HTML elements that match a specified CSS selector (id, class names, 
-                types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
-
-            <h3>document.getElementById("demo").innerHTML</h3>
-            <li>its collect the value in that perticular id</li>
-            <li> getElementById is a method, while innerHTML(replace) is a property.
-                The innerHTML property can be used to get or change any HTML element, including < html> and < body>.
-                If the element is not found, myElement will contain null.
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>var x = document.querySelectorAll("p.intro");</h3>
+                    <li>returns a list of all < p> elements with class="intro".</li>
+                    <li>If you want to find all HTML elements that match a specified CSS selector (id, class names, 
+                        types, attributes, values of attributes, etc), use the querySelectorAll() method.</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>document.getElementById("demo").innerHTML</h3>
+                    <li>its collect the value in that perticular id</li>
+                    <li> getElementById is a method, while innerHTML(replace) is a property.
+                        The innerHTML property can be used to get or change any HTML element, including < html> and < body>.
+                        If the element is not found, myElement will contain null.
+                    </li>
+                </ul>
             </li>
 
+            <li>
+                <ul>
+                    <li>The addEventListener() method attaches an event handler to the specified element.</li>
 
-            <ul>
-                <li>The addEventListener() method attaches an event handler to the specified element.</li>
+                    <li>The addEventListener() method attaches an event handler to an element without overwriting existing event handlers</li>
+                    <li>You can add many event handlers to one element.</li>
 
-                <li>The addEventListener() method attaches an event handler to an element without overwriting existing event handlers</li>
-                <li>You can add many event handlers to one element.</li>
+                    <li>You can add many event handlers of the same type to one element, i.e two "click" events.</li>
 
-                <li>You can add many event handlers of the same type to one element, i.e two "click" events.</li>
+                    <li>You can add event listeners to any DOM object not only HTML elements. i.e the window object.</li>
 
-                <li>You can add event listeners to any DOM object not only HTML elements. i.e the window object.</li>
+                    <li>The addEventListener() method makes it easier to control how the event reacts to bubbling.</li>
 
-                <li>The addEventListener() method makes it easier to control how the event reacts to bubbling.</li>
-
-                <li>When using the addEventListener() method, the JavaScript is separated from the HTML markup, 
-                    for better readability and allows you to add event listeners even when you do not control the HTML markup.</li> 
-                <li>You can easily remove an event listener by using the removeEventListener() method.
-                <li>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:</li>
-                <li>You can add events of different types to the same element:like(mouseover,click & mouseout)</li>
-            </ul>
+                    <li>When using the addEventListener() method, the JavaScript is separated from the HTML markup, 
+                        for better readability and allows you to add event listeners even when you do not control the HTML markup.</li> 
+                    <li>You can easily remove an event listener by using the removeEventListener() method.
+                    <li>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:</li>
+                    <li>You can add events of different types to the same element:like(mouseover,click & mouseout)</li>
+                </ul>
+            </li>
+            <li>
                 <ul>
                    <h3> object.style.alignItems = "stretch|center|flex-start|flex-end|baseline|initial|inherit"</h3>
                     <h5>Property Values</h5>
@@ -86,6 +103,8 @@
                     <li>initial --> 	Sets this property to its default value.</li>
                     <li>inherit --> 	Inherits this property from its parent element.</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                    <h3>object.style.alignContent = "stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit"</h3>
                     <h5>Property Values</h5>
@@ -99,6 +118,8 @@
                     <li>initial --> 	Sets this property to its default value. Read about initial</li>
                     <li>inherit --> 	Inherits this property from its parent element.</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                    <h3> object.style.alignSelf = "auto|stretch|center|flex-start|flex-end|baseline|initial|inherit"</h3>
                     <h5> Property Values</h5>
@@ -112,6 +133,8 @@
                     <li>initial --> 	Sets this property to its default value. Read about initial</li>
                     <li>inherit --> 	Inherits this property from its parent element.</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>animation</h3>
                     <h5>object.style.animation = "name duration timingFunction delay iterationCount direction fillMode playState"</h5>
@@ -128,6 +151,8 @@
                         
                     
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>background --> object.style.background = "color image repeat attachment position size origin clip|initial|inherit"</h3>
                     <li>background-color --> object.style.backgroundColor = "color|transparent|initial|inherit"</li>
@@ -141,6 +166,8 @@
                     <li>background-clip --> object.style.backgroundClip = "border-box|padding-box|content-box|initial|inherit"</li>
 
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>border(ex:left/right/top/bottom)</h3>
                     <li>borderColor</li>
@@ -151,6 +178,8 @@
                     <li>borderImage</li>
                     <li>borderSpacing</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>columns</h3>
                     <li>columnCount --> the given content id devided into given number of columns</li>
@@ -163,6 +192,8 @@
                     <li>columnSpan --> </li>
                     <li>columnWidth --> its giving the width for column</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>flex --> object.style.flex = "flex-grow flex-shrink flex-basis|auto|initial|inherit"</h3>
                     <li>flexBasis --> </li>
@@ -172,6 +203,8 @@
                     <li>flexWrap --> </li>
                     <li>flexShrink --> </li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>font --> object.style.font = "font-style font-variant font-weight font-size/line-height|caption|icon|menu|
                             message-box|small-caption|status-bar|initial|inherit;"</h3>
@@ -184,12 +217,16 @@
                     <li>fontStretch --> </li>
                     
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>listStyle</h3>
                     <li>list-style-type --> returns the position of the list-item marker</li>
                     <li>list-style-position --> object.style.listStylePosition = "outside|inside" its decide the list item mark</li>
                     <li>list-style-image --> returns an image as the list-item marker with url()</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>outline</h3>
                     <li>outlineColor</li>
@@ -204,12 +241,16 @@
                     <li>its give the space between outline and border</li>
 
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>textDecoration --> object.style.textDecoration = "none|underline|overline|line-through|blink"</h3>
                     <li>textDecorationLine --> its gives the color for the line of that text content</li>
                     <li>textDecorationStyle --> object.style.textDecorationStyle = "solid|double|dotted|dashed|wavy</li>
                     <li>textDecorationColor --> its gives the color for that text content</li>
                 </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>transform</h3>
                     
@@ -236,10 +277,17 @@
                     <li>skewY(angle) --> 	Defines a 2D skew transformation along the Y-axis</li>
                     <li>perspective(n) --> 	Defines a perspective view for a 3D transformed element</li>
                 </ul>
-                <h3>transformOrigin --> </h3><span> the starting point for the animation</span>
-                <h3>object.style.transformStyle = "flat|preserve-3d"</h3>
-                <h3>preserve-3d --></h3><span>The child elements will preserve its 3D position</span>
-                <h3>flat --> </h3><span>Default value. The child elements will NOT preserve its 3D position</span>
+            </li>
+            <li>
+                <ul>
+                    <h3>transformOrigin --> </h3><span> the starting point for the animation</span>
+                    <h3>object.style.transformStyle = "flat|preserve-3d"</h3>
+                    <h3>preserve-3d --></h3><span>The child elements will preserve its 3D position</span>
+                
+                    <h3>flat --> </h3><span>Default value. The child elements will NOT preserve its 3D position</span>
+                </ul>
+            </li>
+            <li>
                 <ul>
                     <h3>transition</h3><span> object.style.transition = "property duration timing-function delay</span>
                     <li>transitionProperty -->  which property to  change is Specifies the name of the CSS property the transition effect is for</li>
@@ -247,8 +295,30 @@
                     <li>TimingFunction	 --> Specifies the speed curve of the  effect</li>
                     <li>Delay	 --> Defines when the transition effect will start</li>
                 </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>console</h3>
+
+                    <li>assert() --> Writes an error message to the console if the assertion is false</li>
+                    <li>clear() --> Clears the console</li>
+                    <li>count() --> Logs the number of times that this particular call to count() has been called</li>
+                    <li>error() --> Outputs an error message to the console</li>
+                    <li>group() --> Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called</li>
+                    <li>groupCollapsed() --> Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it</li>
+                    <li>groupEnd() --> Exits the current inline group in the console</li>
+                    <li>info() --> Outputs an informational message to the console</li>
+                    <li>log() --> Outputs a message to the console</li>
+                    <li>table() --> Displays tabular data as a table</li>
+                    <li>time() --> Starts a timer (can track how long an operation takes</li>
+                    <li>timeEnd() --> Stops a timer that was previously started by console.time() </li>                   
+                    <li>trace() --> Outputs a stack trace to the console</li>
+                    <li>warn() --> Outputs a warning message to the console</li>
+
+                </ul>
+            </li>
             
-            </ul>
+            
         </ol>
         <table>        
             <tr>
@@ -392,7 +462,7 @@
             </tr>
             <tr>
                 <td>document.lastModified</td>
-                <td></td>
+                <td>its give the last lastModified time</td>
             </tr>
             <tr>
                 <td>document.links</td>
@@ -400,7 +470,7 @@
             </tr>
             <tr>
                 <td>document.readyState</td>
-                <td></td>
+                <td>its give present page is load or not</td>
             </tr>
             <tr>
                 <td>document.referrer</td>
@@ -420,7 +490,7 @@
             </tr>
             <tr>
                 <td>document.URL</td>
-                <td></td>
+                <td>its give the url link of the page</td>
             </tr>
             <tr>
                 <td>document.getElementById("myBtn").addEventListener("click", displayDate);</td>
@@ -1084,7 +1154,170 @@
                 <td>zIndex</td>
                 <td> its change the content layer</td>
             </tr>
-            
+            <tr>
+                <td>closed --> window.closed</td>
+                <td>its close the current window</td>
+            </tr>
+            <tr>
+                <td>console</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>defaultStatus</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>document</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>frameElement</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>frames</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>history</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>innerHeight</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>innerWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>localStorage</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>location</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>navigator</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>opener</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outerHeight</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>outerWidth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>pageXOffset</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>pageYOffset</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>parent</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>screen</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>screenLeft</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>screenTop</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>screenX</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>screenY</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sessionStorage</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>scrollX</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>scrollY</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>self</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>top</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
             
             
             
@@ -1130,7 +1363,7 @@
             <li>Finding HTML Elements by HTML Object Collections</li>
             <li> document.embeds</li>
             <li>dom animations</li>
-            <li>Event Bubbling or Event Capturing?true/false</li>
+            <li>Event Bubbling(deafault:false --exection from children to parent) or Event Capturing(if we declare true--exection from parent to children)?true/false</li>
             <li>boxDecorationBreak</li>
             <li>columnFill:not supported</li>
             <li>object.style.columnSpan = "1|all|initial|inherit"</li>
