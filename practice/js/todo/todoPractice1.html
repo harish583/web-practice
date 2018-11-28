@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./todoPractice1.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <span class="checkbox" onclick="checkAll(event)">
+                    <span class="checkmark"></span>
+                </span>
+                <input class="input-field" type="text" onkeypress="inputField(event)">
+            </div>
+            <ul class="texted-info" id="texted-info">
+                <li class="listed-info  check" onclick="list(event)"> 
+                    <span class="checkbox">
+                        <span class="checkmark"></span>
+                    </span>
+                    <span>hello</span>
+                    <span class="cross"  onclick="cross(event)" ><img src="./x-transparent-checkmark.png" alt="cross"></span>
+                </li>
+                <li class="listed-info"  onclick="list(event)"> 
+                    <span class="checkbox">
+                        <span class="checkmark"></span>
+                    </span>
+                    <span>hello</span>
+                    <span class="cross"  onclick="cross(event)"><img src="./x-transparent-checkmark.png" alt="cross" ></span>
+                </li>
+                <li class="listed-info  check"  onclick="list(event)"> 
+                    <span class="checkbox">
+                        <span class="checkmark"></span>
+                    </span>
+                    <span>hello</span>
+                    <span class="cross"  onclick="cross(event)"><img src="./x-transparent-checkmark.png" alt="cross" ></span>
+                </li>
+                <li class="listed-info"  onclick="list(event)"> 
+                    <span class="checkbox">
+                        <span class="checkmark"></span>
+                    </span>
+                    <span>hello</span>
+                    <span class="cross"  onclick="cross(event)"><img src="./x-transparent-checkmark.png" alt="cross" ></span>
+                </li>
+            </ul>
+        </div>
+        <script src="./todoPractice1.js"></script>
+    </body>
+</html>

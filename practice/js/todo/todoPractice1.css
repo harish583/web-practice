@@ -1,0 +1,66 @@
+body{
+    color: red;
+}
+*
+{
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.checkbox{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+}
+.input-field{
+    width: calc(100% - 20px);
+    border: 0;
+    outline:0;
+    padding:5px;
+    border-bottom: 1px solid;
+}
+.check .checkmark{
+    width: 11px;
+    height: 5px;
+    border: 1px solid #ccc;
+    border-width: 0 0 2px 2px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 5px;
+    left: 3px;
+
+}
+.check span{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.cross img{
+    width: 25px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+
+}
+.listed-info{
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
+.listed-info:first-child{
+    border: 0;
+}
+.texted-info{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
