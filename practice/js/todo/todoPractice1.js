@@ -37,15 +37,40 @@ function cross(event){
 }
 function list(event){
     var li = event.currentTarget.classList;
+
+
+//***************** 
+//    var classesList = document.getElementsByClassName("listed-info").classList;
+
     if(li.contains("check")){
         li.remove("check");
+
+//***************** 
+ //       classesList.remove("check");
     }
     else{
         li.add("check");
     
     }
     
-}
+ }
+// function checkAll(event){
+//     var classes = event.currentTarget.classList;
+//     if(classes.contains("check")){
+//         classes.remove("check");
+//         var list = document.getElementsByClassName("listed-info");
+//         for(i = 0;i < list.length;i++){
+//             list[i].classList.remove("check");
+//         }
+//     }
+//     else {
+//         classes.add("check");
+//         var list = document.getElementsByClassName("listed-info");
+//         for(i=0;i<list.length;i++){
+//             list[i].classList.add("check");
+//         }
+//     }
+// }
 function checkAll(event){
     var classes = event.currentTarget.classList;
     if(classes.contains("check")){
@@ -55,7 +80,18 @@ function checkAll(event){
             list[i].classList.remove("check");
         }
     }
-    else{
+    else if(classes.contains("check")){
+        var list =document.getElementsByClassName("listed-info");
+        var classesList = document.getElementsByClassName("listed-info").classList;
+       // var classList = event.getAttribute("data-uim");
+        for(i=0;i<list.length;i++){
+            if(!(classesList.contains("check"))){
+        
+        classes.remove("check");
+            }
+        }
+    }
+    else {
         classes.add("check");
         var list = document.getElementsByClassName("listed-info");
         for(i=0;i<list.length;i++){
@@ -63,3 +99,18 @@ function checkAll(event){
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

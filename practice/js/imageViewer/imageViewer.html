@@ -4,22 +4,23 @@
         <link rel="stylesheet" href="./imageViewer.css">
     </head>
     <body>
-        <div class="container">
-            <img src="./katenet-pinkflowerwallpaper2011_1280.jpg" class="opacity flower1">
-            <img src="./katenet-flowerwallpaper2011a_1280.jpg" class="opacity flower2">
-            <img src="./katenetcrapemyrtle2009a_1280.jpg" class="opacity flower3">
-            <img src="./katenetmarigolds2009b_1280.jpg" class=" flower4">
-            <div class="left"></div>
-            <div class="right"></div>
+        <div class="container" id="container">
+            <img src="./katenet-pinkflowerwallpaper2011_1280.jpg" data-uid="0" class="flower">
+            <img src="./katenet-flowerwallpaper2011a_1280.jpg" data-uid="1" class="opacity flower">
+            <img src="./katenetcrapemyrtle2009a_1280.jpg" data-uid="2" class="opacity flower">
+            <img src="./katenetmarigolds2009b_1280.jpg" data-uid="3" class="opacity flower">
+            <div class="left" onclick="moveToPrevious(event)"></div>
+            <div class="right" onclick="moveToNext(event)"></div>
             <div class="list-type">
-                <ul class="list-head">
-                    <span class="boxes"></span>
-                    <span class="boxes"></span>
-                    <span class="boxes"></span>
-                    <span class="boxes"></span>
-                </ul>
+                <div class="list-head">
+                    <span class="boxes checked" data-uid="0" onclick="checked(event)"></span>
+                    <span class="boxes" data-uid="1" onclick="checked(event)"></span>
+                    <span class="boxes" data-uid="2" onclick="checked(event)"></span>
+                    <span class="boxes" data-uid="3" onclick="checked(event)"></span>
+                </div>
             </div>
         </div>
         
     </body>
+    <script src="./imageViewer.js"></script>
 </html>

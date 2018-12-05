@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./arrayMethods.css">
+        <title>HTML | ARRAY METHODS</title>
+        <link rel="icon" href="khscreations.png">
+    </head>
+    <body>
+        <h1 class="middle">HTML | ARRAY METHODS</h1>
+        <ol>
+            <li>
+                <h3>concat():</h3> 
+                <p>Joins two or more arrays, and returns a copy of the joined arrays</p>
+                <p>The concat() method is used to join two or more arrays.</p>
+                <pre>
+                    var hege = ["Cecilie", "Lone"];
+                    var stale = ["Emil", "Tobias", "Linus"];
+                    var children = hege.concat(stale); 
+                   document.getElementById("demo").innerHTML = children; // o/p::Cecilie,Lone,Emil,Tobias,Linus
+                </pre>
+                <p><mark>Syntax::</mark>array1.concat(array2, array3, ..., arrayX)</p>
+                <p>Ex::</p>
+
+            </li>
+            <li>
+                <h3>copyWithin()</h3>
+                <p>The copyWithin() method copies array elements within the array, to and from specified positions.</p>
+                <p><mark>Syntax::</mark>array.copyWithin(target, start, end)</p>
+                <pre>Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    fruits.copyWithin(2,1);
+                    <ins><b>o/p</b></ins>::Banana,Orange,Orange,Apple
+                </pre>
+                <p>2 gives no. of elements are copy from the array</p>
+                <p>1 gives no of elementsare deleted from that copied </p>
+                <p>the result will come in after the coping elemnts</p>
+            </li>
+            <li>
+                <h3>entries()</h3>
+                <p>
+                    The entries() method returns an Array Iterator object with key/value pairs.<br>
+                    For each item in the original array, the new iteration object will contain an array with the index as the key, and the item value as the value:</p>
+                    <pre>
+                    Ex::
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        var x = fruits.entries();
+
+                        document.getElementById("demo").innerHTML = x.next().value; --> 1st time
+                        document.getElementById("demo").innerHTML = x.next().value; --> 2nd time
+                        document.getElementById("demo").innerHTML = x.next().value; --> 3rd time
+                        document.getElementById("demo").innerHTML = x.next().value; --> 4th time
+                    <ins><b>o/p</b></ins>::
+                    [0, "Banana"] -->its  gives first time
+                    [1, "Orange"] -->its  gives second time
+                    [2, "Apple"] -->its  gives third time
+                    [3, "Mango"] -->its  gives forth time
+                    </pre>
+                <p>its give the index with there respective value[key,value]</p>
+                <p><mark>Syntax::</mark>array.entries()</p>
+            </li>
+            <li>
+                <h3>keys()</h3>
+                <p>The keys() method returns an Array Iterator object with the keys of an array.<br>
+                </p>
+                <pre>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    var x = fruits.keys();
+                    
+                    document.getElementById("demo").innerHTML = x.next().value; // <ins><b>o/p</b></ins>::0
+                    document.getElementById("demo").innerHTML = x.next().value; // <ins><b>o/p</b></ins>::1
+                    document.getElementById("demo").innerHTML = x.next().value; // <ins><b>o/p</b></ins>::2
+                    document.getElementById("demo").innerHTML = x.next().value; // <ins><b>o/p</b></ins>::3
+                    document.getElementById("demo").innerHTML = x.next().value; // <ins><b>o/p</b></ins>::undefined
+
+                    <ins><b>o/p</b></ins>:: 
+                </pre>
+                <p><mark>Syntax::</mark>array.keys()</p>
+            </li>
+
+            <li>
+                <h3> every()</h3>
+                <p>Checks if every element in an array pass a test its gives (true/false)</p>
+                <p>The every() method checks if all elements in an array pass a test (provided as a function).<br>
+                    The every() method executes the function once for each element present in the array.<br>
+                    if the every condition is true on given function its give true as a <ins><b>o/p</b></ins>;<br>
+                    if any case its fails directly its gives false as a <ins><b>o/p</b></ins>
+                </p>
+                <pre>
+                    Ex::
+                    var ages = [32, 33, 16, 40];
+
+                    function checkAdult(age) {
+                    return age >= 18;
+                    }
+
+                    function myFunction() {
+                    document.getElementById("demo").innerHTML = ages.every(checkAdult);
+                    }
+                    <ins><b>o/p</b></ins>::false as a <ins><b>o/p</b></ins>.
+                    bcz 16 is not more than that of 18 so its not check next elements directly gives false.
+                </pre>
+                <p><mark>Syntax::</mark>array.every(function(currentValue, index, arr), thisValue)</p>
+            </li>
+
+            <li>
+                <h3>filter()</h3>
+                <p>Creates a new array with every element in an array that pass a test</p>
+                <p>in above example this filter() method gives how many elements are pass the codition and display the satisfy values</p>
+                <p><ins><b>o/p</b></ins>::32,33,40</p>
+                <p><mark>Syntax::</mark>array.filter(function(currentValue, index, arr), thisValue)</p>
+            </li>
+            <li>
+                <h3>find()</h3>
+                <p>Returns the value of the first element in an array that pass a test</p>
+                <p>in this above problem the find() gives the first satisfy element in given array  </p>
+                <pre>
+                    Ex::
+                    var ages = [3, 10, 18, 20];
+
+                    function checkAdult(age) {
+                    return age >= 18;
+                    }
+
+                    function myFunction() {
+                    document.getElementById("demo").innerHTML = ages.find(checkAdult);
+                    <ins><b>o/p</b></ins>::18
+
+                </pre>
+                <p>before that all are fail in condition its succsecc at first its give that value </p>
+                <p>if none of them are succsess its give undifined as <ins><b>o/p</b></ins>.</p>
+                <p><mark>Syntax::</mark>array.find(function(currentValue, index, arr),thisValue)</p>
+            </li>
+            <li>
+                <h3>findIndex()</h3>
+                <p>Returns the index of the first element in an array that pass a test</p>
+                <p>from above example find() method gives first succsess case value</p>
+                <p>if all cases are fail this findIndex() method gives -1 as <ins><b>o/p</b></ins></p>
+                <p>from above example findIndex() method gives first succsess case index value</p>
+                <p><ins><b>o/p</b></ins>:: 2</p>
+
+                <p><mark>Syntax::</mark>array.findIndex(function(currentValue, index, arr),thisValue)</p>
+
+
+            </li>
+            <li>
+                <h3>forEach()</h3>
+                <p>Calls a function for each array element</p>
+                <p>The forEach() method calls a provided function once for each element in an array, in order.</p>
+                <p>Note: forEach() does not execute the function for array elements without values.</p>
+                <pre>Ex::
+                        < button onclick="numbers.forEach(myFunction)">Try it< /button>
+                        demoP = document.getElementById("demo");
+                        var numbers = [4, 9, 16, 25];
+                        
+                        function myFunction(item, index) {
+                            demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "< br>"; 
+                        }
+
+                    <ins><b>o/p</b></ins>::
+                        index[0]: 4
+                        index[1]: 9
+                        index[2]: 16
+                        index[3]: 25
+
+                </pre>
+                <p><mark>Syntax::</mark>array.forEach(function(currentValue, index, arr), thisValue)</p>
+
+            </li>
+            <li>
+                <h3>from()</h3>
+                <p></p>
+                <pre>
+                    Ex::
+                    var myArr = Array.from("ABCDEFG");
+
+                    document.getElementById("demo").innerHTML = myArr;
+
+                    <ins><b>o/p</b></ins>::A,B,C,D,E,F,G
+                </pre>
+                <p><mark>Syntax::</mark>Array.from(object, mapFunction, thisValue)</p>
+            </li>
+            <li>
+                <h3>includes()</h3>
+                <p>The includes() method determines whether an array contains a specified element.<br>
+
+                    This method returns true if the array contains the  element, and false if not.<br>
+                    
+                    Note: The includes() method is case sensitive.
+                </p>
+                <pre>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    var n = fruits.includes("Banana",1);
+                    
+                    document.getElementById("demo").innerHTML = n;
+
+                    <ins><b>o/p</b></ins>::false
+                </pre>
+                <p>here with out 1 its give true</p>
+                <p>with 1 its start to check from 1 so its false</p>
+                <p><mark>Syntax::</mark>array.includes(element, start)</p>
+            </li>
+            <li>
+                <h3>indexOf() & lastIndexOf()</h3>
+                <p>
+                        The indexOf() method searches the array for the specified item, and returns its position.<br>
+                        The lastIndexOf() method searches the array <b>from right to left </b>for the specified item, and returns its position.<br>
+
+                        The search will start at the specified position, or at the beginning if no start position is specified, and end the search at the end of the array.<br>
+                        
+                        Returns -1 if the item is not found.<br>
+                        
+                        If the item is present more than once, the indexOf method returns the position of the first occurence.<br>
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Apple"];
+                    var a = fruits.indexOf("Apple",1);
+                    var b = fruits.lastIndexOf("Apple",1);
+                    document.getElementById("demo").innerHTML = a; //<ins><b>o/p</b></ins>:: 2
+                    document.getElementById("demo").innerHTML = b; // <ins><b>o/p</b></ins>::3
+                    
+                    
+
+                </pre>
+                <p><mark>Syntax::</mark>array.indexOf(item, start)</p>
+                <p><mark>Syntax::</mark>array.lastIndexOf(item, start)</p>
+            </li>
+            <li>
+                <h3>isArray()</h3>
+                <p>
+                    The isArray() method determines whether an object is an array.<br>
+
+                    This function returns true if the object is an array, and false if not.
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    var x = document.getElementById("demo");
+                    x.innerHTML = Array.isArray(fruits);
+
+                    <ins><b>o/p</b></ins>::true
+                </pre>
+                <p><mark>Syntax::</mark>Array.isArray(obj)</p>
+            </li>
+            <li>
+                <h3>join()</h3>
+                <p>
+                    Joins all elements of an array into a string<br>
+
+                    The join() method joins the elements of an array into a string, and returns the string.<br>
+
+
+                    The elements will be separated by a specified separator. The default separator is comma (,).
+
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    var x = document.getElementById("demo");
+                    x.innerHTML = fruits.join(" $ ");
+
+                    <ins><b>o/p</b></ins>::Banana $ Orange $ Apple $ Mango
+                </pre>
+                <p><mark>Syntax::</mark>array.join(separator)</p>
+            </li>
+
+            <li>
+                <h3>fill()</h3>
+                <p>
+                    The fill() method fills all the elements in an array with a static value.<br>
+                    It is possible to specify the index for starting and ending fill(). By default it changes the whole array.
+                </p>
+                <pre>
+                    Ex::
+
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits.fill("Kiwi",1,3);
+
+                    <ins><b>o/p</b></ins>::Banana,Kiwi,Kiwi,Mango
+                </pre>
+                <p>the given element is replace the 1st index to before the 3rd index </p>
+                <p>here all the elements are replaced with given fill element if we dont declare the start and ending positions like 1,3</p>
+                <p><mark>Syntax::</mark>array.fill(value, start, end)</p>
+            </li>
+            <li>
+                <h3></h3>
+                <p>
+                    The map() method creates a new array with the results of calling a function for every array element.<br>
+
+                    The map() method calls the provided function once for each element in an array, in order.<br>
+                    
+                    Note:: map() does not execute the function for array elements without values.<br>
+                    
+                    Note:: map() does not change the original array.
+                </p>
+                <pre>
+                    Ex::
+                    var numbers = [4, 9, 16, 25];
+                    x = document.getElementById("demo")
+                    x.innerHTML = numbers.map(Math.sqrt); //<ins><b>o/p</b></ins>:: 2,3,4,5
+                    if we did not given prefect square its calculate tha sqrt of that value inly
+                </pre>
+                <p><mark>Syntax::</mark>array.map(function(currentValue, index, arr), thisValue)</p>
+            </li>
+            <li>
+                <h3>pop()</h3>
+                <p>
+                    Removes the last element of an array, and returns that element<br>
+                    The pop() method removes the last element of an array, and returns that element.<br>
+
+                    Note:: This method changes the length of an array.<br>
+
+                    Tip:: To remove the first element of an array, use the shift() method.
+                </p>
+                <pre>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+                        fruits.pop();
+                        document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Banana,Orange,Apple
+                </pre>
+                <p><mark>Syntax::</mark>array.pop()</p>
+            </li>
+            <li>
+                <h3>shift()</h3>
+                <p>
+                    The shift() method removes the first item of an array.<br>
+
+                    Note: This method changes the length of the array.<br>
+                    
+                    Note: The return value of the shift method is the removed item.<br>
+                    
+                    Tip: To remove the last item of an array, use the pop() method.<br>
+
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+                    
+                    
+                        fruits.shift();
+                        document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Orange,Apple,Mango
+
+
+                </pre>
+                <p><mark>Syntax::</mark>array.shift()</p>
+            </li>
+            <li>
+                <h3>push()</h3>
+                <p>
+                    The push() method adds new items to the end of an array, and returns the new length.<br>
+
+                    Note: The new item(s) will be added at the end of the array.<br>
+                    
+                    Note: This method changes the length of the array.<br>
+                    
+                    Tip: To add items at the beginning of an array, use the unshift() method.<br>
+
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+
+                  
+                        fruits.push("Kiwi");
+                        document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango,Kiwi
+
+                </pre>
+                <p><mark>Syntax::</mark>array.push(item1, item2, ..., itemX)</p>
+            </li>
+            <li>
+                <h3>unshift()</h3>
+                <p>
+                    The unshift() method adds new items to the beginning of an array, and returns the new length.
+
+                    Note: This method changes the length of an array.
+                    
+                    Tip: To add new items at the end of an array, use the push() method.
+
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+                    fruits.unshift("Lemon", "Pineapple");
+                    document.getElementById("demo1").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Lemon,Pineapple,Banana,Orange,Apple,Mango
+
+
+
+                </pre>
+                <p><mark>Syntax::</mark>array.unshift(item1, item2, ..., itemX)</p>
+            </li>
+            <li>
+                <h3>reduce() & reduceRight()</h3>
+                <p>
+                    The reduce() method reduces the array to a single value.<br>
+
+                    The reduce() method executes a provided function for each value of the array (from left-to-right).<br>
+                    The reduceRight() method executes a provided function for each value of the array (from right-to-left).<br>
+
+                    The return value of the function is stored in an accumulator (result/total).<br>
+
+                    Note: reduce() does not execute the function for array elements without values.<br>
+                </p>
+                <pre>
+                    Ex::
+                    var numbers = [65, 44, 12, 4];
+
+                    function getSum(total, num) {
+                        return total + num;
+                    }
+                    document.getElementById("demo").innerHTML = numbers.reduce(getSum); //<ins><b>o/p</b></ins>::125(sum of the elements from left to right)
+                    document.getElementById("demo").innerHTML = numbers.reduceRight(getSum); //<ins><b>o/p</b></ins>::125(sum of the elements from right to left)
+                    
+                </pre>
+                <p><mark>Syntax::</mark>array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</p>
+                <p><mark>Syntax::</mark>array.reduceRight(function(total, currentValue, currentIndex, arr), initialValue)</p>
+            </li>
+            <li>
+                <h3>reverse()</h3>
+                <p>
+                    The reverse() method reverses the order of the elements in an array.<br>
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+                    fruits.reverse();
+                    document.getElementById("demo").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Mango,Apple,Orange,Banana
+
+
+                </pre>
+                <p><mark>Syntax::</mark>array.reverse()</p>
+            </li>
+            <li>
+                <h3>slice()</h3>
+                <p>
+                        The slice() method returns the selected elements in an array, as a new array object.<br>
+
+                        The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.<br>
+                        
+                        Note: The original array will not be changed.
+                    
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+                    
+                    document.getElementById("demo").innerHTML = fruits.slice(1, 3); //<ins><b>o/p</b></ins>:: Orange,Lemon
+                    document.getElementById("demo1").innerHTML = fruits; //<ins><b>o/p</b></ins>:: Banana,Orange,Lemon,Apple,Mango
+                </pre>
+                <p><mark>Syntax::</mark>array.slice(start, end)</p>
+            </li>
+            <li>
+                <h3></h3>
+                <p>
+                    The some() method checks <b> if any of the elements in an array pass a test </b>(provided as a function).<br>
+
+                    The some() method executes the function once for each element present in the array:<br>
+                    
+                    If it finds an array element where the function returns a true value, some() returns true (and does not check the remaining values)<br>
+                    Otherwise it returns false
+                    Note:: some() does not execute the function for array elements without values.<br>
+                    
+                    Note:: some() does not change the original array.
+                </p>
+                <pre>
+                    Ex::
+                    var ages = [3, 10, 12, 20];
+
+                    function checkAdult(age) {
+                        return age >= 18;
+                    }
+                    document.getElementById("demo").innerHTML = ages.some(checkAdult); // <ins><b>o/p</b></ins>:: true
+
+                </pre>
+                <p><mark>Syntax::</mark>array.some(function(currentValue, index, arr), thisValue)</p>
+            </li>
+            <li>
+                <h3>sort()</h3>
+                <p>
+                    The sort() method sorts the items of an array.<br>
+
+                    The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).<br>
+                    
+                    By default, the sort() method sorts the values as strings in alphabetical and ascending order.<br>
+                    
+                    This works well for strings ("Apple" comes before "Banana"). However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".<br>
+                    
+                    Because of this, the sort() method will produce an incorrect result when sorting numbers.<br>
+                    
+                    You can fix this by providing a "compare function" (See "Parameter Values" below).<br>
+                    
+                    Note: This method changes the original array.<br>
+                    
+                </p>
+                <pre>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>::Banana,Orange,Apple,Mango
+                    fruits.sort();
+                    document.getElementById("demo1").innerHTML = fruits; // <ins><b>o/p</b></ins>::Apple,Banana,Mango,Orange
+
+                </pre>
+                <p><mark>Syntax::</mark>array.sort(compareFunction)</p>
+            </li>
+            <li>
+                <h3>splice()</h3>
+                <p>
+                    The splice() method adds/removes items to/from an array, and returns the removed item(s).<br>
+                    here 2 gives index position for insert the element<br>
+                    here 1 The number of items to be removed. If set to 1, one item will be removed <br>
+                </p>
+                <pre>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+                    fruits.splice(2, 1, "Lemon", "Kiwi");
+                    document.getElementById("demo2").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Lemon,Kiwi,Mango
+
+                </pre>
+                <p><mark>Syntax::</mark>array.splice(index, howmany, item1, ....., itemX)</p>
+            </li>
+            <li>
+                <h3>toString()</h3>
+                <p>
+                    The toString() method converts an array into a String and returns the result.<br>
+
+                    Note: The returned string will separate the elements in the array with commas.
+                </p>
+                <pre>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    fruits.toString();
+                    document.getElementById("demo").innerHTML = fruits; // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+
+                </pre>
+                <p><mark>Syntax::</mark>array.toString()</p>
+            </li>
+            <li>
+                <h3>valueOf()</h3>
+                <p>
+                    The valueOf() method returns the array.<br>
+
+                    This method is the default method of the array object. Array.valueOf() will return the same as Array<br>
+                    
+                    Note: This method will not change the original array.<br>
+
+                </p>
+                <pre>
+                    Ex::
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits.valueOf(); // <ins><b>o/p</b></ins>:: Banana,Orange,Apple,Mango
+
+                </pre>
+                <p><mark>Synatax::</mark>array.valueOf()</p>
+            </li>
+            <h1> ALL IN ONE</h1>
+
+
+            <pre>
+                <ul>
+var a = ["Banana", "Orange", "Apple", "Mango"];
+var b = ["11", "22", "33"];
+var c = ["Banana", "Orange", "Apple", "Mango"];
+
+var d = [4, 9, 16, 25];
+
+
+var ages = [32, 33, 16, 40];
+
+function checkAdult(age) {
+return age >= 18;
+}
+
+
+</li>
+<li>document.getElementById("demo1").innerHTML = a.concat(b); // o/p:: Banana,Orange,Apple,Mango,11,22,33
+
+</li>
+<li>document.getElementById("demo2").innerHTML = a.copyWithin(2,0); //o/p::// o/p::Banana,Orange,Banana,Orange
+
+
+var x = a.entries();</li>
+<li>document.getElementById("demo3").innerHTML = x.next().value;// o/p::0,Banana
+var x = a.keys();
+</li>
+<li>document.getElementById("demo1").innerHTML = x.next().value; // o/p:: 0
+
+</li>
+<li>document.getElementById("demo4").innerHTML = ages.every(checkAdult); // o/p:: false
+
+</li>
+<li>document.getElementById("demo5").innerHTML = a.fill("Kiwi"); // o/p::Kiwi,Kiwi,Kiwi,Kiwi
+</li>
+<li>document.getElementById("demo6").innerHTML = ages.filter(checkAdult); // o/p::32,33,40
+
+</li>
+<li>document.getElementById("demo7").innerHTML = ages.find(checkAdult); // o/p:: 32
+
+</li>
+<li>document.getElementById("demo8").innerHTML = ages.findIndex(checkAdult); // o/p::0
+
+
+< button onclick="numbers.forEach(myFunction)">Try it< /button>
+<button onclick="numbers.forEach(myFunction)">Try it</button>
+demoP =document.getElementById("demo");
+var numbers = [4, 9, 16, 25];
+
+function myFunction(item, index) {
+    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+}
+//o/p::
+index[0]: 4
+index[1]: 9
+index[2]: 16
+index[3]: 25
+
+
+
+</li>
+<li>document.getElementById("demo").innerHTML = Array.from("ABCDEFG"); //o/p::A,B,C,D,E,F,G
+</li>
+<li>document.getElementById("demo").innerHTML  = a ;//o/p:: Kiwi,Kiwi,Kiwi,Kiwi
+</li>
+<li>document.getElementById("demo9").innerHTML = c.includes("Mango"); // o/p:: true
+</li>
+<li>document.getElementById("demo").innerHTML = c.indexOf("Apple"); // o/p:: 2</li>
+<li>document.getElementById("demo").innerHTML = c.lastIndexOf("Apple"); // o/p:: 2
+
+
+</li>
+<li>document.getElementById("demo11").innerHTML =  Array.isArray(a);  // o/p:: true</li>
+<li>document.getElementById("demo11").innerHTML =  Array.isArray(b); // o/p:: true</li>
+<li>document.getElementById("demo11").innerHTML =  Array.isArray(c); // o/p:: true</li>
+<li>document.getElementById("demo11").innerHTML =  Array.isArray(z); // o/p:: empty
+</li>
+<li>document.getElementById("demo11").innerHTML =  a.join(" * "); //o/p:: Banana * Orange * Apple * Mango</li>
+<li>document.getElementById("demo11").innerHTML =  c.join(" $ "); //o/p:: Banana $ Orange $ Apple $ Mango
+
+
+</li>
+<li>document.getElementById("demo").innerHTML = d.map(Math.sqrt); //o/p:: 2,3,4,5</li>
+<li>document.getElementById("demo").innerHTML = d; //o/p:: 4,9,16,25
+</li>
+<li>document.getElementById("demo").innerHTML = d.pop() // o/p::25</li>
+<li>document.getElementById("demo").innerHTML = d; //o/p:: 4,9,16
+</li>
+<li>document.getElementById("demo").innerHTML = d.push("25") // o/p:: 4 [4th place]</li>
+<li>document.getElementById("demo").innerHTML = d; //o/p:: 4,9,16,25
+
+
+function getSum(total, num) {
+return total + num;
+}</li>
+<li>document.getElementById("demo").innerHTML = d.reduce(getSum); // o/p::  54</li>
+<li>document.getElementById("demo").innerHTML = d.reduceRight(getSum); // o/p::  54
+
+</li>
+<li>document.getElementById("demo11").innerHTML = c.reverse(); // o/p:: Mango,Apple,Orange,Banana
+
+</li>
+<li>document.getElementById("demo11").innerHTML = c.reverse(); // o/p:: Mango</li>
+<li>document.getElementById("demo11").innerHTML = c; // o/p:: Apple,Orange,Banana
+
+</li>
+<li>document.getElementById("demo14").innerHTML = c.slice(1, 2); // o/p:: Orange</li>
+<li>document.getElementById("demo11").innerHTML = c; // o/p:: Apple,Orange,Banana</li>
+<li>document.getElementById("demo17").innerHTML =c.sort(); //o/p:: Apple,Banana,Orange
+
+</li>
+<li>document.getElementById("demo").innerHTML = ages.some(checkAdult); // o/p:: true
+</li>
+<li>document.getElementById("demo").innerHTML = a.splice(2, 0, "Lemon", "Kiwi"); // o/p::
+</li>
+<li>document.getElementById("demo").innerHTML = a.unshift("Lemon", "Pineapple");</li>
+<li>document.getElementById("demo").innerHTML = a.toString(); //o/p::</li>
+<li>document.getElementById("demo").innerHTML = a.valueOf(); // o/p::
+
+
+
+
+            
+        </ol>
+    </body>
+</html>
