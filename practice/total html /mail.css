@@ -1,0 +1,16 @@
+.mail-header{
+    width: 300px;
+    display: inline-block;
+    line-height: 0;
+}
+.container{
+    margin-top: 30px;
+    margin-left: calc( 50% - 90px);
+
+}
+.first{
+    background: skyblue;
+}
+.second{
+    background: orange;
+}
