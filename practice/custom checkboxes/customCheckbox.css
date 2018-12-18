@@ -1,0 +1,15 @@
+.boxes{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+.right{
+    width: 60px;
+    height: 30px;
+    border: 2px solid;
+    border-width: 0 0 10px 10px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+}

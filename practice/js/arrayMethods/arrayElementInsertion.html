@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="element" onfocus="this.value=''">
+        <input type="number" id="index" onfocus="this.value=''">
+        <button onclick="arrang()">button</button>
+        
+        <div id="oldarray1"></div>
+        <div id="oldarray2"></div>
+        <div id="array"></div>
+    </body>
+    <script>
+        var array = ["one","two","three","four"];
+        var array2 = ["1","2","3","4"];
+        document.getElementById("oldarray1").innerHTML = array;
+        // document.getElementById("oldarray2").innerHTML = array2;
+             var element = document.getElementById("element").value;
+
+             var indx = document.getElementById("index").value;
+        function arrange(array,element,indx){
+            if(indx >= array.length ){
+            // array[array.length] = element;\
+            array.push(element);
+            
+            } else if(indx <= 0) {
+                array.unshift(element);
+            }
+            if(indx < array.length){
+            array.splice(indx, 0, element);
+            }
+            console.log(array);
+            return array;
+        }
+        function arrang(){ 
+             var length = array.length;
+             var element = document.getElementById("element").value;
+            
+
+             console.log(element);
+             var indx = document.getElementById("index").value;
+             // console.log(indx);
+             indx = parseInt(indx, 10);
+             arrange(array, element, indx);
+             document.getElementById("array").innerHTML = array;
+            
+            // if(indx == ""){
+            //     array.push(element);
+            //   document.getElementById("array").innerHTML = array;
+            // }
+            // if(indx > length ){
+            //     array.push(element);
+            //     console.log(indx);
+            //  console.log(element);
+            //     document.getElementById("array").innerHTML = array;
+            // }
+            // // if(index != NaN){
+            // //     array.push(element);
+            // //     document.getElementById("array").innerHTML = array;
+            // // }
+            // if(indx < length){
+            //     array.splice(indx,0,element);
+            //     document.getElementById("array").innerHTML = array;
+            // }
+            
+        }
+
+    </script>
+</html>

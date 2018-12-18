@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.conainer{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.textField{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.inputContainer{
+    position: relative;
+}
+.checkAll{
+    position: absolute;
+    top: 9px;
+    left: 1px;
+}
+.listContainer{
+    width: 100%;
+    
+    padding: 10px; 
+    border: 1px solid #f1f1f1;
+    background: #c1c1c1;
+    margin: 0;
+    margin-top: 30px;
+
+}
+.list{
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+.checkBox{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -4px;
+    left: 4px;
+    border: 1px solid #f1f1f1;
+    background: #c1c1c1;
+    float: left;
+    cursor: pointer;
+}
+ .check .chechMark{
+    width: 15px;
+    position: absolute;
+    height: 10px;
+    top: calc(50% - 9px);
+    left: calc(50% - 8px);
+    border: 2px solid black;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    
+}
+.check{
+    display: block;
+    text-decoration: line-through;
+}
+.cross{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 14px);
+    cursor: pointer;
+}

@@ -1,0 +1,125 @@
+.head{
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    background-color: #00B1CE;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+.content{
+    /* display: inline-block; */
+    float: left;
+
+}
+.menu{
+    background-color: black;
+    position: fixed;
+    top: 50px;
+
+    height: 100%;
+    width: 300px;
+    
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+.contacts{
+    width: 700px;
+    padding: 100px 0;
+    position: relative;
+    left: 300px;
+    padding-left:20px; 
+}
+.left{
+    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.input-search{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.city-name{
+    width: 100px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.active {
+    background-color: #00B1CE;
+}
+.contentComes{
+   overflow: auto;
+    clear: both;
+    display: block;
+    content: "";
+}
+
+
+
+
+
+.profile-details , .employee-details{
+    display: inline-block;
+    padding: 5px;
+}
+a{
+    /* color: #c1c1c1; */
+    text-decoration: none;
+    color: #62BCD8;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    line-height: 3;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #62BCD8;
+    background: #E3E3E3;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    background-color: white;
+    color: #888888;
+    padding: 10px;
+    margin: 10px 0 ; 
+    width: 100%;
+}
+.name{
+    font-size: 25px;
+    font-weight: bold;
+    color: #757575;
+    text-transform: capitalize;
+}

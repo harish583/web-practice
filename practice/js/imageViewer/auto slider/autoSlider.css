@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container .left {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    transition: all 20s ease-in ;
+    animation: hello 20s ease-in infinite;
+}
+.container{
+    white-space: nowrap;
+    /* overflow: hidden; */
+    position: relative;
+    height: 550px;
+    
+}
+@keyframes hello{
+    0%{
+        margin-left:0 ;
+    }
+    50%{
+        margin-left:-100% ;
+    }
+    /* 100%{
+        margin-left:-200%; 
+    } */
+    /* 99%{
+        margin-left:-300%; 
+    } */
+    
+}
+.left img{
+    width: 100%;
+    height: 100%;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid black;
+
+}
+.check{
+    background: black;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+ul{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
