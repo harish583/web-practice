@@ -20,11 +20,11 @@
     animation: flowers 2 ease-in 1 left;
     
 }
-@keyframes flowers{
+/* @keyframes flowers{
     0%{
         opacity
     }
-}
+} */
 .imageContainer img.active{
     opacity: 1;
     visibility: visible;
