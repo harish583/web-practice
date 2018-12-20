@@ -40,7 +40,10 @@
     var span1 = document.createElement("span");
     var span2 = document.createElement("span");
     span1.setAttribute("class","leftArrow1");
+    span1.setAttribute("data-id","-1")
     span2.setAttribute("class","rightArrow1");
+    span2.setAttribute("data-id","1")
+
     span1.addEventListener("click",function(){
         leftArrow1(-1)});
     span2.addEventListener("click",function(){
@@ -73,8 +76,8 @@ divmarginContainer.setAttribute("class","marginContainer");
 
 
 
+var ulcheckli2 = document.createElement("ul");
 for(var i =0;i<flower2.length;i++){
-    var ulcheckli2 = document.createElement("ul");
     ulcheckli2.setAttribute("class","checkli2");
     divmarginContainer.appendChild(ulcheckli2);
     container.appendChild(divmarginContainer);
@@ -84,9 +87,6 @@ for(var i =0;i<flower2.length;i++){
     img2.setAttribute("src",flower2[i]);
     div2.appendChild(img2);
     divmarginContainer.appendChild(div2);
-    
-
-
 
 
 }
@@ -100,7 +100,7 @@ lis.setAttribute("class","checkbox2");
 lis.setAttribute("data-id",i);
 lis.addEventListener("click",function(){
     var y = parseInt(event.currentTarget.dataset.id);
-    checkbox2(y);
+    checkbox2check(y);
 
 })
 ulcheckli2.appendChild(lis);
@@ -145,6 +145,9 @@ var checkbox = document.querySelectorAll(".checkbox1");
 var x = document.querySelector(".check");
 index = parseInt(x.dataset.id);
 function leftArrow1(n){
+    var checkbox = document.querySelectorAll(".checkbox1");
+    var x = document.querySelector(".check");
+    index = parseInt(x.dataset.id);
     if(index <= 0){
         index = checkbox.length - 1;
 
@@ -154,21 +157,23 @@ function leftArrow1(n){
 
 }
 
-var checkbox = document.querySelectorAll(".checkbox1");
-var check = document.querySelector(".check");
- index = parseInt(check.dataset.id);
+
 function rightArrow1(n){
+    var checkbox = document.querySelectorAll(".checkbox1");
+    var check = document.querySelector(".check");
+    index = parseInt(check.dataset.id);
     if(index >= checkbox.length-1){
         index = 0 ;
 
     }
-    else index = index + n;
+    else index += n;
     checkBox(index);
 
 }
 
 //for slider2
-function checkbox2(n){
+function checkbox2check(n){
+    
     var flowers2 = document.querySelector(".flower2");
     var lis2 = document.querySelectorAll(".checkbox2");
     for(var i =0;i<flower2.length;i++){
@@ -179,28 +184,34 @@ function checkbox2(n){
 }
 
 
-var checks = document.querySelector(".check");
-var ids = parseInt(checks.dataset.id);
 function leftArrow2(n){
+    
+    var checkbox2 = document.querySelectorAll(".checkbox2");
+    var checks = document.querySelector(".checkbox2.check");
+    var ids = parseInt(checks.dataset.id);
     if(ids <=0){
-        ids = flower2.length - 1;
+        ids = checkbox2.length - 1;
     }
     // if(ids>flower2.length){
     //     ids = 0;
     // }
     else ids = ids + n;
-    checkbox2(ids);
+    checkbox2check(ids);
 }
 
-var checks = document.querySelector(".check");
-var ids = parseInt(checks.dataset.id);
+   
 function rightArrow2(n){
+    
     // if(ids <=0){
     //     ids = flower2.length - 1;
     // }
-    if(ids >= flower2.length-1){
+    var checkbox2 = document.querySelectorAll(".checkbox2");
+    var checks = document.querySelector(".checkbox2.check");
+    var ids = parseInt(checks.dataset.id);
+    
+    if(ids >= checkbox2.length-1){
         ids = 0;
     }
     else ids = ids + n;
-    checkbox2(ids);
+    checkbox2check(ids);
 }
