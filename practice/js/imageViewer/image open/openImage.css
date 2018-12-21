@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.imageContainer{
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    opacity: .6;
+    text-align: center;
+}
+.imageContainer:hover{
+    opacity: 1;
+    
+}
+.flowers{
+    width: 100%;
+}
+.cross{
+    width: 30px;
+
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+ .active{
+   opacity: 1;
+}
+.imageDisplayContainer{
+    max-width: 80%;
+    height: 500px;
+}
+.imageDisplayContainer img{
+    width: 100%;
+    height: 100%;
+}
