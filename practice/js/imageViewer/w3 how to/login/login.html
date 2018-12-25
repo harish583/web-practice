@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body class="body">
+        <h1>Welcome to my site</h1>
+        <div class="login" onclick="login()">LOGIN</div>
+        <div class="login" onclick="signup()">SIGNUP</div>
+        <div class="popup">
+            <h1>LOGIN</h1>
+            <div class="profileImage"></div>
+            <div class="cross" onclick="close1()">X</div>
+            <div>Username</div>
+            <div><input class="inputField" type="text"></div>
+            <div>Password</div>
+            <div><input class="inputField" type="password"></div>
+            <div class="login" onclick="signin()">Sign In</div>
+            <label>
+                <span><input type="checkbox"></span>
+                <span>remember me</span>
+            </label>
+        </div>
+        <div class="signup">
+            <h1>SIGNUP</h1>
+            <div class="profileImage">Img</div>
+            <div class="cross" onclick="close2()">X</div>
+            <div>Username</div>
+            <div><input class="inputField" type="text"></div>
+            <div>Password</div>
+            <div><input class="inputField" type="password"></div>
+            <div>Re enter Password</div>
+            <div><input class="inputField" type="password"></div>
+            <div class="login" onclick="sign()">Sign up</div>
+            <label>
+                <span><input type="checkbox"></span>
+                <span>remember me</span>
+            </label>
+        </div>
+        <div class="submitted"> Your info under processing</div>
+        <div class="verfication">your info was submited sucsesfully.......</div>
+        <script src="login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #fafafa;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    background: #fff;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.css-arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-right:15px solid #999; 
+    display: inline-block;
+}
+.arrow-direction-right {
+    transform: rotate(180deg);
+}
+
+.carousel-right-arrow {
+    right: 0;
+    left: auto;
+    padding-left: 13px;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+}
+
+.carousel-slide {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in;
+
+}
+.carousel-slide.active-slide {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.carousel-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    bottom: 4px;
+    height: 0;
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.carousel-bullet {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: #333;
+    cursor: pointer;
+}
+
+.active-bullet {
+    background: #fff;
+}
+
+.carousel-type-slide .carousel-slides{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.carousel-type-slide .carousel-slide{
+    opacity: 1;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    display: inline-block;
+}

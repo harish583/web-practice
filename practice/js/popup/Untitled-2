@@ -1,0 +1,10 @@
+home
+click on add student display add student popup
+collecting the data from the storage 
+show the students info on home page
+click on view details perticular student info on popup
+click on edit show the popup and do the modifications on popup
+if any changes are there update the data
+click on delete disply the popup with conformation message
+if delete clear the perticular student info
+and then  modify the data

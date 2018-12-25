@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./transactions.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="body">
+            <h1>Responsive Checkout Form</h1>
+            <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+            <div class="paymentDetains">
+                <div class="paymentInfo">
+                    <h1>Billing Address</h1>
+                    <h3><span><i class="fas fa-user"></i></span><span> Full Name</span></h3>
+                    <input type="text">
+                    <h3><span><i class="fas fa-envelope"></i></span><span>Email</span></h3>
+                    <input type="text">
+                    <h3><span><i class="fas fa-address-card"></i></span><span>Address</span></h3>
+                    <input type="text">
+                    <h3><span><i class="fas fa-university"></i></span><span>City</span></h3>
+                    <input type="text">
+                </div>
+                <div class="cardDetails">
+                    <h1>Payment</h1>
+                    <h3>Accepted Cards</h3>
+                    <span class="cards sbi">SBI</span>
+                    <span class="cards axis">AXIS</span>
+                    <span class="cards master">MASTER</span>
+                    <span class="cards andra">ANDRA</span>
+                    <h3>Name on Card</h3>
+                    <input type="text">
+                    <h3>Credit card number</h3>
+                    <input type="number">
+                    <h3>Exp Month</h3>
+                    <input type="month">
+                </div>
+                <div>
+                    <div class="extraInfo">
+                        <div>State</div>
+                        <input class="small" type="text" maxlength="3">
+                    </div>
+                    <div class="extraInfo">
+                        <div>Zip</div>
+                        <input class="small" type="number" maxlength="6">
+                    </div>
+                    <div class="extraInfo">
+                        <div>Exp Year</div>
+                        <input class="small" type="number" maxlength="4">
+                    </div>
+                    <div class="extraInfo">
+                        <div>CVV</div>
+                        <input class="small" type="number" maxlength="3">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="box" onclick="mover()">
+            <div class="button"></div>
+        </div>
+
+    </body>
+    <script src="./transactions.js"></script>
+</html>

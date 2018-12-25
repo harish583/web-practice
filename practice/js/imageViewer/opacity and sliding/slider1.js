@@ -140,8 +140,8 @@ function binding(flower1,format){
 //flower1::: flowers1 || flowers2;
 //format ::: opacity || slide ;
 //  function binding(flower1,format);
-// binding(flowers1,"opacity");
-binding(flowers2,"slide");
+ binding(flowers1,"opacity");
+// binding(flowers2,"slide");
 
 
 
