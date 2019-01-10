@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./arrayMethods.css">
+    </head>
+    <body>
+        <h1 class="headding">STRING METHODS</h1>
+        <table>
+            <tr>
+                <th>METHOD</th>
+                <th>EXAMPLES</th>
+                <th>SYNTAX</th>
+                <th>INPUT VALUES / PARAMETERS</th>
+                <th>RETURNS</th>
+                <th>is its change original array</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+                    txt.length;//26</td>
+                <td>string.length</td>
+                <td>---------</td>
+                <td>The length of a string</td>
+                <td>doesnot change the string</td>
+            </tr>
+            <tr>
+                <td>indexOf()</td>
+                <td>The indexOf() method returns the position of the first occurrence of a specified value in a string.<br>
+
+                        This method returns -1 if the value to search for never occurs.<br>
+                        
+                        Note: The indexOf() method is case sensitive.<br>
+                    var str = "Please locate where 'locate' occurs!";<br>
+                    var pos = str.indexOf("locate",15);
+                     //21</td>
+                <td>string.indexOf(searchvalue, start)</td>
+                <td>
+                        searchvalue --> Required. The string to search for<br>
+                        start --> Optional. Default 0. At which position to start the search</td>
+                <td>	A Number, representing the position where the specified searchvalue occurs for the first time, or -1 if it never occurs</td>
+                
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>lastIndexOf()</td>
+                <td>The lastIndexOf() method returns the position of the last occurrence of a specified value in a string.<br>
+
+                        Note: The string is searched from the end to the beginning, but returns the index starting at the beginning, at position 0.<br>
+                        
+                        This method returns -1 if the value to search for never occurs.<br>
+                        
+                        Note: The lastIndexOf() method is case sensitive!<br>
+                    Search a string for the last occurrence of "planet":<br>
+
+                        var str = "Hello planet earth, you are a great planet.";<br>
+                        var n = str.lastIndexOf("planet"); //36</td>
+                <td>string.lastIndexOf(searchvalue, start)</td>
+                <td>
+                        searchvalue --> Required. The string to search for<br>
+                        start --> Optional. The position where to start the search (searching backwards). If omitted, the default value is the length of the string</td>
+                <td>	A Number, representing the position where the specified searchvalue occurs for the last time, or -1 if it never occurs</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>search()</td>
+                <td>
+                        The search() method searches a string for a specified value, and returns the position of the match.<br>
+
+                        The search value can be string or a regular expression.<br>
+                        var str = "Please locate where 'locate' occurs!";<br>
+                    var pos = str.search("locate");
+                     //7<br>
+                    var str = "Mr. Blue has a blue house";<br>
+var n = str.search("blue"); //15<br>
+var str = "Mr. Blue has a blue house";<br>
+var n = str.search(/blue/i); //4<br>
+                </td>
+                <td>string.search(searchvalue)</td>
+                <td>
+                        searchvalue --> Required. A regular expression.<br> 
+                        A string will automatically be converted to a regular expression.</td>
+                <td>A Number, representing the position of the first occurrence of the specified searchvalue, or -1 if no match is found</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>slice()</td>
+                <td>slice() extracts a part of a string and returns the extracted part in a new string.<br>
+                    The method takes 2 parameters: the start position, and the end position (end not included).<br>
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.slice(7, 13);
+                     //Banana;<br>
+                    Tip: Use a negative number to select from the end of the string.<br>
+
+
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.slice(-12, -6);
+                     //Banana;<br>
+                    var res = str.slice(7);(or)<br>
+                    var res = str.slice(-12);<br>
+                     //Banana, Kiwi;
+                    </td>
+                <td>string.slice(start, end)</td>
+                <td>start --> Required. The position where to begin the extraction. First character is at position 0<br>
+                        end --> Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string</td>
+                <td>A String, representing the extracted part of the string</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>substring()</td>
+                <td>This method extracts the characters in a string between "start" and "end", not including "end" itself.<br>
+
+                        If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1, 4) == str.substring(4, 1).<br>
+                        
+                        If either "start" or "end" is less than 0, it is treated as if it were 0.<br>
+                    substring() is similar to slice().<br>
+                    The difference is that substring() cannot accept negative indexes.<br>
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.substring(7, 13);
+                     //Banana;<br>
+                    var str = "Hello world!";<br>
+                    var res = str.substring(1, 4); //ell
+                    </td>
+                <td>string.substring(start, end)
+                    </td>
+                <td>
+                        start --> Required. The position where to start the extraction. First character is at index 0<br>
+                        end --> Optional. The position (up to, but not including) where to end the extraction. If omitted, it extracts the rest of the string</td>
+                <td>A new String containing the extracted characters</td>
+                <td> does not change</td>
+            </tr>
+            <tr>
+                <td>substr()</td>
+                <td>The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.<br>
+
+                        Tip: To extract characters from the end of the string, use a negative start number (This does not work in IE 8 and earlier).<br>
+                    substr() is similar to slice().<br>
+                    The difference is that the second parameter specifies the length of the extracted part.<br>
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.substr(7, 6);
+                     //Banana;<br>
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.substr(7);
+                     //Banana, Kiwi;<br>
+                    If the first parameter is negative, the position counts from the end of the string.<br>
+                    var str = "Apple, Banana, Kiwi";<br>
+                    var res = str.substr(-4);
+                     //kiwi;<br>
+                    var str = "Hello world!";<br>
+                    var res = str.substr(1, 9); //ello worl<br>
+                    var str = "Hello world!";<br>
+                    var res = str.substr(11, 1); //!<br>
+                </td>
+                <td>string.substr(start, length)</td>
+                <td>
+                        start --> Required. The position where to start the extraction. First character is at index 0.<br>
+                        
+                        If start is positive and greater than, or equal, to the length of the string, substr() returns an empty string.<br>
+                        
+                        If start is negative, substr() uses it as a character index from the end of the string. <br>
+                        
+                        If start is negative or larger than the length of the string, start is set to 0<br>
+                        length --> Optional. The number of characters to extract. If omitted, it extracts the rest of the string</td>
+                <td>	A new String, containing the extracted part of the text. If length is 0 or negative, an empty string is returned</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>replace()</td>
+                <td>The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.<br>
+
+                        Note: If you are replacing a value (and not a regular expression), only the first instance of the value will be replaced. To replace all occurrences of a specified value, use the global (g) modifier
+                    By default, the replace() function replaces only the first match:<br>
+                    str = "Please visit Microsoft and Microsoft!";<br>
+                    var n = str.replace("Microsoft", "W3Schools");
+                     //Please visit W3Schools and Microsoft!;<br>
+                    By default, the replace() function is case sensitive. Writing MICROSOFT (with upper-case) will not work:<br>
+                    str = "Please visit Microsoft!";<br>
+                    var n = str.replace("MICROSOFT", "W3Schools");
+                     //Please visit Microsoft!;<br>
+                    To replace case insensitive, use a regular expression with an /i flag (insensitive):<br>
+                    str = "Please visit Microsoft!";<br>
+                    var n = str.replace(/MICROSOFT/i, "W3Schools");
+                     //Please visit W3Schools!;<br>
+                    To replace all matches, use a regular expression with a /g flag (global match):<br>
+                    str = "Please visit Microsoft and Microsoft!";<br>
+                    var n = str.replace(/Microsoft/g, "W3Schools");
+                     //Please visit W3Schools and W3Schools!<br>
+                    Perform a global, case-insensitive replacement:<br>
+
+                    var str = "Mr Blue has a blue house and a blue car";<br>
+                    var res = str.replace(/blue/gi, "red"); //Mr red has a red house and a red car.
+                    </td>
+                <td>string.replace(searchvalue, newvalue)</td>
+                <td>
+                        searchvalue --> Required. The value, or regular expression, that will be replaced by the new value<br>
+                        newvalue --> Required. The value to replace the search value with</td>
+                <td>A new String, where the specified value(s) has been replaced by the new value</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>toUpperCase() / toLocaleUpperCase()</td>
+                <td>The toUpperCase() method converts a string to uppercase letters.<br>
+                    The toLocaleUpperCase() method converts a string to uppercase letters, according to the host's current locale.<br>
+
+                        The locale is based on the language settings of the browser.<br>
+                        
+                        Generally, this method returns the same result as the toUpperCase() method. However, for some locales, where language conflict with the regular Unicode case mappings occurs (such as Turkish), the results may vary.<br>
+                    var text1 = "Hello World!";        // String<br>
+                    var text2 = text1.toUpperCase();   // text2 is text1 converted to upper
+                     //HELLO WORLD!</td>
+                <td>string.toLocaleUpperCase() /string.toUpperCase()</td>
+                <td>None.
+                    </td>
+                <td>	A String, representing the value of a string converted to uppercase according to the host's current locale</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>toLowerCase() / toLocaleLowerCase()</td>
+                <td>The toLowerCase() method converts a string to lowercase letters.<br>
+                    The toLocaleLowerCase() method converts a string to lowercase letters, according to the host's current locale.<br>
+
+                        The locale is based on the language settings of the browser.<br>
+                        
+                        Generally, this method returns the same result as the toLowerCase() method. However, for some locales, where language conflict with the regular Unicode case mappings occurs (such as Turkish), the results may vary.<br>
+                        
+                        
+                    var text1 = "Hello World!";        // String<br>
+                    var text2 = text1.toLowerCase();   // text2 is text1 converted to lower
+                     //hello world!</td>
+                <td>string.toLocaleLowerCase() / string.toLowerCase()</td>
+                <td>None.</td>
+                <td>A String, representing the value of a string converted to lowercase according to the host's current locale</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>concat()</td>
+                <td>concat() joins two or more strings:<br>
+                    var text1 = "Hello";<br>
+                    var text2 = "World";<br>
+                    var text3 = text1.concat(" ", text2);
+                     //Hello World!;<br>
+                    The concat() method can be used instead of the plus operator. These two lines do the same:<br>
+                    var text = "Hello" + " " + "World!";<br>
+                    var text = "Hello".concat(" ", "World!");
+
+                </td>
+                <td>string.concat(string1, string2, ..., stringX)</td>
+                <td>
+                    string1, string2, ..., stringX --> Required. The strings to be joined
+                        </td>
+                <td>This method does not change the existing strings, but returns a new string containing the text of the joined strings.<br>
+                    A new String, containing the text of the combined strings</td>
+                    <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>trim()</td>
+                <td>
+                    The trim() method removes whitespace from both sides of a string:<br>
+                    var str = "(space)Hello World!(space)";<br>
+                    str.trim();
+                     //Hello World!;
+                    </td>
+                <td>string.trim()</td>
+                <td>None.
+                    </td>
+                <td>A String, representing the string with removed whitespace from both ends</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>charAt()</td>
+                <td>The charAt() method returns the character at a specified index (position) in a string:<br>
+                    var str = "HELLO WORLD";<br>
+                    str.charAt(0);             // returns H
+                </td>
+                <td>string.charAt(index)</td>
+                <td>index-- --> Required. An integer representing the index of the character you want to return</td>
+                <td>A String, representing the character at the specified index, or an empty string if the index number is not found</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>charCodeAt()</td>
+                <td>
+                    The charCodeAt() method returns the unicode of the character at a specified index in a string:<br>
+                    The method returns a UTF-16 code (an integer between 0 and 65535).<br>
+                    var str = "HELLO WORLD";<br>
+                    str.charCodeAt(0);          // returns 72
+                        
+                    </td>
+                <td>string.charCodeAt(index)<br>
+                    index --> Required. A number representing the index of the character you want to return
+
+                </td>
+                <td>A Number, representing the unicode of the character at the specified index.<br>
+                    Note: This method returns "NaN" if there is no character at the specified index, or if the index is less than "0".</td>
+                <td>A Number, representing the unicode of the character at the specified index.
+
+                    Note: This method returns "NaN" if there is no character at the specified index, or if the index is less than "0".</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>split()</td>
+                <td>Split a string into an array of substrings:<br>
+                    A string can be converted to an array with the split() method:<br>
+                    var txt = "a,b,c,d,e";    // String<br>
+                    txt.split(",");           // Split on commas  //a,b,c,d,e,f<br>
+                    txt.split(" ");           // Split on spaces  //a,b,c,d,e,f<br>
+                    txt.split("|");           // Split on pipe  //a,b,c,d,e,f<br>
+                    Separate each character, including white-space:<br>
+
+                    var str = "How are you doing today?";<br>
+                    var res = str.split(""); //H,o,w, ,a,r,e, ,y,o,u, ,d,o,i,n,g, ,t,o,d,a,y,?<br>
+                    Use the limit parameter:<br>
+
+                    var str = "How are you doing to day?";<br>
+                    var res = str.split(" ", 3); //How,are,you<br>
+                    Use a letter as a separator:<br>
+
+                    var str = "How are you doing today?";<br>
+                    var res = str.split("o"); //H,w are y,u d,ing t,day?<br>
+                    </td>
+                <td>string.split(separator, limit)</td>
+                <td>separator --> Optional. Specifies the character, or the regular expression, to use for splitting the string. If omitted, the entire string will be returned (an array with only one item)<br>
+                        limit --> Optional. An integer that specifies the number of splits, items after the split limit will not be included in the array</td>
+                <td>An Array, containing the splitted values</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>endsWith()</td>
+                <td>The endsWith() method determines whether a string ends with the characters of a specified string.<br>
+
+                        This method returns true if the string ends with the characters, and false if not.<br>
+                        
+                        Note: The endsWith() method is case sensitive.<br>
+                        var str = "Hello world, welcome to the universe.";<br>
+                        var n = str.endsWith("world", 11); //true<br>
+                    </td>
+                <td>string.endsWith(searchvalue, length)</td>
+                <td>searchvalue-- --> Required. The string to search for<br>
+                        length-- --> Optional. Specify the length of the string to search. If omitted, the default value is the length of the string</td>
+                <td>A Boolean. Returns true if the string ends with the value, otherwise it returns false</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>fromCharCode()</td>
+                <td>Convert a Unicode number into a character:<br>
+                        var res = String.fromCharCode(65); //A<br>
+                        var res = String.fromCharCode(72, 69, 76, 76, 79); //HELLO
+                </td>
+                <td>String.fromCharCode(n1, n2, ..., nX)</td>
+                <td>
+                        n1, n2, ..., nX --> Required. One or more Unicode values to be converted</td>
+                <td>A String, representing the character(s) representing the specified unicode number(s)</td>
+                <td>doesnot change</td>
+
+            </tr>
+            <tr>
+                <td>includes()</td>
+                <td>Check if a string includes "world":<br>
+                    var str = "Hello world, welcome to the universe.";<br>
+                    var n = str.includes("world"); //true<br>
+                    The includes() method determines whether a string contains the characters of a specified string.<br>
+
+                    This method returns true if the string contains the characters, and false if not.<br>
+
+                    Note: The includes() method is case sensitive.<br>
+                    Check if a string includes "world", starting the search at position 12:<br>
+
+                    var str = "Hello world, welcome to the universe.";<br>
+                    var n = str.includes("world", 12);
+                     //false
+                </td>
+                <td>string.includes(searchvalue, start)</td>
+                <td>
+                    searchvalue --> Required. The string to search for<br>
+                    start --> Optional. Default 0. At which position to start the search</td>
+                <td>A Boolean. Returns true if the string contains the value, otherwise it returns false</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>localeCompare()</td>
+                <td>The localeCompare method returns a number indicating whether str1 comes before, after or is the same as str2 in sort order.<br>
+                        var str1 = "ab";<br>
+                        var str2 = "ab";<br>
+                        var n = str1.localeCompare(str2); //0<br>
+                        var str1 = "a";<br>
+                        var str2 = "b";<br>
+                        var n = str1.localeCompare(str2); //-1<br>
+                        var str1 = "b";<br>
+                        var str2 = "a";<br>
+                        var n = str1.localeCompare(str2); //1<br>
+
+                </td>
+                <td>string.localeCompare(compareString)</td>
+                <td --> Required. The string to compare with</td>
+                <td>A Number, indicating whether the reference string comes before, after or is the same as the compareString in sort order. Returns one of three values:<br>
+                        -1 if the reference string is sorted before the compareString<br>
+                        0 if the two strings are equal<br>
+                        1 if the reference string is sorted after the compareString</td>
+                <td>doesnot change</td>
+
+            </tr>
+            <tr>
+                <td>match()</td>
+                <td>
+                        The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.<br>
+                        Perform a global, case-insensitive search for "ain":<br>
+
+                        var str = "The rain in SPAIN stays mainly in the plain";<br> 
+                        var res = str.match(/ain/gi); //ain,AIN,ain,ain
+                </td>
+                <td>string.match(regexp)</td>
+                <td>
+                        regexp --> Required. The value to search for, as a regular expression.
+                        </td>
+                <td>An Array, containing the matches, one item for each match, or null if no match is found</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>repeat()</td>
+                <td>The repeat() method returns a new string with a specified number of copies of the string it was called on.<br>
+
+
+                    Make a new string by copying a string twice:<br>
+
+                        var str = "Hello world!";<br>
+                        str.repeat(3); //Hello world!Hello world!Hello world!
+
+
+                    </td>
+                <td>string.repeat(count)</td>
+                <td>
+                        count --> Required. The number of times the original string value should be repeated in the new string</td>
+                <td>A String, a new string containing copies of the original string</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>startsWith()</td>
+                <td>The startsWith() method determines whether a string begins with the characters of a specified string. <br>                       
+                        Note: The startsWith() method is case sensitive.<br>
+                    Check if a string starts with "Hello":<br>
+
+                        var str = "Hello world, welcome to the universe.";<br>
+                        var n = str.startsWith("Hello"); //true<br>
+                        Check if a string starts with "world", starting the search at position 6:<br>
+
+                        var str = "Hello world, welcome to the universe.";<br>
+                        var n = str.startsWith("world", 6); //true<br>
+                    </td>
+                <td>string.startsWith(searchvalue, start)</td>
+                <td>
+                        searchvalue --> Required. The string to search for<br>
+                        start --> Optional. Default 0. At which position to start the search</td>
+                <td>A Boolean. Returns true if the string starts with the value, otherwise it returns false</td>
+                <td>doesnot change</td>
+
+            </tr>
+            <tr>
+                <td>toString()</td>
+                <td>
+                        The toString() method returns the value of a String object.
+                        
+                        </td>
+                <td>string.toString()</td>
+                <td>None.</td>
+                <td>A String, representing the value of a string</td>
+                <td>doesnot change</td>
+
+            </tr>
+            <tr>
+                <td>valueOf()</td>
+                <td>The valueOf() method returns the primitive value of a String object.<br>
+                        Return the primitive value of a string object:<br>
+
+                        var str = "Hello World!";<br>
+                        var res = str.valueOf(); //Hello World!
+                </td>
+                <td>string.valueOf()</td>
+                <td>None</td>
+                <td>A String, representing the primitive value of a string</td>
+                <td>doesnot change</td>
+            </tr>
+        </table>
+        <h1 class="headding">ARRAY METHODS</h1>
+        <table>
+            <tr>
+                <th>METHOD</th>
+                <th>EXAMPLES</th>
+                <th>SYNTAX</th>
+                <th>INPUT VALUES / PARAMETERS</th>
+                <th>RETURNS</th>
+                <th>is its change original array</th>
+            </tr>
+            <tr>
+                <td>copyWithin() </td>
+                <td>The copyWithin() method copies array elements within the array, to and from specified positions.<br>
+                    Copy the first two array elements to the last two array elements:<br>
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.copyWithin(2, 0); //Banana,Orange,Banana,Orange<br>
+                        Copy the first two array elements to the third and fourth position:<br>
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];<br>
+                        fruits.copyWithin(2, 0, 2); //Banana,Orange,Banana,Orange,Kiwi,Papaya<br>
+                    </td>
+                <td>array.copyWithin(target, start, end)</td>
+                <td>
+                        target --> Required. The index position to copy the elements to<br>
+                        start --> Optional. The index position to start copying elements from  (default is 0)<br>
+                        end --> Optional. The index position to stop copying elements from (default is array.length)</td>
+                <td>An Array, the changed array</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>unshift()</td>
+                <td>The unshift() method adds new items to the beginning of an array, and returns the new length.<br>
+
+                        Note: This method changes the length of an array.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.unshift("Lemon","Pineapple"); //6<br>
+                        fruits; //["Lemon", "Pineapple", "Banana", "Orange", "Apple", "Mango"]
+                </td>
+                <td>array.unshift(item1, item2, ..., itemX)</td>
+                <td>
+                        item1, item2, ..., itemX --> Required. The item(s) to add to the beginning of the array</td>
+                <td>A Number, representing the new length of the array</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>fill()</td>
+                <td>The fill() method fills all the elements in an array with a static value.<br>
+
+                        It is possible to specify the index for starting and ending fill(). By default it changes the whole array.<br>
+                        Fill the last two array elements with a static value:<br>
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.fill("Kiwi", 2, 4); //Banana,Orange,Kiwi,Kiwi<br>
+                    </td>
+                <td>array.fill(value, start, end)</td>
+                <td>
+                        value --> Required. The value to fill the array with<br>
+                        start --> Optional. The index to start filling the array (default is 0)<br>
+                        end --> Optional. The index to stop filling the array (default is array.length)</td>
+                        
+                <td>An Array, the changed array</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>pop()</td>
+                <td>The pop() method removes the last element of an array, and returns that element.<br>
+
+                        Note: This method changes the length of an array.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.pop(); //"Mango";<br>
+                        fruits; //["Banana", "Orange", "Apple"]<br>
+                    </td>
+                <td>array.pop()</td>
+                <td>None</td>
+                <td>Any type*, representing the removed array item. *An array item can be a string, a number, an array, a boolean, or any other object types that are allowed in an array.</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>push()</td>
+                <td>The push() method adds new items to the end of an array, and returns the new length.<br>
+
+                        Note: The new item(s) will be added at the end of the array.<br>
+                        
+                        Note: This method changes the length of the array.<br>
+                    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.push("Kiwi"); //5<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.push("Kiwi", "Lemon", "Pineapple"); //7<br>
+                    </td>
+                <td>array.push(item1, item2, ..., itemX)</td>
+                <td>
+                        item1, item2, ..., itemX --> Required. The item(s) to add to the array</td>
+                <td>A Number, representing the new length of the array</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>reverse()</td>
+                <td>The reverse() method reverses the order of the elements in an array.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.reverse(); //["Mango", "Apple", "Orange", "Banana"]<br>
+                        fruits; //["Mango", "Apple", "Orange", "Banana"]<br>
+                </td>
+                <td>array.reverse()</td>
+                <td>None</td>
+                <td>An Array, representing the array after it has been reversed</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>shift()</td>
+                <td>The shift() method removes the first item of an array.<br>
+
+                        Note: This method changes the length of the array.<br>
+                        
+                        Note: The return value of the shift method is the removed item.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.shift(); //"Banana"<br>
+                        fruits //["Orange", "Apple", "Mango"]<br>
+                        fruits.shift(); //"Orange"<br>
+                        fruits; //["Apple", "Mango"]<br>
+                </td>
+                <td>array.shift()</td>
+                <td>None</td>
+                <td>Any type*, representing the removed array item</td>
+                <td class="changed">changed</td>
+            </tr>
+            <tr>
+                <td>entries()</td>
+                <td>
+                    <!-- Create an Array Iterator object, with key/value pairs for each item in the fruit array:
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.entries(); -->
+                    </td>
+                <td>array.entries()</td>
+                <td>No parameters.</td>
+                <td>An Array Iterator object</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>every()</td>
+                <td>The every() method checks if all elements in an array pass a test (provided as a function).<br>
+
+                        The every() method executes the function once for each element present in the array:</td>
+                <td>array.every(function(currentValue, index, arr), thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value<br>
+                    </td>
+                <td>A Boolean. Returns true if all the elements in the array pass the test, otherwise it returns false</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>filter()</td>
+                <td>The filter() method creates an array filled with all array elements that pass a test (provided as a function).<br>
+
+                        Note: filter() does not execute the function for array elements without values.</td>
+                <td>array.filter(function(currentValue, index, arr), thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value
+                    </td>
+                <td>	An Array containing all the array elements that pass the test. If no elements pass the test it returns an empty array.</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>find()</td>
+                <td>The find() method returns the value of the first element in an array that pass a test (provided as a function).<br>
+
+                        The find() method executes the function once for each element present in the array:<br>
+                        find() does not execute the function for empty arrays.</td>
+                <td>array.find(function(currentValue, index, arr),thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value<br>
+                    </td>
+                <td>Returns the array element value if any of the elements in the array pass the test, otherwise it returns undefined</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>findIndex()</td>
+                <td>The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).<br>
+
+                        The findIndex() method executes the function once for each element present in the array:</td>
+                <td>array.findIndex(function(currentValue, index, arr), thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                    
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value</td>
+                <td>Returns the array element index if any of the elements in the array pass the test, otherwise it returns -1</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>forEach()</td>
+                <td>The forEach() method calls a provided function once for each element in an array, in order.<br>
+
+                        Note: forEach() does not execute the function for array elements without values.</td>
+                <td>array.forEach(function(currentValue, index, arr), thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                    
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value</td>
+                <td>	undefined</td>
+                <td>doesnot changed</td>
+            </tr>
+            <tr>
+                <td>from()</td>
+                <td>The Array.from() method returns an Array object from any object with a length property or an iterable object.<br>
+                        Array.from("ABCDEFG"); //A,B,C,D,E,F,G
+
+
+                </td>
+                <td>Array.from(object, mapFunction, thisValue)</td>
+                <td>
+                        object --> Required. The object to convert to an array<br>
+                        mapFunction --> Optional. A map function to call on each item of the array<br>
+                        thisValue --> Optional. A value to use as this when executing the mapFunction</td>
+                <td>An Array object</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>includes()</td>
+                <td>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                       fruits.includes("Mango"); //true
+                </td>
+                <td>array.includes(element, start)</td>
+                <td>
+                        element --> Required. The element to search for<br>
+                        start --> Optional. Default 0. At which position in the array to start the search</td>
+                <td>A Boolean</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>indexOf()</td>
+                <td>
+                        The indexOf() method searches the array for the specified item, and returns its position.<br>
+                        The search will start at the specified position, or at the beginning if no start position is specified, and end the search at the end of the array.<br>
+                        Returns -1 if the item is not found.<br>
+
+                        If the item is present more than once, the indexOf method returns the position of the first occurence.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango", "Banana", "Orange", "Apple"];<br>
+                        fruits.indexOf("Apple", 4); //6
+                </td>
+                <td>array.indexOf(item, start)</td>
+                <td>
+                        item --> Required. The item to search for<br>
+                        start --> Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the end.</td>
+                <td>A Number, representing the position of the specified item, otherwise -1</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>isArray()</td>
+                <td>The isArray() method determines whether an object is an array.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        Array.isArray(fruits); //true
+                </td>
+                <td>Array.isArray(obj)</td>
+                <td>
+                        obj --> Required. The object to be tested
+                        </td>
+                <td>A Boolean. Returns true if the object is an array, otherwise it returns false</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>join() </td>
+                <td>
+                        The join() method joins the elements of an array into a string, and returns the string.<br>
+
+                        The elements will be separated by a specified separator. The default separator is comma (,).<br>
+                        
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.join("*");  //Banana*Orange*Apple*Mango  <br>
+                </td>
+                <td>array.join(separator)</td>
+                <td>
+                        separator --> Optional. The separator to be used. If omitted, the elements are separated with a comma</td>
+                <td>A String, representing the array values, separated by the specified separator</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>keys()</td>
+                <td>The keys() method returns an Array Iterator object with the keys of an array.<br>
+                        Create an Array Iterator object, with keys for each item in the fruit array:<br>
+
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        var x = fruits.keys();<br>
+                        x.next().value; //0<br>
+                        x.next().value; //1<br>
+                        x.next().value; //2<br>
+                        x.next().value; //3<br>
+                        x.next().value; //undefined
+                        
+                </td>
+                <td>array.keys()</td>
+                <td>No parameters.</td>
+                <td>An Array Iterator object</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>lastIndexOf()</td>
+                <td>
+                        The lastIndexOf() method searches the array for the specified item, and returns its position.<br>
+
+                        The search will start at the specified position, or at the end if no start position is specified, and end the search at the beginning of the array.<br>
+                        
+                        Returns -1 if the item is not found.<br>
+                        
+                        If the item to search for is present more than once, the lastIndexOf method returns the position of the last occurence.<br>
+                        var fruits = ["Banana", "Orange", "Apple","Apple", "Mango"];<br>
+                        fruits.lastIndexOf("Apple"); //3
+                </td>
+                <td>array.lastIndexOf(item, start)</td>
+                <td>
+                        item --> Required. The item to search for<br>
+                        start --> Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the beginning</td>
+                <td>A Number, representing the position of the specified item, otherwise -1</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>map()</td>
+                <td>The map() method creates a new array with the results of calling a function for every array element.<br>
+
+                        The map() method calls the provided function once for each element in an array, in order.<br>
+                        
+                        Note: map() does not execute the function for array elements without values.<br>
+                        var numbers = [4, 9, 16, 25];<br>
+
+                        numbers.map(Math.sqrt);
+                         //2, 3, 4, 5
+                    </td>
+                <td>array.map(function(currentValue, index, arr), thisValue)</td>
+                <td>
+                        currentValue --> Required. The value of the current element<br>
+                        index --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                    
+                        thisValue --> Optional. A value to be passed to the function to be used as its "this" value.<br>
+                        If this parameter is empty, the value "undefined" will be passed as its "this" value</td>
+                <td>An Array containing the results of calling the provided function for each element in the original array.</td>
+                <td>does not change<td>
+            </tr>
+            <tr>
+                <td>reduce()</td>
+                <td>The reduce() method reduces the array to a single value.<br>
+
+                        The reduce() method executes a provided function for each value of the array (from left-to-right).<br>
+                        
+                        The return value of the function is stored in an accumulator (result/total).<br>
+                        
+                        Note: reduce() does not execute the function for array elements without values.<br>
+                        var numbers = [65, 44, 12, 4];<br>
+
+                        function getSum(total, num) {<br>
+                        return total + num;<br>
+                        }<br>
+                        numbers.reduce(getSum);
+                         //125
+                    </td>
+                <td>array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</td>
+                <td>
+                        total --> Required. The initialValue, or the previously returned value of the function<br>
+                        currentValue --> Required. The value of the current element<br>
+                        currentIndex --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                     --> Optional. A value to be passed to the function as the initial value<br>
+                        var numbers = [65, 44, 12, 4];<br>
+
+                        function getSum(total, num) {<br>
+                        return total + num;<br>
+                        }<br>
+                        numbers.reduceRight(getSum);<br>
+
+                    </td>
+                <td>Returns the accumulated result from the last call of the callback function</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>reduceRight()</td>
+                <td>
+                        The reduceRight() method reduces the array to a single value.<br>
+
+                        The reduceRight() method executes a provided function for each value of the array (from right-to-left).<br>
+                        
+                        The return value of the function is stored in an accumulator (result/total).<br>
+                        
+                        Note: reduceRight() does not execute the function for array elements without values.<br>
+                </td>
+                <td>array.reduceRight(function(total, currentValue, currentIndex, arr), initialValue)</td>
+                <td>
+                        total --> Required. The initialValue, or the previously returned value of the function<br>
+                        currentValue --> Required. The value of the current element<br>
+                        currentIndex --> Optional. The array index of the current element<br>
+                        arr --> Optional. The array object the current element belongs to<br>
+                    
+initialValue --> Optional. A value to be passed to the function as the initial value</td>
+                <td>Returns the accumulated result from the last call of the callback function</td>
+                <td>doesnot change</td>
+            </tr>
+            <tr>
+                <td>slice()</td>
+                <td>The slice() method returns the selected elements in an array, as a new array object.<br>
+
+                        The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.<br>
+                        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br>
+                        fruits.slice(1, 3); //["Orange", "Lemon"]<br>
+                        fruits; //["Banana", "Orange", "Lemon", "Apple", "Mango"];<br>
+                        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br>
+                        fruits.slice(-3, -1); //["Lemon", "Apple"]<br>
+                        fruits; //["Banana", "Orange", "Lemon", "Apple", "Mango"]<br>
+                </td>
+                <td>array.slice(start, end)</td>
+                <td>
+                        start --> Optional. An integer that specifies where to start the selection (The first element has an index of 0). Use negative numbers to select from the end of an array. If omitted, it acts like "0"<br>
+                        end --> Optional. An integer that specifies where to end the selection. If omitted, all elements from the start position and to the end of the array will be selected. Use negative numbers to select from the end of an array</td>
+                <td>A new Array, containing the selected elements</td>
+                <td>does not change.</td>
+            </tr>
+            <tr>
+                <td>toString()</td>
+                <td>The toString() method converts an array into a String and returns the result.<br>
+
+                        Note: The returned string will separate the elements in the array with commas.<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.toString(); //"Banana,Orange,Apple,Mango";<br>
+                        fruits; //["Banana", "Orange", "Apple", "Mango"]<br>
+                </td>
+                <td>array.toString()</td>
+                <td>None</td>
+                <td>A String, representing the values of the array, separated by a comma</td>
+                <td>does not change</td>
+            </tr>
+            <tr>
+                <td>valueOf()</td>
+                <td>
+                        The valueOf() method returns the array.<br>
+                        
+                        This method is the default method of the array object. Array.valueOf() will return the same as Array <br>
+                    fruits.valueOf() will return the same as fruits<br>
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.valueOf(); //["Banana", "Orange", "Apple", "Mango"]<br>
+                </td>
+                <td>array.valueOf()</td>
+                <td>None</td>
+                <td>An Array. The valueOf() method returns itself</td>
+                <td>does not change</td>
+            </tr>
+        </table>
+        <h1 class="headding">Number Methods</h1>
+        <table>
+            <tr>
+                <td>toString()</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    text-transform: capitalize;
+}
+.header{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.head{
+    width: 800px;
+    margin: 0 auto;
+}
+.input-boxes{
+    /* margin-top: 30px; */
+}
+.Add-student{
+    width: 200px;
+    padding: 10px;
+    background: greenyellow;
+    cursor: pointer;
+}
+
+.list{
+    margin: 30px 0;
+    border: 1px solid;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.list-headers , .list-values{
+    width: 157px;
+    display: inline-block;
+    text-align: center;
+}
+.list-elements{
+    padding: 10px 0;
+    border: 1px solid;
+    margin: 4px;
+    position: relative;
+}
+.SNo{
+    width: 50px;
+    text-align: center;
+}
+input.edit{
+    width: 160px;
+    padding: 7px 0;
+    margin: 0 2px;
+    text-align: center;
+    border: 0;
+}
+.first-Name , .last-Name ,.Email ,.phone-number{
+    padding: 8px 0;
+}
+.Add-student{
+    width: 200px;
+    padding: 10px;
+    background: greenyellow;
+    cursor: pointer;
+}
+.Delete{
+    padding: 10px;
+    background: red;
+    border: 1px solid;
+    cursor: pointer;
+    color: white;
+}
+.Edit{
+    cursor: pointer;
+    padding: 10px;
+    background: greenyellow;
+    border: 1px solid;
+    margin: 2px;
+    text-align: center;
+    width: 54px;
+    display: inline-block;
+    color: white;
+
+}
+.changable{
+    width: 160px;
+    padding: 7px 0;
+    margin: 0 2px;
+    text-align: center;
+    border: 0;
+    background: white;
+}

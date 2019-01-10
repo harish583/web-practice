@@ -1,0 +1,76 @@
+/* body{
+    color: red;
+} */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.inputtext{
+    width: 90%;
+    /* padding: 8px; */
+    border: 0;
+    /* outline: 0; */
+    font-size: 20px;
+}
+.input-holder{
+    border: 1px solid;
+}
+.input-container{
+    padding: 10px;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+    border:1px solid;
+    display: inline-block;
+    width: 5%;
+    cursor: pointer;
+}
+.checked .checkMark{
+    border: 1px solid black;
+    width: 16px;
+    display: block;
+    height: 8px;
+    /* border: 2px solid black; */
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+.text{
+    text-align: center;
+    display: inline-block;
+    width: 88%
+}
+.cross{
+    display: inline-block;
+    width: 5%;
+    cursor: pointer;
+    background: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.list{
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-bottom: 0;
+}
+.list:last-child{
+    border-bottom: 1px solid black;
+}
+
+.list-container{
+    padding:0;
+    margin: 0;
+    margin-top: 30px;
+}

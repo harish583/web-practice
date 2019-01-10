@@ -1,0 +1,17 @@
+
+.headding{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: 1px solid black;
+    line-height: 2;
+}
+.changed{
+    color: red;
+    font-size: 30px;
+    background: yellow;
+}

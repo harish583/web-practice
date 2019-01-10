@@ -191,29 +191,29 @@ function fordeleteStudent(){
     }
 }
 
-function afterEditingSubmitdata(){
-    var firstName = document.querySelector(".firstName-editField");
-    var lastName = document.querySelector(".lastName-editField");
-    var Email = document.querySelector(".email-editField");
-    var phoneNumber = document.querySelector(".phoneNumber-editField");
-    var firstNameValue = firstName.value;
-    var LastNameValue = lastName.value;
-    var EmailValue = Email.value;
-    var phoneNumberValue = phoneNumber.value;
-    if (firstNameValue && LastNameValue && EmailValue && phoneNumberValue) {
-        var stu = {
-            firstName: firstNameValue,
-            lastName:LastNameValue,
-            Email:EmailValue,
-            phoneNumber:phoneNumberValue
-        };
-    } 
-    else {
-        alert('Please enter all fields');
-    }
-    var  popup = document.querySelector(".student-input-wraper");
-    popup.style.display = "none";
-}
+// function afterEditingSubmitdata(){
+//     var firstName = document.querySelector(".firstName-editField");
+//     var lastName = document.querySelector(".lastName-editField");
+//     var Email = document.querySelector(".email-editField");
+//     var phoneNumber = document.querySelector(".phoneNumber-editField");
+//     var firstNameValue = firstName.value;
+//     var LastNameValue = lastName.value;
+//     var EmailValue = Email.value;
+//     var phoneNumberValue = phoneNumber.value;
+//     if (firstNameValue && LastNameValue && EmailValue && phoneNumberValue) {
+//         var stu = {
+//             firstName: firstNameValue,
+//             lastName:LastNameValue,
+//             Email:EmailValue,
+//             phoneNumber:phoneNumberValue
+//         };
+//     } 
+//     else {
+//         alert('Please enter all fields');
+//     }
+//     var  popup = document.querySelector(".student-input-wraper");
+//     popup.style.display = "none";
+// }
  function closeEditingWraper(){
     var popupOfeditSubmit = document.querySelector(".edit-details-wraper");
     popupOfeditSubmit.style.display = "none"; 

@@ -1,0 +1,158 @@
+body{
+    /* color: red; */
+    text-transform: capitalize;
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+.header{
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.Students-wraper{
+    width: 900px;
+    margin:  0 auto;
+}
+.Students-heading-wraper{
+    border: 2px solid;
+    display: block;
+}
+.students-heading-text{
+    padding: 10px;
+    min-width: 70px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    /* font-size: 20px; */
+    text-transform: uppercase;
+
+}
+.Add-students{
+    width: 150px;
+    padding: 10px;
+    display: block;
+    background: green;
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.student-info{
+    /* padding: 10px; */
+
+    border: 2px solid;
+    border-top: 0;
+}
+.inline{
+    padding: 10px;
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.View-details , .Edit-button , .Delete-button{
+    min-width: 30px;
+    margin: 0 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.View-details{
+    background: brown;
+}
+.Edit-button{
+    background: violet;
+}
+.Delete-button{
+    background: red;
+
+}
+
+.profile{
+    min-width: 51px;
+    /* min-height: 20px; */
+    border: 1px solid;
+    border-radius: 50%;
+    background: aquamarine;
+    margin: 0 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+.popup-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .8;
+    display: none;
+}
+.student-input-form{
+    position: relative;
+    background: white;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    top: -250px;
+    display: none;
+    margin-top: 70px;
+
+}
+.input-header{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.closing-mark{
+    position: absolute;
+    font-size: 25px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+input{
+    padding: 7px;
+    width: 100%;
+}
+.submit-button , .edit-submit-button{
+    width: 150px;
+    text-align: center;
+    background: green;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px; 
+}
+.headers{
+    font-size: 20px;
+    font-weight: bold;
+}
+.list{
+    padding: 20px;
+}
+.lists{
+    padding: 10px 0;
+    font-weight: bold;
+}
+.DeleteConform{
+    padding: 20px 0;
+
+}
+.verification{
+    background: red;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
