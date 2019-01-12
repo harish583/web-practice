@@ -1,0 +1,29 @@
+body{
+    color: red;
+}
+.border{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+}
+.Time{
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    
+
+}
+.times{
+    position: absolute;
+    top: calc(50% - 20px);
+    font-size: 30px;
+    left: calc(50% - 45px);
+}
+.time{
+    position: absolute;
+    top: calc(50% - 47px);
+    font-size: 30px;
+    left: calc(50% - 57px);
+}
