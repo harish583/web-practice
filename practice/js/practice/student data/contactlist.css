@@ -1,0 +1,141 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+.holder{
+    width: 700px;
+    margin: 0 auto;
+}
+.name-container,.names-header{
+    width: 100%;
+    border: 1px solid;
+    padding: 5px;
+    border-top: 0;
+
+}
+.names-header{
+
+    border: 1px solid;
+}
+/* .name-container:last-child{
+    border-top: 1px solid;
+} */
+.names-holder{
+    background: #f1f1f1;
+}
+h1{
+    text-align: center;
+}
+.fname,.lname{
+    width: 38%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.name-edit-button{
+    min-width: 10%;
+    display: inline-block;
+    text-align: center;
+    background: darkcyan;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+}
+.name-delete-button{
+    min-width: 10%;
+    display: inline-block;
+    text-align: center;
+    background: red;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.add-contact-button{
+    background: green;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.FNAME,.LNAME{
+    width: 40%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background: antiquewhite;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    padding: 10px;  
+    margin-bottom: 5px;
+
+}
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .5;
+    background: black;
+}
+.popup-container{
+    width: 700px;
+    background: white;
+    position: fixed;
+    top: 150px;
+    padding: 10px;
+    /* overflow: auto; */
+    content: '';
+    display: inline-block;
+    clear: both;
+
+}
+.closing{
+    width: 40px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    font-size: 30px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.addcontact-submit,.editcontact-submit{
+    min-width: 100px;
+    padding: 10px;
+    color: white;
+    background: green;
+    border-radius: 20px;
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+}
+.cancel,.delete{
+    padding: 10px;
+    min-width: 100px;
+    background: green;
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+    color: white;
+}
+.ADD-CONTACT-Holder,.EDIT-CONTACT-Holder,.DELETE-CONTACT-Holder{
+    display: none;
+}

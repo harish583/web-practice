@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "qwert",
+      "fname": "qwert",
+      "lname": "asdfg",
+      "Phno": "2345",
+      "address": "4567"
+    },
+    {
+      "id": "asd",
+      "fname": "asd",
+      "lname": "a",
+      "Phno": "34",
+      "address": "456"
+    },
+    {
+      "id": "qweqwer",
+      "fname": "qweqwer",
+      "lname": "123",
+      "Phno": "123",
+      "address": "456"
+    },
+    {
+      "id": "qwe",
+      "fname": "qwe",
+      "lname": "12",
+      "Phno": "23",
+      "address": "32"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
