@@ -1,0 +1,95 @@
+
+*{
+    box-sizing: border-box;
+}
+.holder{
+    width: 700px;
+    margin: 0 auto;
+}
+.all-quations{
+    background: #f1f1f1;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.forNextQuation{
+    min-width:100px;
+    background: yellow;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.quation{
+    /* background: #aaa; */
+    /* overflow: auto; */
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+
+}
+.all-quations-answers-holder{
+    width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    background: #f1f1f1;
+    padding: 10px;
+    /* height: 100%; */
+    display: none;
+}
+/* .popup{
+    top: 0; 
+    background: #f1f1f1;
+    position: fixed;
+
+} */
+.worngOption{
+    color: red;
+    display: block;
+    padding: 20px 0;
+}
+.correctOption{
+    color: blue;
+    display: block;
+    padding: 20px 0;
+}
+.abc{
+    color: cadetblue;
+}
+.correctOption::after{
+    content: url(./check-mark-green.png);
+    display: -webkit-inline-box;
+    width: 20px;
+    transform: scale(.07);
+    height: 10px;
+    position: relative;
+    top: -16px; 
+}
+.worngOption::after{
+    content: url(./x-transparent-checkmark.png);
+    display: -webkit-inline-box;
+    width: 20px;
+    transform: scale(.07);
+    height: 10px;
+    position: relative;
+    top: -10px; 
+}
+img{
+    width: 30px;
+}
+label{
+    position: relative;
+    white-space: normal;
+}
+.xyz{
+    padding: 20px 0;
+    display: block;
+    white-space: normal;
+}
+input{
+    cursor: pointer;
+}

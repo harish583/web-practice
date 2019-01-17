@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "question1",
+      "questions": "question1",
+      "options": [
+        "abc defg hijkl mnop qrst uvwx yz abc defg hijkl mnop qrst uvwx yz abc defg hijkl mnop qrst uvwx yz abc defg hijkl mnop qrst uvwx yz abc defg hijkl mnop qrst uvwx yz abc defg hijkl mnop qrst uvwx yz",
+        "option2",
+        "option3",
+        "option4"
+      ]
+    },
+    {
+      "id": "question2",
+      "questions": "question2_updated",
+      "options": [
+        "option1",
+        "option2",
+        "option3",
+        "option4"
+      ]
+    },
+    {
+      "id": "question3",
+      "questions": "question3",
+      "options": [
+        "option1",
+        "option2",
+        "option3",
+        "option4"
+      ]
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+
+
+// https://getbootstrap.com/docs/4.2/components/modal/#modal-components
+// https://getbootstrap.com/docs/4.2/components/forms/
+// https://getbootstrap.com/docs/4.2/components/list-group/
