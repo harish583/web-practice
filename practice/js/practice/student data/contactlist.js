@@ -45,6 +45,7 @@ function loadDoc() {
         }
         // quats.push(Alloption);
         renderingHTML(contact);
+        console.log("load "+contact);
       }
     };
     xhttp.open("GET", "http://localhost:3000/contacts", true);
@@ -57,10 +58,12 @@ loadDoc();
 function create() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState == 4) {
          a =this.responseText;
         a=JSON.parse(a);
         // console.log('a....', a)
+        //renderingHTML()
+        loadDoc();
       }
     };
     xhttp.open("POST", "http://localhost:3000/contacts", true);
@@ -78,6 +81,8 @@ function create() {
         
     })
     xhttp.send(data);
+    console.log(data);
+    //loadDoc();
   }
 
 
@@ -91,25 +96,21 @@ function create() {
         //document.getElementById("demo").innerHTML =
          a =this.responseText;
         a=JSON.parse(a);
-        console.log('a....', a)
+        console.log('a....', a);
+        renderingHTML(contacts);
+        loadDoc();
       }
     };
-    var id = encodeURIComponent(contacts[i].fname.replace(/ /g,''));
+    var id = encodeURIComponent(contacts[i].id);
     xhttp.open("DELETE", "http://localhost:3000/contacts/" + id, true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     // var fedit = document.querySelectorAll(".fname");
     // var ledit = document.querySelectorAll(".lname");
     // var phnoedit = document.querySelectorAll(".Ph-Number-edit");
     // var addredit = document.querySelectorAll(".Full-address-edit");
-    var data = JSON.stringify({
-        id: contacts[i].fname.replace(/ /g,''),
-        "fname":contacts[i].fname,
-        "lname":contacts[i].lname,
-        "Phno":contacts[i].Phno,
-        "address":contacts[i].address
-        
-    })
-    xhttp.send(data);
+   
+    xhttp.send();
+    //loadDoc();
   }
 
 
@@ -122,18 +123,19 @@ function create() {
         //document.getElementById("demo").innerHTML =
          a =this.responseText;
         a=JSON.parse(a);
-        console.log('a....', a)
+        console.log('a....', a);
+        loadDoc();
       }
     };
     var fedit = document.querySelector(".F-NAME-edit");
     var ledit = document.querySelector(".L-NAME-edit");
     var phnoedit = document.querySelector(".Ph-Number-edit");
     var addredit = document.querySelector(".Full-address-edit");
-    var id = encodeURIComponent(contacts[i].fname.replace(/ /g,''));
+    var id = encodeURIComponent(contacts[i].id.replace(/ /g,''));
     xhttp.open("PUT", "http://localhost:3000/contacts/"+id , true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     var data = JSON.stringify({
-        id: fedit.value.replace(/ /g,''),
+        id: contacts[i].fname.replace(/ /g,''),
         "fname":fedit.value,
         "lname":ledit.value,
         "Phno":phnoedit.value,
@@ -143,6 +145,7 @@ function create() {
     console.log(data);
     var container = document.querySelector(".EDIT-CONTACT-Holder");
     container.style.display="none";
+    // loadDoc();
   }
 
 
@@ -150,6 +153,7 @@ function create() {
 // var holder = document.querySelector(".names-holder");
 //       holder.innerHTML ='';
 function renderingHTML(contacts){
+    console.log("rendering"+contacts);
     var oldContacts = '';
     for(var i=0;i<contacts.length;i++){
         oldContacts = oldContacts+'<div class="name-container" data-id="'+i+'">'+
