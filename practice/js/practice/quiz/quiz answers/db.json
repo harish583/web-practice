@@ -43,14 +43,20 @@
         "option3",
         "option4"
       ]
+    },
+    {
+      "id": "hgh",
+      "questions": "hgh",
+      "options": [
+        "vhvgh",
+        "vvhgvhg",
+        "hvhgvh",
+        "hgvhv"
+      ],
+      "correct": "3"
     }
   ],
   "profile": {
     "name": "typicode"
   }
 }
-
-
-// https://getbootstrap.com/docs/4.2/components/modal/#modal-components
-// https://getbootstrap.com/docs/4.2/components/forms/
-// https://getbootstrap.com/docs/4.2/components/list-group/

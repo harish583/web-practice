@@ -27,7 +27,67 @@
 // ]
 
 
+function renderingHTML(contacts){
+    console.log("rendering"+contacts);
+    var html = '';
+    for(var i=0;i<contacts.length;i++){
+        html = html+'<div class="name-container" data-id="'+i+'">'+
+            '<span class="fname" data-id="'+i+'">'+contacts[i].fname+'</span>'+
+            '<span class="lname" data-id="'+i+'">'+contacts[i].lname+'</span>'+
+            '<span class="name-edit-button" data-id="'+i+'">EDIT</span>'+
+            '<span class="name-delete-button" data-id="'+i+'">DELETE</span>'+
+        '</div>';
+    }
+    var holder = document.querySelector(".names-holder");
+    holder.innerHTML=html;
+    var edit = document.querySelectorAll(".name-edit-button");
+    var delet = document.querySelectorAll(".name-delete-button");
+    for(var i=0;i<edit.length;i++){
+        edit[i].addEventListener("click",function(event){
+            editingHolder(event, contacts)
+        });
+        delet[i].addEventListener("click",function(){
+            deletingHolder(contacts)
+        });
+    }
+    var fnam = document.querySelector(".FNAME");
+    fnam.addEventListener("click",function(){
+        console.log("fname clicked");
+        sortByFName(contacts)
+    });
+    var lnam = document.querySelector(".LNAME");
+    lnam.addEventListener("click",function(){
+        console.log("lname clicked");
+        sortByLName(contacts)
+    });
+}
 
+
+function editingHolder(event, contacts){
+    var id = event.currentTarget.dataset.id;
+    var holder = '<div class="popup"></div>'+
+    '<div class="popup-container">'+
+        '<h1>Edit contact details</h1>'+
+        '<div>'+
+            '<div class="closing">X</div>'+
+            '<input class="F-NAME-edit" type="text" placeholder="first name" value="'+contacts[id].fname+'">'+
+            '<input type="text" class="L-NAME-edit" placeholder="last name" value="'+contacts[id].lname+'">'+
+            '<input type="number" class="Ph-Number-edit" placeholder="phone number" value="'+contacts[id].Phno+'">'+
+            '<textarea cols="30" rows="10" placeholder="Full address"  class="Full-address-edit">'+contacts[id].address+'</textarea>'+
+            '<button class="editcontact-submit">SUBMIT</button>'+ 
+    '</div>';
+    var container = document.querySelector(".EDIT-CONTACT-Holder");
+    container.innerHTML = holder;
+    container.style.display="block";
+    var editsubmit = document.querySelector(".editcontact-submit");
+    editsubmit.addEventListener("click",function(){
+        update(contacts,id)
+    })
+    var closing = document.querySelectorAll(".closing");
+    for(var i=0;i<closing.length;i++){
+        closing[i].addEventListener("click",closingpopup);
+    }
+}
 
 
 function loadDoc() {
@@ -38,13 +98,12 @@ function loadDoc() {
         //document.getElementById("demo").innerHTML =
          a =this.responseText;
         a=JSON.parse(a);
-        var contact=[];
-        for(var i =0;i<a.length;i++){
-            contact.push(a[i]);
-            //  Alloption.push(a[i].options);
-        }
-        // quats.push(Alloption);
-        renderingHTML(contact);
+        // var contact=[];
+        // for(var i =0;i<a.length;i++){
+        //     contact.push(a[i]);
+        //     //  Alloption.push(a[i].options);
+        // }
+        renderingHTML(a);
         console.log("load "+contact);
       }
     };
@@ -131,7 +190,7 @@ function create() {
     var ledit = document.querySelector(".L-NAME-edit");
     var phnoedit = document.querySelector(".Ph-Number-edit");
     var addredit = document.querySelector(".Full-address-edit");
-    var id = encodeURIComponent(contacts[i].id.replace(/ /g,''));
+    var id = encodeURIComponent(contacts[i].id);
     xhttp.open("PUT", "http://localhost:3000/contacts/"+id , true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     var data = JSON.stringify({
@@ -152,42 +211,7 @@ function create() {
 // var oldContacts = '';
 // var holder = document.querySelector(".names-holder");
 //       holder.innerHTML ='';
-function renderingHTML(contacts){
-    console.log("rendering"+contacts);
-    var oldContacts = '';
-    for(var i=0;i<contacts.length;i++){
-        oldContacts = oldContacts+'<div class="name-container" data-id="'+i+'">'+
-            '<span class="fname" data-id="'+i+'">'+contacts[i].fname+'</span>'+
-            '<span class="lname" data-id="'+i+'">'+contacts[i].lname+'</span>'+
-            '<span class="name-edit-button" data-id="'+i+'">EDIT</span>'+
-            '<span class="name-delete-button" data-id="'+i+'">DELETE</span>'+
-        '</div>';
-    }
-    var holder = document.querySelector(".names-holder");
-    holder.innerHTML=oldContacts;
-    var edit = document.querySelectorAll(".name-edit-button");
-     for(var i=0;i<edit.length;i++){
-         edit[i].addEventListener("click",function(){
-         editingHolder(contacts)
-        });
-     }
-     var delet = document.querySelectorAll(".name-delete-button");
-     for(var i=0;i<delet.length;i++){
-        delet[i].addEventListener("click",function(){
-         deletingHolder(contacts)
-        });
-     }
-     var fnam = document.querySelector(".FNAME");
-    fnam.addEventListener("click",function(){
-        console.log("fname clicked");
-        sortByFName(contacts)
-       });
-       var lnam = document.querySelector(".LNAME");
-    lnam.addEventListener("click",function(){
-        console.log("lname clicked");
-        sortByLName(contacts)
-       });
-}
+
 
 //renderingHTML();
 function AddContact(){
@@ -216,31 +240,6 @@ function AddContact(){
     submiting.addEventListener("click",addTolist);
 }
 
-function editingHolder(contacts){
-    var id = event.currentTarget.dataset.id;
-    var holder = '<div class="popup"></div>'+
-    '<div class="popup-container">'+
-        '<h1>Edit contact details</h1>'+
-        '<div>'+
-            '<div class="closing">X</div>'+
-            '<input class="F-NAME-edit" type="text" placeholder="first name" value="'+contacts[id].fname+'">'+
-            '<input type="text" class="L-NAME-edit" placeholder="last name" value="'+contacts[id].lname+'">'+
-            '<input type="number" class="Ph-Number-edit" placeholder="phone number" value="'+contacts[id].Phno+'">'+
-            '<textarea cols="30" rows="10" placeholder="Full address"  class="Full-address-edit">'+contacts[id].address+'</textarea>'+
-            '<button class="editcontact-submit">SUBMIT</button>'+ 
-    '</div>';
-    var container = document.querySelector(".EDIT-CONTACT-Holder");
-    container.innerHTML = holder;
-    container.style.display="block";
-    var editsubmit = document.querySelector(".editcontact-submit");
-    editsubmit.addEventListener("click",function(){
-        update(contacts,id)
-    })
-    var closing = document.querySelectorAll(".closing");
-    for(var i=0;i<closing.length;i++){
-        closing[i].addEventListener("click",closingpopup);
-    }
-}
 
 function deletingHolder(contacts){
     var id = event.currentTarget.dataset.id;
