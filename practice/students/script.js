@@ -1,3 +1,4 @@
+
 function getActionHtml() {
     return `<div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -123,8 +124,7 @@ function bindAddStudentEvent() {
 }
 function init() {
     fetchStudentsAndRender();
-    bindAddStudentEvent();
-    // 
+    bindAddStudentEvent(); 
 }
 
 function openStudentDetails(student) {

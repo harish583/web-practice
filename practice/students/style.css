@@ -1,0 +1,18 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+.students-table {
+    margin-top: 20px;
+}
+#empty-students {
+    display: none;
+}
+.ok-from-button {
+    min-width: 100px;
+}
+.student-details-row {
+    margin-bottom: 20px;
+}

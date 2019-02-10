@@ -1,6 +1,6 @@
 
 
-// accordian
+// // accordian
 function subcontent(event){
     var i = event.currentTarget.dataset.id;
     var sublist = document.querySelectorAll(".sub-list");
@@ -25,7 +25,7 @@ for(var i=0;i<closing.length;i++){
 }
 
 
-// tab content horizontally
+// // tab content horizontally
 function linkHolder(){
     var a = event.currentTarget.dataset.id;
     var content = document.querySelector('.link-content-holder');
@@ -44,7 +44,7 @@ for(var i=0;i<links.length;i++){
 } 
 
 
-//tabs vertically
+// //tabs vertically
 function verticalContent(){
     var a = event.currentTarget.dataset.id;
     var verticalLinks = document.querySelectorAll(".verticat-link");
@@ -69,15 +69,15 @@ for(var i=0;i<verticalLinks.length;i++){
 
 
 
-//search content
+// //search content
 
-listingElemnts=["abc","hello","xyz","lmn","dfg"]
+listingElemnts=["abc","hello","xyz","lmn","dfg","abxy"]
 
 function rendering(listingElemnts){
     var html=
     '<div class="search"></div>'+
     '<div class="search-history">';
-    var elemts='';
+    var elemts=''; 
     for(var i=0;i<listingElemnts.length;i++){
      elemts = elemts+ '<div class="searchBar">'+listingElemnts[i]+'</div>';
     }
@@ -87,23 +87,93 @@ function rendering(listingElemnts){
 }
 rendering(listingElemnts);
 var x='';
-var listingElemnts=[];
 function history(){
 
-    // document.querySelector(".search-history").innerHTML ='';
+    var listingElemnt=[];
     var searchHolder = document.querySelector(".text-field");
     var value = searchHolder.value;
     var content = document.querySelectorAll(".searchBar");
-    for(var i=0;i<content.length;i++){
-        if(content[i].innerHTML.includes(value)){
-            //console.log("abc contains"+content[i].innerHTML);
-            listingElemnts.push(content[i].innerHTML);
+    console.log(content.length);
+    for(let i=0;i<listingElemnts.length;i++){
+        if(listingElemnts[i].includes(value)){
+            listingElemnt.push(listingElemnts[i]);
         }
-       // console.log(searchHolder.value)
+        // if(listingElemnts[i].indexOf(value)>=0){
+        //     listingElemnt.push(listingElemnts[i]);
+        // }
     }
-    // document.querySelector(".search").innerHTML =Elements;
-    // document.querySelector(".search-history").innerHTML ='';
-    rendering(listingElemnts);
+    rendering(listingElemnt);
 }
 var searchHolder = document.querySelector(".text-field");
-searchHolder.addEventListener("keypress",history);
+// searchHolder.addEventListener("change",history);
+// searchHolder.addEventListener("keydown",history);
+searchHolder.addEventListener("keyup",history);
+
+
+
+// // navbar animation
+
+function navvisible(){
+    var content = document.querySelector(".nav-content-holder");
+    content.style.width="300px";
+    document.querySelector(".animated-slide").style.marginLeft ="300px";
+
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    // var lines = document.querySelector(".lines-holder");
+    // lines.style.width="0px";
+    
+}
+function navClose(){
+    var content = document.querySelector(".nav-content-holder");
+    content.style.width="0px";
+    document.body.style.backgroundColor = "white";
+    // var lines = document.querySelector(".lines-holder");
+    document.querySelector(".animated-slide").style.marginLeft ="0px";
+    // lines.style.width="100px";
+}
+
+var lines = document.querySelector(".lines-holder");
+lines.addEventListener("click",navvisible);
+var closingNav =  document.querySelector(".closing-nav");
+closingNav.addEventListener("click",navClose);
+
+
+
+// // nav bar with display action
+function displaynavvisible(){
+    var content = document.querySelector(".display-nav-content-holder");
+    content.style.display="block";
+    var lines = document.querySelector(".display-lines-holder");
+    lines.style.display="none";
+    
+}
+function displaynavClose(){
+    var content = document.querySelector(".display-nav-content-holder");
+    content.style.display="none";
+    var lines = document.querySelector(".display-lines-holder");
+    lines.style.display="block";
+}
+
+var lines = document.querySelector(".display-lines-holder");
+lines.addEventListener("click",displaynavvisible);
+var closingNav =  document.querySelector(".display-closing-nav");
+closingNav.addEventListener("click",displaynavClose);
+
+
+
+//Hoverable Sidenav Buttons
+
+
+
+
+//
+function clickingfunction(){
+    var clas = document.querySelector(".click-dropdown-list")
+    if(clas.classList.contains("activate")){
+        clas.classList.remove("activate");
+
+    }else{
+        clas.classList.add("activate");
+    }
+}
+document.querySelector(".click-dropdown").addEventListener("click",clickingfunction)
