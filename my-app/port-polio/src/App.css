@@ -1,0 +1,53 @@
+
+.resume-content{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.short-details{
+  width: 30%;
+  display: inline-block
+}
+.full-details{
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+  margin:0 0 0 50px;
+}
+.details{
+  line-height: 2;
+}
+i{
+  padding: 10px;
+}
+.skill{
+  padding: 10px;
+  background: #5B7ECF;
+  color: white;
+  border-radius: 10px;
+  width:100px;
+  text-align: center;
+  display: inline-block;
+  margin: 3px;
+}
+h2{
+  text-decoration: underline;
+  color: #5B7ECF; 
+}
+.place{
+  color: #5B7ECF;
+  float: right;
+}
+.language::before{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.intersts{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 3px;
+}
