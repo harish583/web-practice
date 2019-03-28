@@ -1,0 +1,72 @@
+
+.my-tasks .tab-bar-element{
+    width: 33.33%;
+    cursor: pointer;
+}
+.my-tasks img{
+    width: 100px;
+    height: 100px;
+}
+.tab-bar{
+    margin-top: 50px;
+    z-index: -1;
+}
+.quality-discription-header{
+    color: #656d74;
+    font-size: 13px;
+    overflow: auto;
+}
+.quality-discription .discription-holder img{
+    width: 60px;
+    height: 60px;
+}
+.discription .quality{
+    font-size: 11px;
+    color: #4f5459;
+    font-weight: 100;
+}
+.discription-values button{
+    width: 32px;
+    height: 32px;
+    color: #42d620;
+    border: 3px solid;
+    margin: 0 7px;
+    float: left;
+}
+.discription-holder .discription-values{
+    width: 42%;
+    top: 15px;
+    position: relative;
+
+}
+.discription .reason{
+    font-size: 13px;
+    color: #4f5459;
+    font-weight: bold;
+}
+.discription .explanation{
+    color: #b7bcc1;
+    font-size: 13px;
+}
+.discription{
+    width: 53%;
+}
+.discription-values .right-button{
+    color: #42d620;
+    border: 3px solid; 
+    border-width: 0 0 3px 3px;
+}
+.discription-values .worng{
+    color: red;
+}
+.quality-discription .discription-holder{
+    margin: 6px;
+    padding: 10px 0;
+}
+.discription-holder-container{
+    height: 178px;
+    overflow: auto;
+}
+.quality-discription{
+    padding: 10px;
+}

@@ -1,0 +1,47 @@
+
+.popupBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+}
+.popupContent{
+    width: 700px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    background: white;
+    min-height: 200px;
+    text-align: center;
+}
+.cross-mark{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 6px;
+    font-size: 24px;
+    color: #c1c1c1;
+    cursor: pointer;
+    z-index: 3;
+}
+.cross-mark:hover{
+    background: red;
+    color: white;
+}
+.closingButton{
+    cursor: pointer;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: #f1f1f1;
+    padding: 6px;
+    min-width: 100px;
+    z-index: 3;
+}
+.closingButton:hover{
+    background: #c1c1c1;
+    color: white;
+}

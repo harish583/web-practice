@@ -24,7 +24,11 @@ class App extends Component {
             </div>
             <div className="details">
               <i class="fab fa-github"></i>
-              <span><a>github.com/harish583</a></span>
+              <span><a href="https://github.com/harish583">github.com/harish583</a></span>
+            </div>
+            <div className="details">
+              <i class="fab fa-github"></i>
+              <span><a href="https://github.com/harish583/portfolio">github.com/harish583/portfolio</a></span>
             </div>
           </div>
           <div>
@@ -37,12 +41,12 @@ class App extends Component {
             <div className="skill">CORE JAVA</div>
             <div className="skill">AJAX</div>
             <div className="skill">React</div>
-            <div className="skill">JQuary</div>
+            <div className="skill">JQuery</div>
             <div className="skill">Fetch</div>
             <div className="skill">JSON</div>
           </div>
           <div>
-            <h2>LANGUAGES</h2>
+            <h2>Languages</h2>
             <hr/>
             <ul>
               <li className="language">English</li>
@@ -51,14 +55,15 @@ class App extends Component {
             </ul>
           </div>
           <div>
-            <h2>INTERESTS</h2>
+            <h2>Interests</h2>
             <hr />
+
+            <div className="intersts">Exploring Technologies</div>
             <div className="intersts">Browsing on Internet</div>
-            <div className="intersts">Playing Games</div>
           </div>
         </div>
         <div className="full-details">
-          <h2>EDUCATION</h2>
+          <h2>Education</h2>
           <hr />
           <div>
             <div>
@@ -72,7 +77,7 @@ class App extends Component {
               </div>
             </div>
             <div>
-              <h2>INTERMEDIATE</h2>
+              <h2>Intermediate</h2>
               <div>Shivani Junior College</div>
               <span>06/2011 – 03/2013</span>
               <i className="place">Hanumakonda</i>
@@ -89,10 +94,10 @@ class App extends Component {
             </div>
           </div>
           <div>
-            <h2>PROJECTS</h2>
+            <h2>Projects</h2>
             <ul>
-              <li>Student Management System</li>
-              <li>Create Quiz and answer the quiz</li>
+              <li><a href="https://harish583.github.io/web-practice/practice/js/local%20storage/localStorage.html">Student Management System</a></li>
+              <li><a href="https://harish583.github.io/web-practice/practice/js/carousel/index.html">Multi curosels</a></li>
               <li>
                 <div>Study of 500MW Generator protection (12/2015 – 12/2015)</div>
                 <i>Have done mini project at KTPS VI-STAGE , PALVANCHA</i>
@@ -104,7 +109,7 @@ class App extends Component {
             </ul>
           </div>
           <div>
-            <h2>EXTRA ACTIVITIES</h2>
+            <h2>Extra Activities</h2>
             <hr></hr>
             <ul>
               <li>Participated in my college events.</li>

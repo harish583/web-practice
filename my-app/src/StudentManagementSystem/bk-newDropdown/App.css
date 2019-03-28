@@ -1,0 +1,14 @@
+.Add-Student-Button{
+    padding: 10px;
+    border: 10px solid;
+    border-radius: 20px;
+    background: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+.App-holder{
+    width: 800px;
+    margin: 0 auto;
+}

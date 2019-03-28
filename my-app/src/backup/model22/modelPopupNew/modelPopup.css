@@ -1,0 +1,21 @@
+body{
+    color: red;
+}
+.popupBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+}
+.popupContent{
+    width: 700px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    background: white;
+    min-height: 200px;
+    text-align: center;
+}

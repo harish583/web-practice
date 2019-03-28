@@ -1,0 +1,169 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    /* color: #a1a1a1; */
+    font-family: Verdana,sans-serif;
+    position: relative;
+    line-height: 1.4;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+ .single-purpose-apps ,.micro-transformational-header ,.key-features ,.footer{
+    padding: 20px;
+}
+.home-holder{
+    background: #f1f1f1;
+}
+li.navbar-element-link{
+    list-style: none;
+    display: inline-block;
+    min-width:50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.navbar-element-link:hover{
+    color: aqua;
+}
+.spotCues-icon{
+    position: absolute;
+    left: 35px;
+    top: 45px;
+}
+.navbar-background{
+    float: right;
+}
+.nav-holder{
+    position: absolute;
+    right: 75px;
+    top: 69px;
+    color: white;
+    font-weight: bold;
+}
+.single-purpose-apps{
+}
+.contact{
+    padding: 10px;
+    background: blue;
+    /* border-radius: 10px; */
+}
+.home-content-image{
+    text-align: center;
+}
+.fa-sort-down{
+    position: relative;
+    left: 3px;
+    top: -2px;
+}
+.single-purpose-apps-header-name{
+    width: 500px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.single-purpose-apps-header-declaration{
+    width: 700px;
+    margin: 0 auto;
+}
+.devider{
+    width: 100%;
+}
+.side-by-side-icons{
+    display: inline-block;
+}
+.left-feature , .right-feature{
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+.side-by-side{
+    display: inline-block;
+    width: 297px;
+    position: absolute;
+}
+.micro-transformational-header-discription{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.micro-transformational-header-name , .key-features-header{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+.inline-approach{
+    display: inline-block;
+    width: 30%;
+}
+.key-features-header ,.footer-header , .micro-transformational-content {
+    text-align: center;
+}
+.contactus-button{
+    max-width: 200px;
+    margin: 0 auto;
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+    /* border-radius: 10px; */
+}
+.footer-links{
+    padding: 0;
+    margin: 0;
+}
+.footer-links li{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
+.left-feature-content , .right-feature-content{
+    padding: 35px 27px;
+}
+.left-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.right-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.spotCues{
+    padding: 0px 0 100px;
+}
+.footer-header{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.contactus-button{
+    margin-bottom: 50px;
+}
+.navbar-element-link .action-button{
+    width: 100%;
+    padding: 7px;
+    /* border: 1px solid; */
+    background: 0;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: -8px;
+}
+@media
+.navbar-element-link .dropdown{
+    position: relative;
+    min-width: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    top: 10px;
+    left: 10px;
+}

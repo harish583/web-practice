@@ -1,0 +1,63 @@
+.cart-history-button{
+    padding: 10px;
+    background: green;
+    width: 150px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: .5;
+}
+.popup-content{
+    min-height: 100px;
+    position: absolute;
+    width: 970px;
+    background: white;
+    margin: 0 auto;
+    left: 100px;
+    right: 100px;
+    top: 50px;
+    padding-top: 50px;
+}
+.cross-mark{
+    font-size: 25px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    cursor: pointer;
+}
+
+.empty-content{
+    text-align: center;
+    font-size: 30px;
+    line-height: 5;
+}
+.back-button{
+    width: 100px;
+    border: 1px solid;
+    border-radius: 0;
+    padding: 10px;
+    height: 38px;
+    margin: 0 10px;
+}
+.clear-cart-button{
+    position: absolute;
+    right: left;
+    top: 4px;
+    padding: 10px;
+    left: 10px;
+    background: red;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+.ecommerce-app .dropdown{
+    top: 2px;
+}

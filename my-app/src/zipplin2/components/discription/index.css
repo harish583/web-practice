@@ -1,0 +1,63 @@
+
+.discription{
+    display: inline-block;
+    width: 60%;
+}
+.discription-values{
+    display: inline-block;
+    width: 20%;
+}
+.quality-discription img{
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+.discription-holder{
+    display: flex;
+    padding: 5px;;
+    border-top: 1px solid;
+    margin: 12px;
+}
+.right-button{
+    width: 20px;
+    height: 12px;
+    border: 3px solid green;
+    border-width: 0 0 3px 3px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: calc(50% - 8px);
+    left: calc(50% - 10px);
+}
+button{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 3px solid green;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin: 22px 5px ;
+    float: right;
+    cursor: pointer;
+}
+.worng-button{
+    font-size: 22px;
+    color: red;
+}
+.worng{
+    border: 3px solid red;
+}
+.quality , .reason {
+    font-weight: bold;
+}
+.quality-discription-header{
+    padding: 0 7px 10px;
+    overflow: visible;
+}
+.quality-discription .dropdown{
+    top: 0;
+    float: right;
+}
+.dropdown .action-button{
+    padding: 3px;
+}

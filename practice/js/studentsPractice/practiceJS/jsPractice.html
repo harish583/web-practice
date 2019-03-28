@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./jsPractice.css">
+    </head>
+    <body>
+        <div class="full-container">
+            <div class="header-content">
+                <h1>STUDENTS DATA</h1>
+                <div class="Empty-holder">
+                <div>Data is Empty...</div>
+                <button class="btn addStudentButton">Add Student</button>
+                </div>
+                <button class="btn addStudentButton float-right">Add Student</button>
+
+            </div>
+            <div class="body-content">
+                <table>
+                    <thead>
+                        <tr class="header-list">
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                         
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="modal-popup-new-form">
+                <div class="modal-layer"></div>
+                <div class="modal-wrapper">
+                    <div class="form">
+                        <div class="closingCrossButton closingFunction-addData">X</div>
+                        <div>
+                            <label for="fname">FIRST NAME : </label>
+                            <input type="text" id="fname" placeholder="First Name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="lname">LAST NAME : </label>
+                            <input type="text"  id="lname" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER : </label>
+                            <input type="text"  id="phoneNumber" placeholder="Phone Number">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="address">Address :</label>
+                            <textarea  id="address" cols="3" placeholder="Address"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn closingFunction-addData">close</button>
+                            <button class="btn submit-Data">Submit</button>
+                            <button class="btn editing-Data">Submit</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="modal-popup-details">
+                    <div class="modal-layer"></div>
+                    <div class="modal-wrapper">
+                        <div class="form">
+                            <h1>Student Details..</h1>
+                            <div class="closingCrossButton closingFunction">X</div>
+                            <div class="details-content-holder">
+
+                            </div>
+                            <div class="buttons">
+                                <button class="btn closingFunction">Close</button>
+                                <button class="btn btn-danger deleteFunction">Delete</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+        </div>
+    
+
+
+        <script src="./ajaxAllFunctions.js"></script>
+        <script src="./ajaxRendering.js"></script>
+        <script src="./renderingHtml.js"></script>
+        <script src="./jsPractice.js"></script>
+        <script src=""></script>
+    </body>
+</html>

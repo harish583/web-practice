@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "fname": "q",
+      "lname": "q",
+      "phoneNumber": "q",
+      "address": "1aq",
+      "id": 1550093240712
+    },
+    {
+      "fname": "e",
+      "lname": "e",
+      "phoneNumber": "e",
+      "address": "1e",
+      "id": 1550093249393
+    },
+    {
+      "fname": "lllllllllllll",
+      "lname": "ll",
+      "phoneNumber": "l",
+      "address": "l",
+      "id": 1550093258100
+    },
+    {
+      "fname": "w",
+      "lname": "w",
+      "phoneNumber": "w",
+      "address": "aw",
+      "id": 1550121424488
+    },
+    {
+      "fname": "harish",
+      "lname": "h",
+      "phoneNumber": "h",
+      "address": "h",
+      "id": 1550121956630
+    },
+    {
+      "fname": "a",
+      "lname": "a",
+      "phoneNumber": "a",
+      "address": "a",
+      "id": 1550121966446
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

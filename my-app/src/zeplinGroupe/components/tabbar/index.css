@@ -1,0 +1,35 @@
+
+.tab-bar-element{
+    width:50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    color: #a8a8a8;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab-bar-element:hover{
+    cursor: pointer;
+}
+.tab-element{
+    font-size: 14px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 0;
+    cursor: pointer;
+}
+.tab-element-activated{
+    border-bottom: 3px solid #8855b9;
+    padding: 10px;
+    padding-top: 0;
+    color: #8855b9;
+}
+.tab-bar-element:hover{
+    color: blue;
+}
+.tab-bar{
+    position: relative;
+    width: 100%;
+    background: white;
+}

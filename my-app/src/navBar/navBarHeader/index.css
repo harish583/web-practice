@@ -1,0 +1,11 @@
+
+.nav-element{
+    display: inline-block;
+    padding: 10px;
+    background: #f1f1f1;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.nav-element:hover{
+    background: #c1c1c1;
+}

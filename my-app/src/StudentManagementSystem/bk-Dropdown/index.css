@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+.dropdown {
+    position: relative;
+   
+    display: inline-block;
+}
+.dropdown-text {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-option:hover {
+    background: #f1f1f1;
+}
+
+.app .dropdown{
+    margin: 0 10px;
+}

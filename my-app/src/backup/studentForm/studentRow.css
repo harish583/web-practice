@@ -1,0 +1,36 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.header-content{
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+    border: 1px solid;
+    border-left: 0;
+    border-bottom: 0;
+    font-weight: bold;
+}
+.header-content:first-child{
+    border-left: 1px solid;
+}
+.content-holder{
+    width: 85%;
+    margin: 0 auto;
+}
+.student-content{
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+    overflow: auto;
+    border: 1px solid;
+    border-left: 0px;
+    
+}
+.student-content:first-child{
+    border-left: 1px solid;
+}

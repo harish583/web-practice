@@ -1,0 +1,47 @@
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+}
+.popupContent{
+    margin:30px 10px; 
+}
+.popup-content-holder{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+    min-height: 200px;
+}
+.close-button{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 6px;
+    cursor: pointer;
+    background: #f1f1f1;
+    min-width: 80px;
+    text-align: center;
+}
+.close-button:hover{
+    background: #c1c1c1;
+}
+.cross-mark{
+    top: 4px;
+    position: absolute;
+    right: 4px;
+    
+    padding: 6px;
+    cursor: pointer;
+    background: #f1f1f1;
+}
+.cross-mark:hover{
+    background: red;
+    color: white;
+}

@@ -1,0 +1,17 @@
+
+.pending-task-header{
+    font-size: 13px;
+    color: #656d74;
+    font-weight: bold;
+    padding: 0 7px 10px;
+    overflow: visible;
+}
+.pending-task{
+    padding: 10px;
+    -webkit-backdrop-filter: blur(44px);
+    backdrop-filter: blur(44px);
+    background-color: rgba(246, 246, 246, 0.6);
+}
+.dropdown{
+    top: 0;
+}

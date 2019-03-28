@@ -1,0 +1,25 @@
+
+.inputField ,.textareaField{
+    padding: 10px;
+    width: 80%;
+}
+.textarea-holder{
+    display: flex;
+    height: 100px;
+}
+.holder{
+    margin: 5px 0;
+}
+.submit-button{
+    padding: 10px;
+    border: 1px solid;
+    width: 100px;
+    text-align: center;
+    background: green;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.edit-header{
+    text-align: center;
+}

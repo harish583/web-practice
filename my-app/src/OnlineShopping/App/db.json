@@ -1,0 +1,78 @@
+
+
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      }
+    ],
+    "list":[
+        {
+            "image":"https://rukminim1.flixcart.com/image/832/832/t-shirt/h/w/t/men-s-stylish-half-zip-double-flap-collar-full-sleeve-tees-original-imaek47r3sshxttu.jpeg?q=70",
+            "price":"120",
+            "use":"Add To Cart",
+            "productCode":"1",
+            "size":"XL",
+            "name":"boy t-shirt-XL"
+        },
+        {
+            "image":"https://rukminim1.flixcart.com/image/612/612/jmwch3k0/t-shirt/z/d/9/s-hooded102-helmont-original-imaf56hhmjq4yybu.jpeg?q=70",
+            "price":"130",
+            "use":"Add To Cart",
+            "productCode":"2",
+            "size":"S",
+            "name":"boy t-shirt -S "
+        },
+        {
+            "image":"https://img0.junaroad.com/uiproducts/14225135/zoom_0-1522922150.jpg",
+            "price":"100",
+            "use":"Add To Cart",
+            "productCode":"3",
+            "size":"XXL",
+            "name":"boy t-shirt-XXL"
+        },
+        {
+            "image":"https://rukminim1.flixcart.com/image/332/398/jhuvjww0/t-shirt/y/t/7/m-bts038-billion-original-imaf5s96f8qgf3v4.jpeg?q=50",
+            "price":"90",
+            "use":"Add To Cart",
+            "productCode":"4",
+            "size":"L",
+            "name":"boy t-shirt -L"
+        },
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_Qpf0oMhVfkkXD12cKMa4H4T687uNexn8CJ2Y1uNCecF8uCw",
+            "price":"121",
+            "use":"Add To Cart",
+            "productCode":"5",
+            "size":"XXL",
+            "name":"boy t-shirt -XXL"
+        },
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAoDARWI_i-2qExoYpw2OOZ6bJWXJUm7LXNgG-A12S01d0mW25",
+            "price":"155",
+            "use":"Add To Cart",
+            "productCode":"6",
+            "size":"XL",
+            "name":"boy t-shirt -XL"
+        },
+        {
+            "image":"https://img0.junaroad.com/uiproducts/14225135/zoom_0-1522922150.jpg",
+            "price":"100",
+            "use":"Add To Cart",
+            "productCode":"7",
+            "size":"M",
+            "name":"boy t-shirt-M"
+        },
+        {
+            "image":"https://rukminim1.flixcart.com/image/832/832/t-shirt/h/w/t/men-s-stylish-half-zip-double-flap-collar-full-sleeve-tees-original-imaek47r3sshxttu.jpeg?q=70",
+            "price":"120",
+            "use":"Add To Cart",
+            "productCode":"8",
+            "size":"S",
+            "name":"boy t-shirt-S"
+        }
+        
+    ]
+}
