@@ -1,0 +1,93 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro,sans-serif;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0;
+  cursor: default;
+}
+img{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.container .links{
+  text-align: center;
+}
+.disable{
+  pointer-events: none;
+  opacity: .5;
+  cursor: default;
+}
+
+.selected-value{
+      background: yellow;
+      padding: 10px;
+      top: 25px;
+      position: relative;
+      width: 116px;
+      left: calc(100% - 116px);
+      z-index: -1;
+}
+.app-holder{
+  width: 600px;
+  margin: 0 auto;
+}
+.loading{
+  
+  border-radius: 10px;
+  background: yellow;
+  display: inline-block;
+  margin: 6px
+}
+.loading1{
+  animation: harish1  1s infinite;
+}
+@keyframes harish1{
+  /* 0% {width:0px;height: 0px;}
+  33%{width:10px;height: 10px;}
+  66%{width:20px;height: 20px;}
+  100% {width:0px;height: 0px;} */
+  from{width: 0px;height: 0px}
+  to{width: 20px;height: 20px}
+  /* 80%{width:10px;height: 10px;}
+  100%{width:20px;height: 20px;} */
+}
+.loading2{
+  animation: harish2 1s infinite;
+}
+@keyframes harish2{
+  /* 0% {width:10px;height: 10px;}
+  33% {width:20px;height: 20px;}
+  66% {width:0px;height: 0px;}
+  100% {width:10px;height: 10px;} */
+  from{width: 10px;height: 10px}
+  to{width: 20px;height: 20px}
+}
+.loading3{
+  animation: harish3 1s infinite;
+}
+@keyframes harish3{
+  /* 0% {width:20px;height: 20px;}
+  33%{width:0px;height: 0px;}
+  66%{width:10px;height: 10px;}
+  100% {width:20px;height: 20px;} */
+  from{width: 20px;height: 20px}
+  to{width: 0px;height: 0px}
+}
+.request-loading{
+  margin: 10px;
+}
+.document-before-loading-gif-file{
+  position: fixed;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+}

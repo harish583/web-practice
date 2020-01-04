@@ -1,0 +1,22 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro,sans-serif;
+}
+img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.avatar-container , .container{
+  display: inline-block;
+}
+.container .links{
+  text-align: center;
+}

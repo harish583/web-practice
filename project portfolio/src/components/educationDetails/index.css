@@ -1,0 +1,15 @@
+
+.study-component{
+    padding: 10px;
+    line-height: 2;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 5px 10px;
+}
+.education-component{
+    padding: 10px;
+
+}
+.study-component h3{
+    text-decoration: underline;
+}
