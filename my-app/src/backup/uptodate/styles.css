@@ -1,0 +1,105 @@
+
+*{
+    box-sizing: border-box;
+}
+.button{
+    padding: 10px;
+    color: white;
+    background: #c1c1c1;
+    border: 0px;
+    cursor: pointer;
+    margin-right:4px;  
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.background{
+    left: 0;
+    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+}
+.container{
+    width: 700px;
+    position: absolute;
+    background: white;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 200px;
+    margin-top: 50px;
+    padding-top: 50px;
+    left: 200px;
+    right: 200px;
+    top: 50px;
+}
+.cross-mark{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 25px;
+    color: #d1f1d1;
+    cursor: pointer;
+}
+.container .cross-mark:hover{
+    color: #c1c1c1;
+}
+.close-button{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    padding: 6px;
+    min-width: 100px;
+    text-align: center;
+    background: #f1f1f1;
+    cursor: pointer;
+    
+}
+.container .close-button:hover{
+    background: #c1c1c1;
+}
+tr{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2px;
+}
+table{
+    border-collapse: collapse; 
+    width: 1000px;
+    margin: 0 auto;
+}
+td,th{
+    width: 25%;
+    padding: 10px 0;
+    display: inline-block;
+}
+.dropdown{
+    width: 100%;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: 0;
+}
+.dropdown:last-child{
+    border-bottom: 1px solid;
+}
+.dropdown:hover{
+    background: #c1c1c1;
+}
+.Actions{
+    cursor: pointer;
+    background: #f1f1f1;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}

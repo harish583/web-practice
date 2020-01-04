@@ -1,0 +1,81 @@
+
+.content-holder{
+    width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.header{
+    text-align: center;
+}
+.AddData{
+    padding: 10px;
+    min-width: 100px;
+    background: green;
+    border: 0;
+    color: white;
+    position: relative;
+    left: 60px;
+    cursor: pointer;
+}
+.header-holder{
+    background: #e1e1e1;
+    padding: 10px
+}
+.list-header{
+    display: inline-block;
+    width: 22%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    
+    border-right: 1px solid;
+}
+/* .list-header:first-child{
+    border-left: 1px solid;
+} */
+.list-header-holder{
+    margin-top: 50px;
+    border: 1px solid;
+}
+.list-element{
+    display: inline-block;
+    width: 22%;
+    padding: 10px;
+    border-right: 1px solid;
+    position: relative;
+}
+.list-element:last-child{
+    border-right: 0;
+    padding: 0
+}
+.list-Elements-holder{
+    border: 1px solid;
+    border-top: 0; 
+}
+.Action-Button{
+    background: #f1f1f1;
+    padding: 6px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 18%;
+    right: 38px;
+    z-index: 2;
+    background: #c1c1c1;
+    border: 1px solid;
+}
+.Actions{
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+}
+.Actions:hover{
+    background: #ccc;
+}

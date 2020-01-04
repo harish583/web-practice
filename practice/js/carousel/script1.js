@@ -133,8 +133,8 @@ binding({
     type : "slide",
     target:document.querySelector(".wraper2")
 });
-binding({
-    type : "opacity",
-    target:document.querySelector(".wraper")
-});
+// binding({
+//     type : "opacity",
+//     target:document.querySelector(".wraper")
+// });
 //binding("slide");

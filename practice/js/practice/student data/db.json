@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "fname": "1234_update",
+      "lname": "sada2",
+      "Phno": "3",
+      "address": "4"
+    },
+    {
+      "id": "vgh",
+      "fname": "vvhvvhv",
+      "lname": "h",
+      "Phno": "35",
+      "address": "abcfhfhg"
+    },
+    {
+      "id": "dddd",
+      "fname": "dddd_updated",
+      "lname": "fgcgc",
+      "Phno": "5e54",
+      "address": "bb"
+    },
+    {
+      "id": "asdas",
+      "fname": "asdas",
+      "lname": "asdasd",
+      "Phno": "788798",
+      "address": "sadsad"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "fname": "sad",
+      "lname": "asd",
+      "phoneNumber": "6789",
+      "address": "asd",
+      "id": 1549739986158
+    },
+    {
+      "fname": "asa",
+      "lname": "qxxx",
+      "phoneNumber": "csdc",
+      "address": "dscsdc",
+      "id": 1549742181515
+    },
+    {
+      "fname": "hello",
+      "lname": "hai",
+      "phoneNumber": "2345",
+      "address": "f",
+      "id": 1549776304781
+    },
+    {
+      "fname": "abcj",
+      "lname": "erty",
+      "phoneNumber": "vh",
+      "address": "jvjvjhv",
+      "id": 1549783067733
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

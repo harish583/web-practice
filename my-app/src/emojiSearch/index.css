@@ -1,0 +1,15 @@
+
+.emoji-pic{
+    width: 30px;
+    height: 30px;
+}
+.emoji-details{
+    padding: 10px;
+}
+.emoji-details:hover{
+    background: #f1f1f1;
+}
+.emoji-name{
+    vertical-align: super;
+    padding-left: 20px;
+}

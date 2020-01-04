@@ -1,0 +1,27 @@
+
+.header-link{
+    display: inline-block;
+    color: wheat;
+    cursor: pointer;
+}
+.header-text{
+    padding: 13px;
+}
+.header-text:hover{
+    background: wheat;
+    color: black;
+}
+.selected{
+    background: green;
+}
+.selected:hover{
+    background: green; 
+}
+.fa-grip-vertical{
+    /* display: none; */
+}
+@media (max-width:577px){
+    .fa-grip-vertical{
+        display: inline-block;
+    }   
+}

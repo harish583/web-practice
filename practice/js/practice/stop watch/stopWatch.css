@@ -1,0 +1,44 @@
+/* body{
+    color: red;
+} */
+*{
+    box-sizing: border-box;
+}
+.holder{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    /* display: inline-block; */
+    margin: 0 30px;
+    float: left;
+}
+.round{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+}
+.time, .date{
+    top: 45%;
+    position: relative;
+}
+
+.stopWatch {
+    position: relative;
+    top: 40%;
+    font-size: 40px;
+}
+button{
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px;
+}
+
+.count{
+    position: relative;
+    top: 45%;
+}
+.inputNumber,.inputNumbersec{
+    width: 60px;
+}

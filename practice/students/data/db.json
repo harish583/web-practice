@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "fname": "sad",
+      "lname": "asd",
+      "phoneNumber": "asd",
+      "address": "asd",
+      "id": 1549739986158
+    },
+    {
+      "fname": "asa",
+      "lname": "qxxx",
+      "phoneNumber": "csdc",
+      "address": "dscsdc",
+      "id": 1549742181515
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

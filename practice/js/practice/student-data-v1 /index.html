@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student System</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="./styles/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Welcome</h1>
+                <button class="button" id="add-new-contact">Add New Contact</button>
+            </div>
+            <ul class="student-list">
+                <li>
+                    <div class="student-name">
+                        First, Kumar
+                    </div>
+                    <div class="action-buttons">
+                        <button class="button button-small">Edit</button>
+                        <button class="button button-small button-danger">Delete</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="student-name">
+                        Ram, Kumar
+                    </div>
+                    <div class="action-buttons">
+                        <button class="button button-small">Edit</button>
+                        <button class="button button-small button-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-popup" id="modal-popup">
+            <div class="modal-layer"></div>
+            <div class="modal-wrapper">
+                <span class="modal-close">x</span>
+                <div class="modal-content">
+                    <div class="add-button-form">
+                        <div class="modal-title">
+                            Add New Student
+                        </div>
+                        <div class="student-form">
+                            <div class="input-row">
+                                <div class="input-label">
+                                    First name
+                                </div>
+                                <input type="text" />
+                            </div>
+                            <div class="input-row">
+                                <div class="input-label">
+                                    Last name
+                                </div>
+                                <input type="text" />
+                            </div>
+                            <div class="input-row">
+                                <div class="input-label">
+                                    Phone number
+                                </div>
+                                <input type="text" />
+                            </div>
+                            <div class="input-row">
+                                <div class="input-label">
+                                    Address
+                                </div>
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="./scripts/index.js"></script>
+</html>

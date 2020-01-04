@@ -1,0 +1,134 @@
+
+
+*{
+    box-sizing: border-box;
+}
+.holder{
+    width: 700px;
+    margin: 0 auto;
+}
+.all-quations{
+    background: #f1f1f1;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.forNextQuation{
+    min-width: 100px;
+    background: yellow;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    right: 94px;
+    bottom: -10px;
+}
+.forPrevQuation{
+    min-width: 100px;
+    background: yellow;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    left: 36px;
+    bottom: -10px;
+    display: none;
+}
+.submiting{
+    min-width: 100px;
+    background: yellow;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    right: -12px;
+    bottom: -10px;
+    display: none;
+}
+.quation{
+    /* background: #aaa; */
+    /* overflow: auto; */
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+
+}
+hr:last-child{
+    width: 0;
+
+}
+.all-quations-answers-holder{
+    width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    background: #f1f1f1;
+    padding: 10px;
+    /* height: 100%; */
+    display: none;
+}
+/* .popup{
+    top: 0; 
+    background: #f1f1f1;
+    position: fixed;
+
+} */
+.worngOption{
+    color: red;
+    display: block;
+    padding-bottom: 20px;
+}
+.correctOption{
+    color: blue;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.abc{
+    color: cadetblue;
+}
+.optionsSort{
+    max-width: 90%;
+    display: inline-block;
+}
+.correctOption::after{
+    content: url(./check-mark-green.png);
+    display: -webkit-inline-box;
+    width: 20px;
+    transform: scale(.07);
+    height: 10px;
+    position: relative;
+    top: -6px; 
+    vertical-align: top;
+}
+.worngOption::after{
+    content: url(./x-transparent-checkmark.png);
+    display: -webkit-inline-box;
+    width: 20px;
+    transform: scale(.07);
+    height: 10px;
+    position: relative;
+    top: -6px; 
+    vertical-align: top;
+}
+img{
+    width: 30px;
+}
+label{
+    position: relative;
+    white-space: normal;
+}
+.xyz{
+    padding-bottom: 20px;
+    display: block;
+    white-space: normal;
+}
+.xyz:last-child{
+    padding-bottom: 0px;
+
+}
+input{
+    cursor: pointer;
+    vertical-align: top;
+}

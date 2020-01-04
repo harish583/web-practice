@@ -1,0 +1,98 @@
+body{
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+.content-component{
+    width: 1000px;
+    margin: 0 auto;
+}
+.dropdown-holder{
+    left: 100%;
+}
+.student-data{
+    padding: 20px 0;
+    display: block;
+}
+.add-student-button{
+    width:200px;
+    border-radius: 10px;
+    border: 0;
+    background: green;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer; 
+}
+.add-student-form input{
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #c1c1c1;
+    outline: 0;
+}
+
+.student-holder-data{
+    display: inline-block;
+    width: 245px;
+    text-align: center;
+}
+.action-button{
+    padding: 7px;
+    background: #f1f1f1;
+    color: #c1c1c1;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    min-width: 100px;
+    border-radius: 7px;
+    position: relative;
+}
+.student-holder{
+    padding: 10px;
+    position: relative;
+}
+.submit-button{
+    padding: 7px;
+    background: green;
+    border: 0;
+    border-radius: 7px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup-content{
+    width: 600px;
+    background: white;
+    min-height: 500px;
+    position: absolute;
+    left: calc(50% - 300px);
+}
+.popup-closing-button{
+    font-size: 25px;
+    color: #c1c1c1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.popup-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,255,.5);
+}

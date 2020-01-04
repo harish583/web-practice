@@ -1,0 +1,30 @@
+
+.student-row-header{
+    display: inline-block;
+    padding: 10px;
+    width: 24%;
+    border: 1px solid;
+    border-right: 0;
+    font-weight: bold;
+    text-align: center;
+}
+ .student-row-header:last-child{
+    border-right: 1px solid;
+}
+.add-button{
+    padding: 10px;
+    background: green;
+    color: white;
+    border: 0;
+    float: left;
+    cursor: pointer;
+}
+.add-button.right{
+    float: right;
+}
+.add-button-holder{
+    overflow: auto;
+}
+.header{
+    text-align: center;
+}

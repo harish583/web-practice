@@ -1,0 +1,49 @@
+.survey-item {
+    width: 100%;
+    position: relative;
+    padding:  0 10px;
+    margin-top: 20px;
+}
+.survey-item .content-holder{
+    width: 93%;
+    background: white;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    display: inline-block;
+    height: 280px;
+    
+}
+.survey-item .survey-button{
+    width: 80%;
+    background-color: rgb(96, 58, 126);
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.survey-item .image-holder{
+    height: 185px;
+    overflow: hidden;
+}
+.survey-item .image{
+    text-align: center;
+    height: 374px;
+    position: relative;
+    left: 0px;
+    top: -98px;
+    width: 428px;
+}
+.survey-item .icon-survey{
+    position: relative;
+    top: -227px;
+    left: 0px;
+    font-size: 30px;
+    color: rgb(96, 58, 126);
+}
+.survey-item .text-content{
+    color: rgb(74, 74, 74)
+}

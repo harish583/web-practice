@@ -1,0 +1,109 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+.nav-bar{
+    background: #BCDDB2;
+    padding-left:10px;
+    margin-left: 10px; 
+    margin-top: -20px;
+}
+.profile-name{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-bar-content{
+    display: inline-block;
+    padding: 10px;
+}
+.far , .fas , .fab{
+    margin-right: 5px;
+}
+.content-header{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 0;
+}
+.projects .content-header{
+    padding: 10px 10px 0 0; 
+}
+ul{
+    margin: 0;
+}
+.skils{
+    padding: 10px;
+    background: #BCDDB2;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    display: inline-block;
+    /* min-width: 31%;
+    text-align: center; */
+    margin: 3px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.content-holder{
+    padding: 0px 15px 10px;
+}
+.skills{
+    /* text-align: center; */
+    
+}
+.skills-content-holder{
+    text-align: left;
+}
+.profile-holder{
+    padding: 10px 0 20px 10px;
+}
+.resume-holder{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.project-content-header{
+    padding: 10px 0;
+    font-weight: 600
+}
+@media (max-width:580px){
+    .nav-bar{
+        /* text-align: center; */
+    }
+    .email{
+        /* display: block; */
+    }
+}
+@media (min-width:600px){
+    .skils{
+        /* min-width: 23%; */
+    }
+}
+@media (max-width:420px){
+    
+    
+    .skils{
+        min-width: 45%;
+        text-align: center;
+    }
+    /* .profile-name ,  .qualification{
+        text-align: center;
+    } */
+}
+@media (max-width:320px){
+    .skils{
+        text-align: center;
+        margin: 0 auto;
+        min-width:100px;
+        display: block;
+    }
+}

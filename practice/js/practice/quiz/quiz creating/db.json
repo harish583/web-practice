@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "questions": [
+    {
+      "id": "hello",
+      "questions": "hello",
+      "options": [
+        "d",
+        "h",
+        "b",
+        "k"
+      ],
+      "correct": "1"
+    },
+    {
+      "id": "wert",
+      "questions": "wert",
+      "options": [
+        "hbv",
+        "vbn",
+        "kjn",
+        "bnm"
+      ],
+      "correct": "3"
+    },
+    {
+      "id": "we",
+      "questions": "we",
+      "options": [
+        "hg",
+        "fg",
+        "ijb",
+        "kjn"
+      ],
+      "correct": "2"
+    },
+    {
+      "id": "hjhb",
+      "questions": "hjhb",
+      "options": [
+        "fbn",
+        "kjn",
+        "vbn",
+        "kn"
+      ],
+      "correct": "4"
+    },
+    {
+      "id": "rtyrtyr",
+      "questions": "rtyrtyr",
+      "options": [
+        "rtrtrty",
+        "rtyrtyr",
+        "rytrtyr",
+        "rytryt"
+      ],
+      "correct": "2"
+    },
+    {
+      "id": "456789",
+      "questions": "456789",
+      "options": [
+        "fghjk",
+        "fghjk",
+        "fghjk",
+        "fghjk"
+      ],
+      "correct": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

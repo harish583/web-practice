@@ -1,0 +1,48 @@
+
+
+.task-status-header{
+    background: #f8f8f8;
+    padding: 11px 12px 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.updater-holder{
+    background: #f8f8f8;
+    padding: 3px;
+    color: #4f5459;
+}
+.status-update{
+    border-bottom:1px solid #f8f8f8;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+.updated-status-info{
+    font-size: 10px;
+    line-height: 1.5;
+}
+.status-update-holder{
+    background: white;
+    padding:0 10px;
+    margin-bottom: 15px;
+}
+/* .status-update:last-child{
+    border: 0;
+} */
+/* .status-update-holder:last-child{
+    margin-bottom: 35px;
+} */
+#Completed .status{
+    color: #42d620;
+}
+#Accepted .status{
+    color: #009cde;
+}
+
+#Dismissed .status{
+    color: #ff635c;
+}
+.task-id{
+    font-weight: bold;
+}

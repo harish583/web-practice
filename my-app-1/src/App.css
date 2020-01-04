@@ -1,0 +1,69 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.overflow{
+  overflow: hidden;
+}
+body{
+  padding: 0;
+  margin: 0;
+
+  /* background-image: url(../src/grass-snake-snake-serpentes-natrix-80474\ \(1\).jpeg); */
+  /* background-image: url(../src/telangana.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%; */
+  font-family: Source Sans Pro,sans-serif;
+}
+.header-holder{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+/* .app-holder{
+  width: 700px;
+  margin: 0 auto;
+} */
+.icons{
+  color: wheat;
+  float: right;
+}
+.fab{
+  padding: 13px;
+  cursor: pointer;
+  line-height: 1.13;
+}
+a{
+  color: wheat;
+}
+.fab:hover{
+  color: black;
+  background: wheat;
+}
+.content-holder{
+  margin-top: 100px;
+}
+@media (max-width:575px){
+  .app-holder{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .icons{
+    display: block;
+    text-align: center;
+    float: inherit;
+  }
+}
+@media (max-width:400px){
+  .header-holder .header-link{
+    display: block;
+    text-align: center;
+  }
+}

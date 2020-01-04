@@ -1,0 +1,91 @@
+
+.discription{
+    display: inline-block;
+    width: 60%;
+}
+.discription-values{
+    display: inline-block;
+    width: 20%;
+}
+.quality-discription img{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.discription-holder{
+    display: flex;
+    padding: 5px;;
+    border-top: 1px solid #d6d6d6;
+}
+.right-button{
+    width: 20px;
+    height: 12px;
+    border: 3px solid green;
+    border-width: 0 0 3px 3px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: calc(50% - 8px);
+    left: calc(50% - 10px);
+}
+button{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 3px solid green;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin: 22px 5px ;
+    float: right;
+    cursor: pointer;
+}
+.worng-button{
+    font-size: 22px;
+    color: red;
+}
+.worng{
+    border: 3px solid red;
+}
+.quality , .reason {
+    font-size: 13px;
+    font-weight: bold;
+    color: #4f5459;
+}
+.quality-discription-header{
+    padding: 7px;
+    color: #656d74;
+    font-size: 13px;
+    font-weight: bold;
+}
+.quality-discription{
+    margin-top: 52px;
+    padding: 10px; 
+}
+.disctription-content-holder{
+    height: 150px;
+    overflow: auto;
+}
+.quality{
+    color: #4f5459;
+    font-size: 11px;
+}
+.explanation{
+    color: #b7bcc1;
+    font-size: 13px;
+}
+.round-border{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #2bbff8;
+    display: inline-block;
+    color: #2bbff8;
+    top: calc(50% - 15px);
+    right: -30px;
+}
+.fas{
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+}

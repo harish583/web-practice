@@ -1,0 +1,40 @@
+
+.actions-holder{
+    padding: 0;
+    margin: 0;
+}
+.list-elements{
+    list-style-type: none;
+}
+.action-button{
+    width: 100%;
+    background: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-container{
+    width: 150px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    top: -15px;
+    left: 18px;
+    right: 0;
+    bottom: 0;
+}
+.actions-holder{
+    border: 1px solid;
+    width: 112%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+.list-elements{
+    padding: 10px;
+    cursor: pointer;
+    background: #f1f1f1;
+}
+.list-elements:hover{
+    background: #c1c1c1;
+}

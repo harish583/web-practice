@@ -1,0 +1,80 @@
+
+/* body{
+    font-family: Source Sans Pro,sans-serif;
+} */
+*{
+    box-sizing: border-box;
+}
+.total-container{
+    width: 500px;
+    background: #f0f0f0;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.header{
+    background: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.surveyButton{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    background-color:rgb(96, 58, 126);   
+    border: 0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.single-container{
+    padding: 10px;
+    position: relative;
+    width: 440px;
+    height: 295px;
+}
+.images-holder , .icon-survey{
+    /* display: inline-block;
+    width: 20px;
+    height: 20px; */
+}
+.icon-survey{
+    position: absolute;
+    font-family: 'icomoon' !important;
+    top: 20px;
+    font-size: 40px;
+    left: -2px;
+    color:rgb(96, 58, 126)
+}
+.icon-survey:before {
+    content: "\e928";
+    display: block;
+    width:100px;
+  }
+.images-holder{
+    width: 108%;
+    margin: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    background: white;
+    padding: 10px;
+    height: 290px;
+}
+.monkey-image{
+    background-image: url(https://secure.surveymonkey.com/smassets/responseweb/smlib.globaltemplates/1.14.2/assets/sm_logo_fb.png);
+    width: 97%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}

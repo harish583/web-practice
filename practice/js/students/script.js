@@ -1,133 +1,213 @@
-var students = [];
-/* core functionality starts here */
-function readDataFromStorage() {
-    // read the data from storage and asign to students GLOBAL varaiable
-
+function getActionHtml() {
+    return `<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                Action
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" data-action="edit" href="#">Edit</a>
+                <a class="dropdown-item" data-action="details"  href="#">Details</a>
+                <a class="dropdown-item" data-action="delete"  href="#">Delete</a>
+            </div>
+        </div>`;
 }
 
-function writeDataToStorage(data) {
-    // write the data passed to localStorage 
+function showEmptyMessage() {
+    document.getElementById('student-list').style.display = 'none';
+    document.getElementById('empty-students').style.display = 'block';   
 }
-
-function addStudent(student) {
-    // takes the student object and push to students array and write data to storage
-    // append the student object respective dom i.e renderStudent(student, parentNode)
+function showStudentsData() {
+    if ($('#student-list').is(':hidden')) {
+        document.getElementById('student-list').style.display = 'block';
+        document.getElementById('empty-students').style.display = 'none';    
+    }
 }
-
-function deleteStudent(index) {
-    // take the index to remove, and remove the respective data and writes to storage
-    // remove the respective dom node
+function createStudentRow(student) {
+    var tr = $(`
+        <tr>
+            <td class="student-fname">${student.fname}</td>
+            <td class="student-lname">${student.lname}</td>
+            <td class="student-phoneNumber">${student.phoneNumber}</td>
+            <td class="student-actions">${getActionHtml()}</td>
+        </tr>
+    `);
+    return tr;
 }
-
-function updateStudent(student, index) {
-    // takes the student and index and update the data repectively nad writes for storage
-    // update the repective dom with values passed 
-}
-/* core functionality ends here */
-
-/* View details functionaly starts here */
-function openViewDetailsPopup(index) {
-    // pre populate the student from the index
-}
-
-function closeViewDetailsPopup() {
-    // should close the delete confrom popup
-}
-
-function onViewDetailsClick(event) {
-    // write the functionality for view details click
-}
-/* View details functionaly ends here */
-
-
-/* Delete student functionaly starts here */
-function onDeleteConfirmClick(index) {
-    // delete student from the respective index
-    // close the deleteConfrimPopup
-}
-
-function openDeleteConfirmPopup(index) {
-    // Bind event for OK button click in confrim popup
-    // Make sure above confirm event is getting called only once 
-}
-
-function closeDeleteConfirmPopup() {
-    // should close the delete confrom popup
-}
-
-function onDeleteButtonClick(event) {
-    // write functioanlity for delete button click
+function renderStudent(student) {
+    var tbody = document.getElementById('students-rows');
+    var row = createStudentRow(student);
+    row.on('click', '.dropdown-item', function(event) {
+        event.preventDefault();
+        var action = $(event.currentTarget).attr('data-action');
+        if (action === 'details') {
+            openStudentDetails(student);
+        }
+        else if (action === 'delete') {
+            openDeleteConfirm(student, row);
+        } else if(action === 'edit') {
+            openStudentEdit(student, row);
+        }
+    });
+    tbody.appendChild(row[0]);
 
 }
-/* Delete student functionaly ends here */
-
-/* Edit student functionality starts here */
-function openEditStudentForm(index) {
-    // should open the form and
-    // should bind the bind the event for submit click
-    // make sure above event is calling is only once
-    // Prefill the data
-}
-
-function closeEditStudentPopup() {
-    // shoould close the form
-}
-
-function onEditStudentSubmitClick(event, index) {
-    // should read the values from inputs and if the values are proper call updateStudent(student, index) and close the popup
-}
-
-function onEditStudentClick(event) {
-    // Functionality for add Student click
-}
-/* Edit student functionality ends here */
-
-
-
-function bindStudentEvents(node) {
-    // bind on click events for view details, edit, delete event handlers  
-}
-
-function renderStudent(student, parent) {
-    // create the student node and append to parent
-    // TODO
-    // and bindStudentEvents
-}
-
 function renderStudents(data) {
-    // render students by using data array passed
+    if (data.length === 0) {
+        showEmptyMessage();
+        return;
+    }
+    var tbody = document.getElementById('students-rows');
+    tbody.innerHTML = '';
+    for(var student of data) {
+        renderStudent(student);
+    }
+}
+function fetchStudentsAndRender() {
+    conactService.getContacts()
+    .then(function(data) {
+        renderStudents(data);
+    })
+}
+function showStudentForm() {
+    $('#studentModalForm').modal();
+    // var fname = $('#firstName');
+    // var lname = $("#lastName");
+    // var phoneNumber = $('#phoneNumber');
+    // var address = $("#address");
+    // fname.val('');
+    // fname.val('');
+    // fname.val('');
+    // fname.val('');
+    var saveBtn = $('#save-button');
+    saveBtn.hide();
+    var okbtn = $('#ok-button');
+    okbtn.show();
+    $('#firstName, #lastName, #phoneNumber, #address').val('');
+}
+function onSubmitHandler() {
+    var fname = $('#firstName');
+    var lname = $("#lastName");
+    var phoneNumber = $('#phoneNumber');
+    var address = $("#address");
+    var data = {
+        fname: fname.val(),
+        lname: lname.val(),
+        phoneNumber: phoneNumber.val(),
+        address: address.val(),
+        id: Date.now()
+    };
+    if (!data.fname || !data.lname || !data.phoneNumber || !data.address) {
+        alert('Please Eneter all details');
+        return;
+    }
+    conactService.createStudent(data)
+    .then(function(response) {
+        $('#studentModalForm').modal('hide');
+        showStudentsData();
+        renderStudent(response);
+    })
+}
+function bindOkBtnEvent() {
+    var okbtn = $('#ok-button');
+    if(!okbtn.attr('is-event-binded')) {
+        okbtn.attr('is-event-binded', true);
+        okbtn.on('click', function() {
+            onSubmitHandler();   
+        })
+    }
+}
+function bindAddStudentEvent() {
+    $('.add-student-btn').on('click', function(e) {
+        showStudentForm();
+        bindOkBtnEvent()
+    });
+}
+function init() {
+    fetchStudentsAndRender();
+    bindAddStudentEvent();
+    // 
 }
 
-
-/* add student functionality starts here */
-function openAddStudentForm() {
-    // should open the form and
-    // should bind the bind the event for submit click
-    // make sure above event is calling is only once
+function openStudentDetails(student) {
+    $("#studentModalDetails").modal();
+    $("#details-fname").html(student.fname)
+    $("#details-lname").html(student.lname)
+    $("#details-phoneNumber").html(student.phoneNumber)
+    $("#details-address").html(student.address)
 }
 
-function closeAddStudentPopup() {
-    // shoould close the form
+function onDeleteConfirmHandler(student, row) {
+    conactService.deleteContact(student.id)
+    .then(function() {
+        $("#studentModalDelete").modal('hide');
+        row.remove();
+        var tbody = document.getElementById('students-rows');
+        if ($(tbody).find('tr').length === 0) {
+            showEmptyMessage();
+        }
+    });
+}
+function openDeleteConfirm(student, row) {
+    $("#studentModalDelete").modal();
+    var deleteBtn = $('#delete-button');
+    // if(!deleteBtn.attr('is-event-binded')) {
+    //     deleteBtn.attr('is-event-binded', true);
+    //     deleteBtn.on('click', function() {
+    //         onDeleteConfirmHandler(student, row);   
+    //     })
+    // }
+    deleteBtn.off('click').on('click', function() {
+        onDeleteConfirmHandler(student, row);   
+    })
 }
 
-function onAddStudentSubmitClick(event) {
-    // should read the values from inputs and if the values are proper call addStudent and close the popup
+function onUpdateStudentHandler(student, row) {
+    var fname = $('#firstName');
+    var lname = $("#lastName");
+    var phoneNumber = $('#phoneNumber');
+    var address = $("#address");
+    var data = {
+        fname: fname.val(),
+        lname: lname.val(),
+        phoneNumber: phoneNumber.val(),
+        address: address.val(),
+        id: student.id
+    };
+    if (!data.fname || !data.lname || !data.phoneNumber || !data.address) {
+        alert('Please Eneter all details');
+        return;
+    }
+    conactService.updateContact(student.id, data)
+    .then(function(response) {
+        student.fname = response.fname;
+        student.lname = response.lname;
+        student.phoneNumber = response.phoneNumber;
+        student.address = response.address;
+        $('#studentModalForm').modal('hide');
+        row.find('.student-fname').html(response.fname);
+        row.find('.student-lname').html(response.lname);
+        row.find('.student-phoneNumber').html(response.phoneNumber);
+    })
 }
 
-function onAddStudentClick(event) {
-    // Functionality for add Student click
+function openStudentEdit(student, row) {
+    $('#studentModalForm').modal();
+    var fname = $('#firstName');
+    var lname = $("#lastName");
+    var phoneNumber = $('#phoneNumber');
+    var address = $("#address");
+    fname.val(student.fname);
+    lname.val(student.lname);
+    phoneNumber.val(student.phoneNumber);
+    address.val(student.address);
+    var saveBtn = $('#save-button');
+    saveBtn.show();
+    var okbtn = $('#ok-button');
+    okbtn.hide();
+    saveBtn.off('click').on('click', function() {
+        onUpdateStudentHandler(student, row);   
+    })
 }
-/* add student functionality ends here */
 
-function bindAddStudentClick() {
-    // Functionality for add button click
-}
-
-
-function initialize() {
-    readDataFromStorage();
-    renderStudents();
-    bindAddStudentClick();
-}
-
-function initialize();
+$(document).ready(function() {
+    init();
+});

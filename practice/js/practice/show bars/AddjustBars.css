@@ -1,0 +1,21 @@
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+.bar-holder{
+    width: 100%;
+    height: 20px;
+    background: #f1f1f1;
+    border: 1px solid;
+    position: relative;
+}
+.adjuster{
+    width: 26px;
+    height: 26px;
+    top: -3px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+}

@@ -1,0 +1,58 @@
+.projects-component{
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    line-height: 1.5;
+    margin: 5px;
+    cursor: pointer;
+    color: black;
+}
+.projects-component img{
+    width: 100%;
+}
+.fa-ellipsis-v{
+    right: 10px;
+    position: absolute;
+}
+.project-content{
+    padding: 15px;
+}
+.project-name-header{
+    padding: 15px;
+    background: #bbbbbb;
+}
+.name-link{
+    color: blue;
+    font-weight: bold;
+}
+.text-content{
+    padding: 7px;
+}
+@media (max-width:1050px){
+    .projects-component{
+        width: 32%;
+    }
+}
+@media (max-width:850px){
+    .projects-component{
+        width: 48%;
+    }
+}
+@media (max-width:580px){
+    .projects-component{
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .header-link , .fa-github{
+        width: 100%;
+        text-align: center;
+    }
+    .header-link a{
+        display: block;
+    }
+}

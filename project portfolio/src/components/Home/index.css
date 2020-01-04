@@ -1,0 +1,45 @@
+
+.component-header{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+.swipe-down-button{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid;
+    cursor: pointer;
+    top: 80%;
+    position: absolute;
+    margin: 0 auto;
+    left: 45%;
+    /* animation: SwipeButton 2s ease-in-out infinite; */
+}
+.swipe-down-button:hover{
+    background: rgb(18, 226, 233);
+    color: white;
+}
+.home-component-holder{
+    color: white;
+}
+.header-discription{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: block;
+}
+.logo-background{
+    background-image: url("http://findmatthew.com/style/../img/filler.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

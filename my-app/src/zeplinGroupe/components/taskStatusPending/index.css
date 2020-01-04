@@ -1,0 +1,32 @@
+
+.status-count-pending{
+    color: #ff635c;
+}
+
+.task-status-pending{
+    padding: 10px;
+    font-size: 12px;
+}
+.status-count-number{
+    font-size: 32px;
+}
+.status-count-pending{
+    font-size: 18px;
+}
+/* .due-time{
+    float: right;
+}
+.single-line{
+    display: inline-block;
+} */
+.pending-task-status{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.history{
+    font-size: 10px;
+}
+.pending-task-status{
+    margin: 4px;
+    border-left: 3px solid #ff635c;
+}

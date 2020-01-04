@@ -1,0 +1,56 @@
+.container{
+    display: none;
+}
+.popup-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: .5;
+}
+.content{
+    width: 500px;
+    background: white;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.data{
+    padding: 20px 0;
+}
+.closing{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+}
+.closing:hover{
+    background: red;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.closeButton{
+    width: 100px;
+    background: #f1f1f1;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.closeButton:hover{
+    background: #c1c1c1;
+}
+.buttons1 , .buttons2{
+    min-width:100px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 3px;
+}

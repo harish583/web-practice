@@ -1,0 +1,64 @@
+{
+    "emoji":[
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f600.png",
+            "name":"1234"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f4af.png",
+            "name":"100"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f600.png",
+            "name":"Grinning"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f62c.png",
+            "name":"Grimacing"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f601.png",
+            "name":"Grin"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f602.png",
+            "name":"Joy"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f603.png",
+            "name":"Smiley"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f605.png",
+            "name":"Sweat Smile"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f606.png",
+            "name":"Laughing"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f607.png",
+            "name":"Innocent"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f609.png",
+            "name":"Wink"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f60a.png",
+            "name":"Blush"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f642.png",
+            "name":"Slight Smile"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/1f643.png",
+            "name":"Upside Down"
+        },
+        {
+            "image":"//cdn.jsdelivr.net/emojione/assets/png/263a.png",
+            "name":"Relaxed"
+        }
+    ]
+}

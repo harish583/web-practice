@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.modal-popup-new-form , .modal-popup-details{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-layer {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-wrapper {
+    position: relative;
+    max-width: 600px;
+    padding: 10px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 0px;
+    overflow: auto;
+    top: 30px;
+    transition: all 1.2s ease;
+}
+.show-modal .modal-wrapper {
+    margin-top: 30px;
+}
+input , textarea{
+    padding: 7px;
+    width: 100%;
+}
+.closingCrossButton{
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.form{
+    margin-top: 50px;
+
+}
+.buttons{
+    float: right;
+}
+.btn{
+    color: bisque;
+    background: cornflowerblue;
+    padding: 10px;
+    min-width: 100px;
+    border: 0;
+    border-radius: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    outline: 0;
+}
+.submit-Data{
+    background: brown;
+}
+.full-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.options{
+    cursor: pointer;
+}
+.float-right{
+    float: right;
+}
+.header-content{
+    background: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    padding: 10px;
+}
+th ,td{
+    width: 25%;
+    border-bottom: 2px slategray solid;
+    text-align: center;
+    padding: 10px;
+}
+.dropdown-List{
+    background: #f1f1f1;
+    position: absolute;
+    width: 100px;
+    left: 30%;
+    top: 84%;
+    display: none;
+    z-index: 1;
+}
+.show .dropdown-List{
+    display: block;
+}
+li{
+    list-style: none;
+}
+.dropdown-header{
+    position: relative;
+    padding: 0;
+}
+.new-data{
+    display: none;
+}
+.options{
+    padding: 10px;
+
+}
+.options:hover{
+    background: #c1c1c1;
+}
+.deleteFunction ,.closingFunction{
+    display: inline-block;
+}

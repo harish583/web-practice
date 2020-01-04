@@ -1,0 +1,149 @@
+.component{
+    /* background: #c1c1c1;
+    padding: 10px; */
+    margin-top: 75%;
+    position: relative;
+    /* background-image:url("../../y2mate.com\ -\ ye_mantramo_video_song_andala_rakshasi_songs_lavanya_tripati_naveen_rahul_hanu_raghavapudi_cx5VDiLM7YY_1080p.mp4");  */
+}
+.component-header{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+.distict-name{
+    padding: 10px;
+    background: #c1c1c1;
+    margin: 5px 0;
+    overflow: auto;
+}
+.swipe-down-button{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    background: #c1c1c1;
+    top: 80%;
+    position: absolute;
+    margin: 0 auto;
+    left: 45%;
+    animation: SwipeButton 2s ease-in-out infinite;
+}
+@keyframes SwipeButton{
+    from{top:80%}
+    to{top:70%}
+}
+.distict-name-image{
+    display: inline-block;
+    width: 20%;
+}
+.distict-place-discription{
+    display: inline-block;
+    width: 80%;
+}
+.distict-name .distict-name-header{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.distict-place-discription{
+    background: #f1f1f1;
+    padding: 10px;
+    max-height: 100px;
+    overflow: auto;
+}
+.logo-background{
+    /* background-image: url(../../telangana.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%; */
+  width: 0;
+  height: 0;
+}
+.component-container{
+    width: 700px;
+    margin: 0 auto;
+}
+.header-discription{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: block;
+}
+.videos-button , .images-button{
+    padding: 10px;
+    border: 0;
+    background: brown;
+    color: white;
+    font-weight: bold;
+    margin: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.videos-button:hover , .images-button:hover{
+    background: tomato;
+
+}
+.buttons-holder{
+    float: right;
+}
+.backgroung{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a1a1a1;
+    z-index: -1;
+    opacity: .5;
+}
+.popup-background{
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
+    background:#c1c1c1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.popup-cross{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+}
+.place-name{
+    text-align: center;
+}
+.popup-image{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.popup-content-holder{
+    position: relative;
+    width: auto;
+    margin: 60px 10px;
+}
+.popup-images-holder{
+    /* margin: 80px 20px 30px;
+    overflow: auto; */
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    outline: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}

@@ -1,0 +1,12 @@
+
+.contact-component a{
+    display: block;
+    color: rgb(107, 107, 8);
+}
+.contact-component a:hover{
+    color: brown;
+}
+.contact-component{
+    line-height: 2;
+    padding: 20px;
+}

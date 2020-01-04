@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "result": [
+      {
+        "_id": "5c67ecb285543a30690c77ff",
+        "modifiedAt": "2019-02-16T10:57:54.612Z",
+        "__v": 0,
+        "users": [],
+        "createdAt": "2019-02-16T10:57:54.611Z",
+        "image": "https://secure.surveymonkey.com/smassets/responseweb/smlib.globaltemplates/1.14.2/assets/sm_logo_fb.png",
+        "_owner": "58086a7cc6d233c46dffafa1",
+        "_app": "5afbc7485d74bc61a1058263",
+        "_channel": "587c56497c3465c078f6f2df",
+        "url": "https://www.surveymonkey.com/r/22XZM8K",
+        "title": "Example Survey Another"
+      },
+      {
+        "_id": "5bfd0f58ca23224b3bc71645",
+        "modifiedAt": "2018-11-27T09:33:12.390Z",
+        "__v": 0,
+        "users": [],
+        "createdAt": "2018-11-27T09:33:12.387Z",
+        "image": "https://secure.surveymonkey.com/smassets/responseweb/smlib.globaltemplates/1.14.2/assets/sm_logo_fb.png",
+        "_owner": "58086a7cc6d233c46dffafa1",
+        "_app": "5afbc7485d74bc61a1058263",
+        "_channel": "587c56497c3465c078f6f2df",
+        "url": "https://www.surveymonkey.com/r/GDQFHJH",
+        "title": "first Survey"
+      }
+    ]
+    }

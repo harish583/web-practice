@@ -1,0 +1,51 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.row-content{
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+}
+.Action-button{
+    padding: 10px 0;
+    background: #f1f1f1;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+    position: relative;
+}
+.Action-button:hover{
+    background: #c1c1c1;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    text-align: center;
+}
+.list-header{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border: 1px solid;
+}
+.list-element{
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid;
+}
+.list-element:last-child{
+    border-bottom: 0;
+}
+.list-element:hover{
+    background: #f1f1f1;
+}

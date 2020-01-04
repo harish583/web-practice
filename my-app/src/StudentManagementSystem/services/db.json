@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "students": [
+    {
+      "name": "1233",
+      "username": "7",
+      "email": "7",
+      "address": "7",
+      "id": 1551938093753
+    },
+    {
+      "name": "8",
+      "username": "8",
+      "email": "8",
+      "address": "8",
+      "id": 1551938179117
+    },
+    {
+      "name": "gfghh",
+      "username": "fhfhfhfhf",
+      "email": "hfhfhfhfhf",
+      "address": "fhfhfhfhffh",
+      "id": 1551940634030
+    },
+    {
+      "name": "pppppp",
+      "username": "pppppp",
+      "email": "ppppppppp",
+      "address": "ppppppp",
+      "id": 1551940714182
+    },
+    {
+      "name": "xx",
+      "username": "xxxx",
+      "email": "xxx",
+      "address": "xxx",
+      "id": 1551940808051
+    },
+    {
+      "name": "wwww",
+      "username": "wwwwww",
+      "email": "wwwwwww",
+      "address": "w",
+      "id": 1551942338733
+    },
+    {
+      "name": "1234",
+      "username": "1234",
+      "email": "234",
+      "address": "234",
+      "id": 1551965433874
+    },
+    {
+      "name": "esfdgfhg",
+      "username": "sdfdgfhg",
+      "email": "qwqeedfgdsfgnb",
+      "address": "sdfhgj",
+      "id": 1551967257197
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,35 @@
+
+.property-content{
+    width: 45%;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+.my-tasks img{
+    width: 100%;
+}
+#HIGH .property-Quality{
+    color: #ff635c;
+}
+#MEDIUM .property-Quality{
+    color: #009cde;
+}
+#LOW .property-Quality{
+    color: #7ed321;
+}
+.property-Quality{
+    font-size: 10px;
+}
+.property-reasion{
+    color: #4f5459;
+    font-size: 13px;
+}
+.property-explanation{
+    color: #b7bcc1;
+    font-size: 13px;
+}
+.property-specifications{
+    padding: 10px;
+    background: white;
+}
