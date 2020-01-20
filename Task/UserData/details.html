@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users data</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="Users-holder">
+            <h2 class="header">User Data</h2>
+            <div id="add-list">Add Details</div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Add Details</h2>
+                  <input type="text" placeholder="Name" class="enter name"/>
+                  <input type="email" placeholder="Email" class="enter email" />
+                  <input type="number" placeholder="Phone Number" class="enter number"/>
+                  <div class="adding" >Add</div>
+                </div>
+              </div>
+            <table class="user-details">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <script src="dataScript.js" ></script>
+    </body>
+</html>

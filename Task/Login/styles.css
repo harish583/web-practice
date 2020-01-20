@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #c1c1c1;
+    font-family: sans-serif;
+}
+
+.Page-contant .login-form{
+    width: 500px;
+    margin: auto;
+    border: 1px solid #c1c1c1;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.imageIcon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #c1c1c1;
+    background: yellowgreen;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.Page-contant .login-form.heading{
+    text-align: center;
+}
+
+.Page-contant .login-form .user-email-id , .Page-contant .login-form .user-password{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+}
+
+.Page-contant .login-form .user-email-id.error , .Page-contant .login-form .user-password.error{
+    border: 1px solid red;
+}
+
+.Page-contant .login-form .submit-form{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    background: #5edc5e;
+    margin-top: 20px;
+    border: 1px solid ;
+    transition: all 0.7s ease;
+}
+
+label{
+    padding-bottom: 15px;
+    display: block;
+}
+
+input{
+    font-size: 18px;
+}
+
+.Page-contant .login-form .submit-form:hover{
+    color: white;
+    background: #257925;
+    transition: all 0.7s ease;
+}
+
+.Page-contant .login-form .email-verification, .Page-contant .login-form .password-verification{
+    color: red;
+    display: none;
+    font-size: 11px;
+}
+
+.color-red{
+    color: red;
+}

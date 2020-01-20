@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div  class="Page-contant">
+            <div class="login-form">
+                <h1 class="heading">Login</h1>
+                <label>
+                    <div>Email : <span class="color-red">*</span></div> 
+                    <input type="email" class="user-email-id" placeholder="Enter Your Email"/>
+                    <div class="email-verification" >* Check Your Email</div>
+                </label>
+                <label>
+                    <div>Password : <span class="color-red">*</span></div>
+                    <input type="password" class="user-password" placeholder="Enter Your Password"/>
+                    <div class="password-verification" >* Check Your Password</div>
+                </label>
+                <div class="submit-form" onclick="submitUserData()" >LOGIN </div>
+            </div>  
+        </div>
+        <script src="script.js" ></script>
+    </body>
+</html>
